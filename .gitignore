@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Environment files (contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+api.err.log
+api.out.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node (for front_end)
+front_end/node_modules/
+front_end/dist/
+
+# Local data
+Pet-agentv11/data/*.json
+!Pet-agentv11/data/.gitkeep
+
+# Temporary files
+*.tmp
+*.bak
