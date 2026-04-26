@@ -21,55 +21,12 @@ export function MapRoutePage({ onNavigate, appState, plan, mapData }: MapRoutePa
   const [showHospitalPanel, setShowHospitalPanel] = useState(false);
 
   const fallbackDays = [
-    { day: 1, date: 'May 15, 2026', label: 'Day 1' },
-    { day: 2, date: 'May 16, 2026', label: 'Day 2' },
-    { day: 3, date: 'May 17, 2026', label: 'Day 3' },
+    { day: 1, date: 'No date', label: 'Day 1' },
   ];
 
   const fallbackRoutes: Record<number, any[]> = {
-    1: [
-      { id: 1, time: '09:00', name: 'Depart Shanghai', type: 'start', duration: '2 hrs', distance: '180 km', x: 15, y: 50 },
-      { id: 2, time: '11:30', name: 'Check-in: West Lake Pet Hotel', type: 'hotel', petPolicy: 'Friendly', hours: '24 hours', phone: '+86 571-8888-1111', description: 'Modern pet-friendly hotel with welcome packages for pets. Clean rooms and excellent service.', x: 45, y: 45 },
-      { id: 3, time: '14:00', name: 'Su Causeway Walk', type: 'attraction', duration: '2 hrs', distance: '3 km', petPolicy: 'Leash required', hours: 'Always open', ticket: 'Free', phone: '+86 571-8888-2222', description: 'Beautiful lakeside walk with dedicated pet rest areas and water stations.', x: 50, y: 52 },
-      { id: 4, time: '16:30', name: 'Pet-Friendly Cafe', type: 'meal', petPolicy: 'Friendly', hours: '10:00-22:00', phone: '+86 571-8888-3333', description: 'Cozy cafe with outdoor seating area where pets are welcome.', x: 48, y: 48 },
-      { id: 5, time: '18:00', name: 'Dinner at Hubin Road Pet Restaurant', type: 'meal', petPolicy: 'Friendly', hours: '11:00-23:00', phone: '+86 571-8888-4444', description: 'Restaurant with pet menu and outdoor dining area.', x: 52, y: 50 },
-    ],
-    2: [
-      { id: 6, time: '08:30', name: 'Prince Bay Park', type: 'attraction', duration: '2.5 hrs', distance: '5 km', petPolicy: 'Leash required', hours: 'Open until 18:00', ticket: 'Free', phone: '+86 571-8888-5555', description: 'Spring flowers and photo-worthy scenery. Pets allowed in designated areas.', x: 55, y: 58 },
-      { id: 7, time: '12:00', name: 'Lunch Break', type: 'meal', x: 58, y: 55 },
-      { id: 8, time: '14:00', name: 'Drive to Yunqi Bamboo Trail', type: 'transport', duration: '30 min', distance: '12 km', x: 60, y: 50 },
-      { id: 9, time: '15:00', name: 'Yunqi Bamboo Trail', type: 'attraction', duration: '2 hrs', petPolicy: 'Friendly', hours: 'Open until 17:00', ticket: '¥8', phone: '+86 571-8888-6666', description: 'Cool bamboo forest trails, perfect for pets. Shaded and comfortable.', x: 70, y: 45 },
-      { id: 10, time: '17:30', name: 'Tea House Rest Stop', type: 'meal', petPolicy: 'Friendly', hours: '09:00-20:00', phone: '+86 571-8888-7777', description: 'Traditional tea house with pet-friendly outdoor seating.', x: 72, y: 48 },
-    ],
-    3: [
-      { id: 11, time: '09:00', name: 'Longjing Village', type: 'attraction', duration: '2 hrs', petPolicy: 'Friendly', hours: 'Always open', ticket: 'Free', phone: '+86 571-8888-8888', description: 'Tea plantation trails where pets can walk alongside you.', x: 62, y: 40 },
-      { id: 12, time: '12:00', name: 'Hotel Check-out', type: 'hotel', x: 45, y: 45 },
-      { id: 13, time: '13:30', name: 'Return to Shanghai', type: 'end', duration: '2 hrs', distance: '180 km', x: 85, y: 50 },
-    ],
+    1: [],
   };
-
-  const fallbackHospitals = [
-    {
-      id: 1,
-      name: 'Zhejiang University Animal Hospital',
-      rating: 4.8,
-      hours: '24 hours',
-      distance: '2.3 km',
-      eta: '8 min',
-      phone: '+86 571-8888-0000',
-      address: 'No. 268 Kaixuan Road, Hangzhou',
-    },
-    {
-      id: 2,
-      name: 'Hangzhou Pet Care Hospital',
-      rating: 4.6,
-      hours: '08:00-22:00',
-      distance: '4.1 km',
-      eta: '12 min',
-      phone: '+86 571-8888-0001',
-      address: 'No. 155 Wensan West Road, Hangzhou',
-    },
-  ];
 
   const days = mapData?.days?.length
     ? mapData.days.map((day) => ({ day: day.day, date: day.date, label: day.label || `Day ${day.day}` }))
@@ -100,7 +57,7 @@ export function MapRoutePage({ onNavigate, appState, plan, mapData }: MapRoutePa
         })),
       ]))
     : fallbackRoutes;
-  const hospitals = mapData?.hospitals?.length ? mapData.hospitals : plan?.hospitals?.length ? plan.hospitals : fallbackHospitals;
+  const hospitals = mapData?.hospitals?.length ? mapData.hospitals : plan?.hospitals?.length ? plan.hospitals : [];
   const activeDay = days.find((d) => d.day === selectedDay) || days[0];
   const currentRoute = routes[selectedDay] || [];
 
@@ -167,18 +124,6 @@ export function MapRoutePage({ onNavigate, appState, plan, mapData }: MapRoutePa
           </div>
         </div>
       </div>
-
-      {/* Warning Banner */}
-      {selectedDay === 2 && (
-        <div className="px-8 py-3 bg-amber-50 border-b border-amber-200">
-          <div className="max-w-[1600px] mx-auto flex items-center gap-3">
-            <AlertCircle className="w-5 h-5 text-amber-600 flex-shrink-0" strokeWidth={2} />
-            <p className="text-sm text-amber-800">
-              <span className="font-semibold">Yunqi Bamboo Trail</span> closes at 5:00 PM. About 45 minutes remaining.
-            </p>
-          </div>
-        </div>
-      )}
 
       {/* Main Content */}
       <div className="flex-1 overflow-hidden">

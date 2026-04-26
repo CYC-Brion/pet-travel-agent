@@ -1,11 +1,12 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import json
 import os
 import re
+import traceback
 import uuid
 from copy import deepcopy
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, List, Literal, Optional
 
@@ -166,9 +167,9 @@ def _slug(value: str) -> str:
 
 def _fmt_currency(value: Any) -> str:
     try:
-        return f"¥{int(float(value)):,}"
+        return f"CNY {int(float(value)):,}"
     except Exception:
-        return "¥0"
+        return "CNY 0"
 
 
 def _date_label(start: str, end: str) -> str:
@@ -180,6 +181,14 @@ def _date_label(start: str, end: str) -> str:
         return f"{s.strftime('%b')} {s.day}, {s.year} - {e.strftime('%b')} {e.day}, {e.year}"
     except Exception:
         return f"{start} to {end}"
+
+
+# Override currency formatting explicitly to avoid locale/encoding artifacts.
+def _fmt_currency(value: Any) -> str:
+    try:
+        return f"CNY {int(float(value)):,}"
+    except Exception:
+        return "CNY 0"
 
 
 def _default_profile(user_id: str, email: Optional[str] = None, name: Optional[str] = None) -> Dict[str, Any]:
@@ -214,8 +223,8 @@ def _fallback_itinerary(req: PlanRequest) -> List[Dict[str, Any]]:
             "day": 1,
             "date": req.trip.start_date,
             "activities": [
-                {"id": "d1-1", "time": "09:00", "type": "transport", "title": f"Depart {req.trip.departure}", "duration": "2 hrs", "price": "¥200 gas", "petPolicy": None},
-                {"id": "d1-2", "time": "11:30", "type": "hotel", "title": f"Check-in: {city} Pet-Friendly Hotel", "duration": None, "price": "¥680", "petPolicy": "Friendly", "hours": "24 hours"},
+                {"id": "d1-1", "time": "09:00", "type": "transport", "title": f"Depart {req.trip.departure}", "duration": "2 hrs", "price": "CNY 200 gas", "petPolicy": None},
+                {"id": "d1-2", "time": "11:30", "type": "hotel", "title": f"Check-in: {city} Pet-Friendly Hotel", "duration": None, "price": "CNY 680", "petPolicy": "Friendly", "hours": "24 hours"},
                 {"id": "d1-3", "time": "14:00", "type": "attraction", "title": "Su Causeway Walk", "duration": "2 hrs", "ticket": "Free", "petPolicy": "Leash required", "hours": "Always open"},
                 {"id": "d1-4", "time": "16:30", "type": "meal", "title": "Pet-Friendly Cafe", "petPolicy": "Friendly"},
                 {"id": "d1-5", "time": "18:00", "type": "meal", "title": "Dinner at Hubin Road Pet Restaurant", "petPolicy": "Friendly"},
@@ -227,8 +236,8 @@ def _fallback_itinerary(req: PlanRequest) -> List[Dict[str, Any]]:
             "activities": [
                 {"id": "d2-1", "time": "08:30", "type": "attraction", "title": "Prince Bay Park", "duration": "2.5 hrs", "ticket": "Free", "petPolicy": "Leash required", "hours": "Open until 18:00"},
                 {"id": "d2-2", "time": "12:00", "type": "meal", "title": "Lunch Break"},
-                {"id": "d2-3", "time": "14:00", "type": "transport", "title": "Drive to Yunqi Bamboo Trail", "duration": "30 min", "price": "¥30 gas"},
-                {"id": "d2-4", "time": "15:00", "type": "attraction", "title": "Yunqi Bamboo Trail", "duration": "2 hrs", "ticket": "¥8", "petPolicy": "Friendly", "hours": "Open until 17:00"},
+                {"id": "d2-3", "time": "14:00", "type": "transport", "title": "Drive to Yunqi Bamboo Trail", "duration": "30 min", "price": "CNY 30 gas"},
+                {"id": "d2-4", "time": "15:00", "type": "attraction", "title": "Yunqi Bamboo Trail", "duration": "2 hrs", "ticket": "CNY 8", "petPolicy": "Friendly", "hours": "Open until 17:00"},
                 {"id": "d2-5", "time": "17:30", "type": "meal", "title": "Tea House Rest Stop", "petPolicy": "Friendly"},
             ],
         },
@@ -238,7 +247,7 @@ def _fallback_itinerary(req: PlanRequest) -> List[Dict[str, Any]]:
             "activities": [
                 {"id": "d3-1", "time": "09:00", "type": "attraction", "title": "Longjing Village", "duration": "2 hrs", "ticket": "Free", "petPolicy": "Friendly"},
                 {"id": "d3-2", "time": "12:00", "type": "hotel", "title": "Hotel Check-out"},
-                {"id": "d3-3", "time": "13:30", "type": "transport", "title": f"Return to {req.trip.departure}", "duration": "2 hrs", "price": "¥200 gas"},
+                {"id": "d3-3", "time": "13:30", "type": "transport", "title": f"Return to {req.trip.departure}", "duration": "2 hrs", "price": "CNY 200 gas"},
             ],
         },
     ][: req.trip.days]
@@ -282,25 +291,42 @@ def _normalize_plan(req: PlanRequest, recommendations: Optional[Dict[str, Any]] 
         first = itineraries[0]
         stops = first.get("stops") if isinstance(first, dict) else None
         if isinstance(stops, list) and stops:
-            itinerary_days = [{
-                "day": 1,
-                "date": req.trip.start_date,
-                "activities": [
+            mapped_activities = []
+            for idx, stop in enumerate(stops):
+                if not isinstance(stop, dict):
+                    continue
+                normalized = stop.get("stop") if isinstance(stop.get("stop"), dict) else stop
+                mapped_activities.append(
                     {
-                        "id": str(stop.get("id") or f"stop-{idx + 1}"),
-                        "time": stop.get("time") or "TBD",
-                        "type": stop.get("type") or "attraction",
-                        "title": stop.get("name") or stop.get("title") or "Trip stop",
-                        "duration": stop.get("duration"),
-                        "ticket": stop.get("ticket"),
-                        "price": stop.get("price"),
-                        "petPolicy": stop.get("pet_policy") or stop.get("petPolicy"),
+                        "id": str(normalized.get("id") or f"stop-{idx + 1}"),
+                        "time": normalized.get("time") or normalized.get("arrival") or "TBD",
+                        "type": normalized.get("type") or "attraction",
+                        "title": normalized.get("name") or normalized.get("title") or "Trip stop",
+                        "duration": normalized.get("duration") or normalized.get("duration_minutes"),
+                        "ticket": normalized.get("ticket"),
+                        "price": normalized.get("price"),
+                        "petPolicy": normalized.get("pet_policy") or normalized.get("petPolicy"),
                     }
-                    for idx, stop in enumerate(stops)
-                ],
-            }]
+                )
+            days_count = max(1, int(req.trip.days or 1))
+            chunk_size = max(1, (len(mapped_activities) + days_count - 1) // days_count)
+            itinerary_days = []
+            for day_idx in range(days_count):
+                day_acts = mapped_activities[day_idx * chunk_size: (day_idx + 1) * chunk_size]
+                if not day_acts:
+                    break
+                day_date = req.trip.start_date
+                try:
+                    day_date = (datetime.fromisoformat(req.trip.start_date) + timedelta(days=day_idx)).date().isoformat()
+                except Exception:
+                    day_date = req.trip.start_date
+                itinerary_days.append({
+                    "day": day_idx + 1,
+                    "date": day_date,
+                    "activities": day_acts,
+                })
 
-    hospitals = _fallback_hospitals(req.trip.destination)
+    hospitals = []
     hosp_rec = rec.get("hospital_recommendations") or {}
     if isinstance(hosp_rec, dict) and isinstance(hosp_rec.get("candidates"), list) and hosp_rec["candidates"]:
         hospitals = [
@@ -317,15 +343,39 @@ def _normalize_plan(req: PlanRequest, recommendations: Optional[Dict[str, Any]] 
             for idx, item in enumerate(hosp_rec["candidates"][:3])
         ]
 
-    attractions = [
-        {"id": "a1", "name": "Su Causeway Walk", "type": "Nature", "petFriendly": True},
-        {"id": "a2", "name": "Prince Bay Park", "type": "Park", "petFriendly": True},
-        {"id": "a3", "name": "Yunqi Bamboo Trail", "type": "Nature", "petFriendly": True},
-    ]
-    restaurants = [
-        {"id": "r1", "name": "Pet-Friendly Cafe", "type": "Cafe", "petFriendly": True},
-        {"id": "r2", "name": "Hubin Road Pet Restaurant", "type": "Restaurant", "petFriendly": True},
-    ]
+    restaurants = []
+    rest_rec = rec.get("restaurant_suggestions")
+    if isinstance(rest_rec, list):
+        restaurants = [
+            {
+                "id": str(item.get("id") or f"restaurant-{idx + 1}"),
+                "name": item.get("name") or item.get("title") or "Restaurant",
+                "type": item.get("type") or item.get("category") or "restaurant",
+                "petFriendly": item.get("pet_friendly") if item.get("pet_friendly") is not None else True,
+                "address": item.get("address"),
+                "price": item.get("price"),
+            }
+            for idx, item in enumerate(rest_rec[:8])
+            if isinstance(item, dict)
+        ]
+
+    attractions = []
+    scored = rec.get("scored_candidates")
+    if isinstance(scored, dict) and isinstance(scored.get("Attractions"), list):
+        for idx, item in enumerate(scored.get("Attractions", [])[:12]):
+            if not isinstance(item, dict):
+                continue
+            meta = item.get("metadata") if isinstance(item.get("metadata"), dict) else {}
+            attractions.append(
+                {
+                    "id": str(meta.get("id") or item.get("id") or f"attraction-{idx + 1}"),
+                    "name": meta.get("name") or item.get("name") or "Attraction",
+                    "type": meta.get("type") or item.get("type") or "attraction",
+                    "petFriendly": meta.get("pet_friendly") if meta.get("pet_friendly") is not None else True,
+                    "address": meta.get("address"),
+                    "ticket": meta.get("ticket") or meta.get("price"),
+                }
+            )
 
     return {
         "title": f"Your Pet-Friendly Trip to {req.trip.destination}",
@@ -333,7 +383,7 @@ def _normalize_plan(req: PlanRequest, recommendations: Optional[Dict[str, Any]] 
         "dates": _date_label(req.trip.start_date, req.trip.end_date),
         "budget_range": {"min": req.trip.budget_min, "max": req.trip.budget_max, "currency": "CNY"},
         "estimated_total": int(float(total)),
-        "hotel": {"name": f"{req.trip.destination} Pet-Friendly Hotel", "type": req.trip.hotel_preference, "price": "¥680/night", "petPolicy": "Friendly"},
+        "hotel": {"name": f"{req.trip.destination} Pet-Friendly Hotel", "type": req.trip.hotel_preference, "price": "CNY 680/night", "petPolicy": "Friendly"},
         "itinerary_days": itinerary_days,
         "restaurants": restaurants,
         "attractions": attractions,
@@ -346,18 +396,18 @@ def _normalize_plan(req: PlanRequest, recommendations: Optional[Dict[str, Any]] 
 
 
 def _try_agent_plan(req: PlanRequest) -> tuple[Optional[str], Optional[Dict[str, Any]], Optional[Dict[str, Any]], List[str]]:
-    if os.getenv("PET_AGENT_USE_LIVE", "0") != "1":
+    if os.getenv("PET_AGENT_USE_LIVE", "1") != "1":
         return None, None, None, ["Live agent disabled; using API fallback plan."]
 
     try:
         import sys
 
         sys.path.insert(0, os.path.dirname(__file__))
-        from agent1_orchestrator import agent1_orchestrator
-        from helper import get_or_create_user_profile
+        from agent2_retrieval import agent2_retrieval
+        from agent3_planning import agent3_planning
 
-        user_profile = get_or_create_user_profile(req.user_id)
-        user_profile.update({
+        user_profile = {
+            "user_id": req.user_id,
             "pet_type": req.pet.type,
             "breed": req.pet.breed,
             "pet_weight": req.pet.weight_kg,
@@ -366,7 +416,9 @@ def _try_agent_plan(req: PlanRequest) -> tuple[Optional[str], Optional[Dict[str,
             "num_people": req.trip.num_people,
             "num_pets": req.trip.num_pets,
             "departure": req.trip.departure,
-        })
+            "preferences": req.trip.hotel_preference,
+            "health_status": req.pet.health_status,
+        }
         trip_context = {
             "initial_mode": "pre_trip",
             "departure": req.trip.departure,
@@ -379,10 +431,98 @@ def _try_agent_plan(req: PlanRequest) -> tuple[Optional[str], Optional[Dict[str,
             "budget": f"{req.trip.budget_min}-{req.trip.budget_max} CNY",
             "transport": req.trip.transport,
         }
-        prompt = f"Plan a pet-friendly trip to {req.trip.destination}."
-        reply = agent1_orchestrator(req.session_id or str(uuid.uuid4()), req.user_id, prompt, trip_context, user_profile)
-        return reply, None, None, ["Live agent completed; structured fallback normalizer used for frontend fields."]
+        retrieval = agent2_retrieval(user_profile, req.trip.destination, trip_context)
+        recommendations = agent3_planning(user_profile, retrieval, req.trip.days, lang="en")
+        if not isinstance(recommendations, dict):
+            recommendations = {}
+
+        has_itinerary = isinstance(recommendations.get("itineraries"), list) and len(recommendations.get("itineraries", [])) > 0
+        if not has_itinerary:
+            from helper import openai_chat, AGENT3_MODEL
+
+            llm_schema_prompt = (
+                "Generate a pet-friendly trip plan as strict JSON with keys: "
+                "itineraries, restaurant_suggestions, hospital_recommendations, budget_summary, notes, source_trace. "
+                "Rules: one itinerary option only; include 5-8 stops with realistic times and names; "
+                "use English text only; output JSON only."
+            )
+            llm_user_prompt = (
+                f"Trip request: departure={req.trip.departure}, destination={req.trip.destination}, "
+                f"start_date={req.trip.start_date}, end_date={req.trip.end_date}, days={req.trip.days}, "
+                f"budget_min={req.trip.budget_min}, budget_max={req.trip.budget_max}, transport={req.trip.transport}, "
+                f"hotel_preference={req.trip.hotel_preference}, pace={req.trip.pace}, "
+                f"pet={{name:{req.pet.name}, type:{req.pet.type}, breed:{req.pet.breed}, health:{req.pet.health_status}}}."
+            )
+            llm_completion = openai_chat(
+                messages=[
+                    {"role": "system", "content": llm_schema_prompt},
+                    {"role": "user", "content": llm_user_prompt},
+                ],
+                model=os.getenv("AGENT3_MODEL", "gpt-5-mini"),
+                max_tokens=2200,
+                response_format={"type": "json_object"},
+            )
+            llm_text = (llm_completion.choices[0].message.content or "").strip()
+            parsed = {}
+            try:
+                parsed = json.loads(llm_text)
+            except Exception:
+                match = re.search(r"\{.*\}", llm_text, flags=re.DOTALL)
+                if match:
+                    parsed = json.loads(match.group(0))
+            if isinstance(parsed, dict):
+                recommendations.update(parsed)
+                recommendations["source_trace"] = recommendations.get("source_trace") or [{"branch": "live_llm_json", "used": True}]
+                normalized_itineraries = recommendations.get("itineraries")
+                if not (isinstance(normalized_itineraries, list) and normalized_itineraries):
+                    if isinstance(parsed.get("itinerary"), list):
+                        recommendations["itineraries"] = [{"option": "Live-LLM", "days": req.trip.days, "stops": parsed.get("itinerary")}]
+                    elif isinstance(parsed.get("stops"), list):
+                        recommendations["itineraries"] = [{"option": "Live-LLM", "days": req.trip.days, "stops": parsed.get("stops")}]
+                    elif isinstance(parsed.get("activities"), list):
+                        recommendations["itineraries"] = [{"option": "Live-LLM", "days": req.trip.days, "stops": parsed.get("activities")}]
+            current_stops = []
+            if isinstance(recommendations.get("itineraries"), list) and recommendations.get("itineraries"):
+                first_it = recommendations["itineraries"][0] if isinstance(recommendations["itineraries"][0], dict) else {}
+                if isinstance(first_it.get("stops"), list):
+                    current_stops = first_it.get("stops")
+            needs_stops_regen = (not current_stops) or (len(current_stops) < max(3, int(req.trip.days or 1) * 2))
+            if needs_stops_regen:
+                llm_stops_completion = openai_chat(
+                    messages=[
+                        {
+                            "role": "system",
+                            "content": (
+                                "Return strict JSON object only with key `stops` (array). "
+                                "Each stop must contain: name, time, type, duration, pet_policy."
+                            ),
+                        },
+                        {
+                            "role": "user",
+                            "content": (
+                                f"Create 6 pet-friendly stops for a {req.trip.days}-day trip from "
+                                f"{req.trip.departure} to {req.trip.destination}."
+                            ),
+                        },
+                    ],
+                    model=os.getenv("AGENT3_MODEL", "gpt-5-mini"),
+                    max_tokens=1800,
+                    response_format={"type": "json_object"},
+                )
+                llm_stops_text = (llm_stops_completion.choices[0].message.content or "").strip()
+                try:
+                    stops_payload = json.loads(llm_stops_text)
+                except Exception:
+                    stops_payload = {}
+                if isinstance(stops_payload, dict) and isinstance(stops_payload.get("stops"), list) and stops_payload.get("stops"):
+                    recommendations["itineraries"] = [{"option": "Live-LLM", "days": req.trip.days, "stops": stops_payload.get("stops")}]
+                    recommendations["source_trace"] = recommendations.get("source_trace") or [{"branch": "live_llm_stops", "used": True}]
+
+        reply = f"Generated a live pet-friendly trip plan for {req.trip.departure} to {req.trip.destination}."
+        return reply, recommendations, retrieval, []
     except Exception as exc:
+        if os.getenv("PET_AGENT_DEBUG", "0") == "1":
+            return None, None, None, [f"Live agent unavailable: {exc}. Trace: {traceback.format_exc()} Using API fallback plan."]
         return None, None, None, [f"Live agent unavailable: {exc}. Using API fallback plan."]
 
 
@@ -403,6 +543,49 @@ def _trip_summary(trip: Dict[str, Any]) -> Dict[str, Any]:
         ),
         "rating": (REVIEWS.get(trip["trip_id"]) or {}).get("rating"),
     }
+
+
+def _deep_replace_currency_markers(value: Any) -> Any:
+    if isinstance(value, str):
+        return (
+            value.replace("妤?", "CNY ")
+            .replace("¥", "CNY ")
+            .replace("￥", "CNY ")
+        )
+    if isinstance(value, list):
+        return [_deep_replace_currency_markers(item) for item in value]
+    if isinstance(value, dict):
+        return {k: _deep_replace_currency_markers(v) for k, v in value.items()}
+    return value
+
+
+def _synthesize_live_itinerary_from_candidates(rec_payload: Dict[str, Any], req: PlanRequest) -> List[Dict[str, Any]]:
+    scored = rec_payload.get("scored_candidates") if isinstance(rec_payload, dict) else None
+    attractions = []
+    if isinstance(scored, dict) and isinstance(scored.get("Attractions"), list):
+        attractions = [a for a in scored.get("Attractions", []) if isinstance(a, dict)]
+    if not attractions:
+        return []
+
+    stops = []
+    for idx, item in enumerate(attractions[: min(6, max(2, req.trip.days * 2))]):
+        meta = item.get("metadata") if isinstance(item.get("metadata"), dict) else {}
+        name = meta.get("name") or item.get("name") or f"Stop {idx + 1}"
+        time_hint = f"{9 + idx}:00" if idx < 9 else "TBD"
+        stops.append(
+            {
+                "id": str(meta.get("id") or item.get("id") or f"live-{idx + 1}"),
+                "name": name,
+                "time": item.get("time") or meta.get("time") or time_hint,
+                "type": meta.get("type") or item.get("type") or "attraction",
+                "duration": meta.get("duration") or "1.5 hrs",
+                "price": meta.get("price"),
+                "ticket": meta.get("ticket"),
+                "pet_policy": meta.get("pet_friendly_note") or ("Pet-friendly" if meta.get("pet_friendly", True) else "Check policy"),
+            }
+        )
+
+    return [{"option": "Live-Candidates", "days": req.trip.days, "stops": stops}]
 
 
 @app.get("/health")
@@ -439,7 +622,35 @@ def plan_trip(req: PlanRequest) -> Dict[str, Any]:
     session_id = req.session_id or str(uuid.uuid4())
     trip_id = f"trip-{uuid.uuid4().hex[:10]}"
     assistant_reply, rec, retrieval, warnings = _try_agent_plan(req)
-    plan = _normalize_plan(req, rec, retrieval)
+    strict_real = os.getenv("PET_AGENT_STRICT_REAL", "1") == "1"
+    rec_payload = rec or {}
+    rec_itineraries = []
+    if isinstance(rec_payload.get("itineraries"), list):
+        rec_itineraries = rec_payload["itineraries"]
+    elif isinstance(rec_payload.get("final_merged_result"), dict) and isinstance(rec_payload["final_merged_result"].get("itineraries"), list):
+        rec_itineraries = rec_payload["final_merged_result"]["itineraries"]
+    if not rec_itineraries:
+        rec_itineraries = _synthesize_live_itinerary_from_candidates(rec_payload, req)
+        if rec_itineraries:
+            rec_payload["itineraries"] = rec_itineraries
+            rec = rec_payload
+    if strict_real and not rec_itineraries:
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "message": "Live planning is required, but itinerary generation returned no live route data.",
+                "warnings": warnings or ["No itinerary candidates returned from live planner."],
+            },
+        )
+    if strict_real and any(("fallback" in w.lower() or "disabled" in w.lower() or "unavailable" in w.lower()) for w in warnings):
+        raise HTTPException(
+            status_code=503,
+            detail={
+                "message": "Live planning is required, but real model/tool chain is unavailable.",
+                "warnings": warnings,
+            },
+        )
+    plan = _deep_replace_currency_markers(_normalize_plan(req, rec, retrieval))
     if not assistant_reply:
         assistant_reply = f"I created one budget-matched itinerary for {plan['route']} within {_fmt_currency(req.trip.budget_min)} - {_fmt_currency(req.trip.budget_max)}."
 
@@ -475,18 +686,6 @@ def plan_trip(req: PlanRequest) -> Dict[str, Any]:
 @app.get("/api/users/{user_id}/trips")
 def list_trips(user_id: str) -> Dict[str, Any]:
     trips = [_trip_summary(t) for t in TRIPS.values() if t.get("user_id") == user_id]
-    if not trips:
-        trips = [
-            {
-                "id": "sample-hangzhou",
-                "title": "Hangzhou Pet-Friendly Weekend",
-                "route": "Shanghai to Hangzhou",
-                "dates": "May 15-18, 2026",
-                "petName": "Biscuit",
-                "status": "draft",
-                "nextStep": "Complete trip details",
-            }
-        ]
     return {"ok": True, "trips": trips}
 
 
@@ -558,7 +757,7 @@ def emergency_replan(trip_id: str, req: EmergencyReplanRequest) -> Dict[str, Any
     if not trip:
         raise HTTPException(status_code=404, detail="Trip not found")
     alt = [
-        {"time": "14:00", "name": "Zhejiang Provincial Museum", "type": "indoor", "original": req.affected_stop or "Outdoor stop", "reason": "Indoor venue with safer weather conditions", "distance": "2.5 km", "eta": "15 min", "petService": "Pet boarding available", "ticket": "¥30"},
+        {"time": "14:00", "name": "Zhejiang Provincial Museum", "type": "indoor", "original": req.affected_stop or "Outdoor stop", "reason": "Indoor venue with safer weather conditions", "distance": "2.5 km", "eta": "15 min", "petService": "Pet boarding available", "ticket": "CNY 30"},
         {"time": "16:30", "name": "Return to Hotel", "type": "indoor", "original": "Outdoor cafe", "reason": "More comfortable for pets during the alert", "distance": "1.2 km", "eta": "8 min", "petPolicy": "Friendly"},
         {"time": "18:00", "name": "Dinner at Hubin Road", "type": "indoor", "original": "Same as original", "petPolicy": "Friendly"},
     ]
@@ -639,3 +838,4 @@ def post_review(trip_id: str, req: ReviewRequest) -> Dict[str, Any]:
     REVIEWS[trip_id] = review
     _save_state()
     return {"ok": True, "review": review}
+

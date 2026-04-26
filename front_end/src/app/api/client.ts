@@ -153,85 +153,25 @@ export interface LoginResponse {
 
 const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL as string | undefined)?.replace(/\/$/, '') || '';
 
-const fallbackPlan: ApiPlan = {
-  title: 'Your Pet-Friendly Trip to Hangzhou',
-  route: 'Shanghai to Hangzhou',
-  dates: 'May 15-18, 2026',
-  budget_range: { min: 3500, max: 6000, currency: 'CNY' },
-  estimated_total: 4500,
-  hotel: { name: 'Hangzhou Pet-Friendly Hotel', type: '4-star', price: '¥680/night', petPolicy: 'Friendly' },
-  itinerary_days: [
-    {
-      day: 1,
-      date: 'May 15, 2026',
-      activities: [
-        { id: 'd1-1', time: '09:00', type: 'transport', title: 'Depart Shanghai by Car', duration: '2 hrs', price: '¥200 gas' },
-        { id: 'd1-2', time: '11:30', type: 'hotel', title: 'Check-in: West Lake Pet-Friendly Hotel', price: '¥680', petPolicy: 'Friendly', hours: '24 hours' },
-        { id: 'd1-3', time: '14:00', type: 'attraction', title: 'Su Causeway Walk', duration: '2 hrs', ticket: 'Free', petPolicy: 'Leash required', hours: 'Always open' },
-        { id: 'd1-4', time: '16:30', type: 'meal', title: 'Pet-Friendly Cafe', petPolicy: 'Friendly' },
-      ],
-    },
-    {
-      day: 2,
-      date: 'May 16, 2026',
-      activities: [
-        { id: 'd2-1', time: '08:30', type: 'attraction', title: 'Prince Bay Park', duration: '2.5 hrs', ticket: 'Free', petPolicy: 'Leash required' },
-        { id: 'd2-2', time: '15:00', type: 'attraction', title: 'Yunqi Bamboo Trail', duration: '2 hrs', ticket: '¥8', petPolicy: 'Friendly', hours: 'Open until 17:00' },
-      ],
-    },
-    {
-      day: 3,
-      date: 'May 18, 2026',
-      activities: [
-        { id: 'd3-1', time: '09:00', type: 'attraction', title: 'Longjing Village', duration: '2 hrs', ticket: 'Free', petPolicy: 'Friendly' },
-        { id: 'd3-2', time: '13:30', type: 'transport', title: 'Return to Shanghai', duration: '2 hrs', price: '¥200 gas' },
-      ],
-    },
-  ],
-  restaurants: [],
-  attractions: [
-    { id: 'a1', name: 'Su Causeway Walk', type: 'Nature', petFriendly: true },
-    { id: 'a2', name: 'Prince Bay Park', type: 'Park', petFriendly: true },
-    { id: 'a3', name: 'Yunqi Bamboo Trail', type: 'Nature', petFriendly: true },
-  ],
-  hospitals: [
-    { id: 'hospital-1', name: 'Hangzhou Pet Hospital (24hr)', rating: 4.8, hours: '24 hours', distance: '2.3 km', eta: '8 min', phone: '+86 571-8888-0000', address: 'No. 268 Kaixuan Road, Hangzhou' },
-  ],
-  flights: [],
-  risks: ['Confirm pet policies before arrival.', 'Carry vaccination records and water.'],
-  documents: ['Pet vaccination record', 'Owner ID/passport', 'Hotel pet policy confirmation'],
-  source_trace: [{ branch: 'frontend-fallback', used: true }],
-};
-
 export const fallbackProfile: UserProfile = {
-  fullName: 'Alex Chen',
-  email: 'alex.chen@example.com',
-  phone: '+86 138-0000-1234',
-  petName: 'Biscuit',
+  fullName: '',
+  email: '',
+  phone: '',
+  petName: '',
   petType: 'dog',
-  breed: 'Golden Retriever',
-  age: '3',
-  weight: '35',
+  breed: '',
+  age: '',
+  weight: '',
   healthStatus: 'healthy',
-  healthNotes: 'Vaccinations up to date. No known allergies.',
-  minBudget: '3500',
-  maxBudget: '6000',
+  healthNotes: '',
+  minBudget: '',
+  maxBudget: '',
   transportPreference: 'car',
   hotelPreference: '4-star',
   travelPace: 'moderate',
-  emergencyName: 'Jane Chen',
-  emergencyPhone: '+86 138-0000-1234',
-  emergencyRelation: 'Spouse',
-};
-
-export const fallbackPlanResponse: PlanResponse = {
-  ok: true,
-  trip_id: 'frontend-fallback-trip',
-  session_id: 'frontend-fallback-session',
-  status: 'planned',
-  assistant_reply: 'Backend unavailable, showing the local fallback trip plan.',
-  plan: fallbackPlan,
-  warnings: ['Backend unavailable; local fallback data is being used.'],
+  emergencyName: '',
+  emergencyPhone: '',
+  emergencyRelation: '',
 };
 
 async function requestJson<T>(path: string, options: RequestInit = {}): Promise<T> {
@@ -241,7 +181,8 @@ async function requestJson<T>(path: string, options: RequestInit = {}): Promise<
   });
 
   if (!response.ok) {
-    throw new Error(`API ${path} failed with ${response.status}`);
+    const message = await response.text().catch(() => '');
+    throw new Error(`API ${path} failed with ${response.status}${message ? `: ${message}` : ''}`);
   }
 
   return response.json() as Promise<T>;
@@ -249,123 +190,73 @@ async function requestJson<T>(path: string, options: RequestInit = {}): Promise<
 
 export const api = {
   async login(email?: string, name?: string): Promise<LoginResponse> {
-    try {
-      return await requestJson<LoginResponse>('/api/session/login', {
-        method: 'POST',
-        body: JSON.stringify({ email, name }),
-      });
-    } catch {
-      return { ok: true, user_id: 'alex-chen', session_id: 'frontend-fallback-session', profile: fallbackProfile };
-    }
+    return await requestJson<LoginResponse>('/api/session/login', {
+      method: 'POST',
+      body: JSON.stringify({ email, name }),
+    });
   },
 
   async getProfile(userId: string): Promise<UserProfile> {
-    try {
-      const data = await requestJson<{ ok: boolean; profile: UserProfile }>(`/api/users/${userId}/profile`);
-      return data.profile;
-    } catch {
-      return fallbackProfile;
-    }
+    const data = await requestJson<{ ok: boolean; profile: UserProfile }>(`/api/users/${userId}/profile`);
+    return data.profile;
   },
 
   async saveProfile(userId: string, profile: UserProfile): Promise<UserProfile> {
-    try {
-      const data = await requestJson<{ ok: boolean; profile: UserProfile }>(`/api/users/${userId}/profile`, {
-        method: 'PUT',
-        body: JSON.stringify(profile),
-      });
-      return data.profile;
-    } catch {
-      return profile;
-    }
+    const data = await requestJson<{ ok: boolean; profile: UserProfile }>(`/api/users/${userId}/profile`, {
+      method: 'PUT',
+      body: JSON.stringify(profile),
+    });
+    return data.profile;
   },
 
   async createPlan(payload: PlanRequest): Promise<PlanResponse> {
-    try {
-      return await requestJson<PlanResponse>('/api/trips/plan', {
-        method: 'POST',
-        body: JSON.stringify(payload),
-      });
-    } catch {
-      return fallbackPlanResponse;
-    }
+    return await requestJson<PlanResponse>('/api/trips/plan', {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    });
   },
 
   async getTrips(userId: string): Promise<TripSummary[]> {
-    try {
-      const data = await requestJson<{ ok: boolean; trips: TripSummary[] }>(`/api/users/${userId}/trips`);
-      return data.trips;
-    } catch {
-      return [
-        { id: 'frontend-fallback-trip', title: fallbackPlan.title, route: fallbackPlan.route, dates: fallbackPlan.dates, petName: 'Biscuit', status: 'planned', nextStep: 'Confirm the plan or start the trip' },
-      ];
-    }
+    const data = await requestJson<{ ok: boolean; trips: TripSummary[] }>(`/api/users/${userId}/trips`);
+    return data.trips;
   },
 
   async startTrip(tripId: string) {
-    try {
-      return await requestJson(`/api/trips/${tripId}/start`, { method: 'POST' });
-    } catch {
-      return { ok: true };
-    }
+    return await requestJson(`/api/trips/${tripId}/start`, { method: 'POST' });
   },
 
   async completeTrip(tripId: string) {
-    try {
-      return await requestJson(`/api/trips/${tripId}/complete`, { method: 'POST' });
-    } catch {
-      return { ok: true };
-    }
+    return await requestJson(`/api/trips/${tripId}/complete`, { method: 'POST' });
   },
 
   async getMap(tripId: string) {
-    try {
-      return await requestJson<any>(`/api/trips/${tripId}/map`);
-    } catch {
-      return null;
-    }
+    return await requestJson<any>(`/api/trips/${tripId}/map`);
   },
 
-  async emergencyReplan(tripId: string, issue: string): Promise<EmergencyReplanResponse | null> {
-    try {
-      return await requestJson<EmergencyReplanResponse>(`/api/trips/${tripId}/emergency-replan`, {
-        method: 'POST',
-        body: JSON.stringify({ issue, selected_day: 2 }),
-      });
-    } catch {
-      return null;
-    }
+  async emergencyReplan(tripId: string, issue: string): Promise<EmergencyReplanResponse> {
+    return await requestJson<EmergencyReplanResponse>(`/api/trips/${tripId}/emergency-replan`, {
+      method: 'POST',
+      body: JSON.stringify({ issue, selected_day: 2 }),
+    });
   },
 
   async emergencyDecision(tripId: string, decision: EmergencyDecision) {
-    try {
-      return await requestJson(`/api/trips/${tripId}/emergency-decision`, {
-        method: 'POST',
-        body: JSON.stringify({ decision }),
-      });
-    } catch {
-      return { ok: true };
-    }
+    return await requestJson(`/api/trips/${tripId}/emergency-decision`, {
+      method: 'POST',
+      body: JSON.stringify({ decision }),
+    });
   },
 
-  async getReview(tripId: string): Promise<TripReviewData | null> {
-    try {
-      const data = await requestJson<{ ok: boolean; review: TripReviewData }>(`/api/trips/${tripId}/review`);
-      return data.review;
-    } catch {
-      return null;
-    }
+  async getReview(tripId: string): Promise<TripReviewData> {
+    const data = await requestJson<{ ok: boolean; review: TripReviewData }>(`/api/trips/${tripId}/review`);
+    return data.review;
   },
 
-  async postReview(tripId: string, payload: { rating: number; notes: string }): Promise<TripReviewData | null> {
-    try {
-      const data = await requestJson<{ ok: boolean; review: TripReviewData }>(`/api/trips/${tripId}/review`, {
-        method: 'POST',
-        body: JSON.stringify(payload),
-      });
-      return data.review;
-    } catch {
-      return null;
-    }
+  async postReview(tripId: string, payload: { rating: number; notes: string }): Promise<TripReviewData> {
+    const data = await requestJson<{ ok: boolean; review: TripReviewData }>(`/api/trips/${tripId}/review`, {
+      method: 'POST',
+      body: JSON.stringify(payload),
+    });
+    return data.review;
   },
 };

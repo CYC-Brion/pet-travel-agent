@@ -23,19 +23,26 @@ export default function App() {
   const [mapData, setMapData] = useState<any>(null);
   const [emergencyData, setEmergencyData] = useState<EmergencyReplanResponse | null>(null);
   const [reviewData, setReviewData] = useState<TripReviewData | null>(null);
+  const [homeDraftPrompt, setHomeDraftPrompt] = useState('');
 
   const handleLogin = async (email?: string, name?: string) => {
-    const result = await api.login(email, name);
-    setUserId(result.user_id);
-    setSessionId(result.session_id);
-    setProfile(result.profile);
-    setMockState((current) => ({ ...current, isAuthenticated: true, userName: result.profile.fullName || current.userName }));
-    const trips = await api.getTrips(result.user_id);
-    setMockState((current) => ({
-      ...current,
-      trips: trips.map((trip) => ({ ...trip, selectedPlan: 'budget_matched' as const })),
-      currentTripId: trips[0]?.id || current.currentTripId,
-    }));
+    try {
+      const result = await api.login(email, name);
+      setUserId(result.user_id);
+      setSessionId(result.session_id);
+      setProfile(result.profile);
+      setMockState((current) => ({ ...current, isAuthenticated: true, userName: result.profile.fullName || current.userName }));
+      const trips = await api.getTrips(result.user_id);
+      setMockState((current) => ({
+        ...current,
+        trips: trips.map((trip) => ({ ...trip, selectedPlan: 'budget_matched' as const })),
+        currentTripId: trips[0]?.id || current.currentTripId,
+      }));
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Login failed';
+      alert(message);
+      throw error;
+    }
   };
 
   const buildPlanRequest = useCallback((formData: any): PlanRequest => ({
@@ -72,34 +79,41 @@ export default function App() {
 
   const generatePlan = useCallback(async () => {
     if (!pendingPlanForm || currentPlanResponse?.status === 'planned') return;
-    setPlanningError(null);
-    const response = await api.createPlan(buildPlanRequest(pendingPlanForm));
-    setCurrentPlanResponse(response);
-    setSessionId(response.session_id);
-    setMapData(null);
-    setEmergencyData(null);
-    setReviewData(null);
-    setMockState((current) => ({
-      ...current,
-      currentTripId: response.trip_id,
-      trips: [
-        {
-          id: response.trip_id,
-          title: response.plan.title,
-          route: response.plan.route,
-          dates: response.plan.dates,
-          petName: pendingPlanForm.petName || 'Biscuit',
-          selectedPlan: 'budget_matched',
-          status: response.status,
-          nextStep: 'Confirm the plan or start the trip',
-        },
-        ...current.trips.filter((trip) => trip.id !== response.trip_id),
-      ],
-    }));
-    if (response.warnings?.length) {
-      setPlanningError(response.warnings[0]);
+    try {
+      setPlanningError(null);
+      const response = await api.createPlan(buildPlanRequest(pendingPlanForm));
+      setCurrentPlanResponse(response);
+      setSessionId(response.session_id);
+      setMapData(null);
+      setEmergencyData(null);
+      setReviewData(null);
+      setMockState((current) => ({
+        ...current,
+        currentTripId: response.trip_id,
+        trips: [
+          {
+            id: response.trip_id,
+            title: response.plan.title,
+            route: response.plan.route,
+            dates: response.plan.dates,
+            petName: pendingPlanForm.petName || 'Biscuit',
+            selectedPlan: 'budget_matched',
+            status: response.status,
+            nextStep: 'Confirm the plan or start the trip',
+          },
+          ...current.trips.filter((trip) => trip.id !== response.trip_id),
+        ],
+      }));
+      if (response.warnings?.length) {
+        setPlanningError(response.warnings[0]);
+      }
+      setCurrentView('planning');
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'Failed to generate plan';
+      setPlanningError(message);
+      setCurrentView('loading');
+      return;
     }
-    setCurrentView('planning');
   }, [buildPlanRequest, currentPlanResponse?.status, pendingPlanForm]);
 
   const handleNavigate = (view: string) => {
@@ -120,9 +134,13 @@ export default function App() {
       if (nextView === 'map') {
         if (currentPlanResponse?.trip_id) {
           const activeTripId = currentPlanResponse.trip_id;
-          void api.startTrip(activeTripId);
+          void api.startTrip(activeTripId).catch((error) => {
+            setPlanningError(error instanceof Error ? error.message : 'Failed to start trip');
+          });
           void api.getMap(activeTripId).then((payload) => {
             if (payload?.ok) setMapData(payload);
+          }).catch((error) => {
+            setPlanningError(error instanceof Error ? error.message : 'Failed to load map');
           });
         }
         const nextState = updateTripStatus(current, 'in_progress');
@@ -133,6 +151,8 @@ export default function App() {
         if (currentPlanResponse?.trip_id) {
           void api.emergencyReplan(currentPlanResponse.trip_id, 'Heavy rainfall expected near the current route').then((payload) => {
             if (payload?.ok) setEmergencyData(payload);
+          }).catch((error) => {
+            setPlanningError(error instanceof Error ? error.message : 'Failed to load emergency replan');
           });
         }
         return current;
@@ -141,8 +161,12 @@ export default function App() {
       if (nextView === 'review') {
         if (currentPlanResponse?.trip_id) {
           const activeTripId = currentPlanResponse.trip_id;
-          void api.completeTrip(activeTripId);
-          void api.getReview(activeTripId).then((payload) => setReviewData(payload));
+          void api.completeTrip(activeTripId).catch((error) => {
+            setPlanningError(error instanceof Error ? error.message : 'Failed to complete trip');
+          });
+          void api.getReview(activeTripId).then((payload) => setReviewData(payload)).catch((error) => {
+            setPlanningError(error instanceof Error ? error.message : 'Failed to load review');
+          });
         }
         return updateTripStatus(current, 'completed');
       }
@@ -163,14 +187,27 @@ export default function App() {
   }
 
   if (currentView === 'home') {
-    return <HomeDashboard appState={mockState} onNavigate={handleNavigate} />;
+    return <HomeDashboard
+      profile={profile}
+      appState={mockState}
+      onStartPlanning={(prompt) => {
+        setHomeDraftPrompt(prompt);
+        setCurrentView('info');
+      }}
+      onNavigate={handleNavigate}
+    />;
   }
 
   if (currentView === 'info') {
-    return <InfoCompletionPage onSubmitPlan={(formData) => {
-      setPendingPlanForm(formData);
-      setCurrentPlanResponse(null);
-    }} onNavigate={handleNavigate} />;
+    return <InfoCompletionPage
+      profile={profile}
+      initialPrompt={homeDraftPrompt}
+      onSubmitPlan={(formData) => {
+        setPendingPlanForm(formData);
+        setCurrentPlanResponse(null);
+      }}
+      onNavigate={handleNavigate}
+    />;
   }
 
   if (currentView === 'loading') {

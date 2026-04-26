@@ -14,49 +14,15 @@ export function PlanningResultPage({ onNavigate, initialEditMode = false, plan }
 
   const recommendedPlan = {
     name: 'Budget-Matched',
-    totalCost: plan ? `¥${Number(plan.estimated_total || 0).toLocaleString()}` : '¥4,500',
-    budgetRange: plan ? `¥${plan.budget_range.min.toLocaleString()} - ¥${plan.budget_range.max.toLocaleString()}` : '¥3,500 - ¥6,000',
-    hotelType: (plan?.hotel?.type || plan?.hotel?.name || '4-Star Pet-Friendly Hotel') as string,
-    attractions: plan?.attractions?.length || plan?.itinerary_days?.reduce((sum, day) => sum + day.activities.filter((activity) => activity.type === 'attraction').length, 0) || 12,
+    totalCost: `¥${Number(plan?.estimated_total || 0).toLocaleString()}`,
+    budgetRange: `¥${Number(plan?.budget_range?.min || 0).toLocaleString()} - ¥${Number(plan?.budget_range?.max || 0).toLocaleString()}`,
+    hotelType: (plan?.hotel?.type || plan?.hotel?.name || 'N/A') as string,
+    attractions: plan?.attractions?.length || plan?.itinerary_days?.reduce((sum, day) => sum + day.activities.filter((activity) => activity.type === 'attraction').length, 0) || 0,
     petFriendliness: 95,
     pace: 'Moderate',
   };
 
-  const fallbackItinerary = [
-      {
-        day: 1,
-        date: 'May 15, 2026',
-        activities: [
-          { time: '09:00', type: 'transport', title: 'Depart Shanghai by Car', duration: '2 hrs', note: 'Self-drive recommended', price: '¥200 gas' },
-          { time: '11:30', type: 'hotel', title: 'Check-in: West Lake Pet-Friendly Hotel', rating: 4, petPolicy: 'Friendly', petFee: '¥100/day', price: '¥680' },
-          { time: '14:00', type: 'attraction', title: 'Su Causeway Walk', duration: '2 hrs', ticket: 'Free', petPolicy: 'Leash required', hours: 'Always open' },
-          { time: '16:30', type: 'meal', title: 'Pet-Friendly Cafe', petPolicy: 'Friendly' },
-          { time: '18:00', type: 'meal', title: 'Dinner at Hubin Road Pet Restaurant', petPolicy: 'Friendly' },
-        ],
-      },
-      {
-        day: 2,
-        date: 'May 16, 2026',
-        activities: [
-          { time: '08:30', type: 'attraction', title: 'Prince Bay Park', duration: '2.5 hrs', ticket: 'Free', petPolicy: 'Leash required', hours: 'Open until 18:00' },
-          { time: '12:00', type: 'meal', title: 'Lunch Break' },
-          { time: '14:00', type: 'transport', title: 'Drive to Yunqi Bamboo Trail', duration: '30 min', price: '¥30 gas' },
-          { time: '15:00', type: 'attraction', title: 'Yunqi Bamboo Trail', duration: '2 hrs', ticket: '¥8', petPolicy: 'Friendly', hours: 'Open until 17:00' },
-          { time: '17:30', type: 'meal', title: 'Tea House Rest Stop', petPolicy: 'Friendly' },
-        ],
-      },
-      {
-        day: 3,
-        date: 'May 17, 2026',
-        activities: [
-          { time: '09:00', type: 'attraction', title: 'Longjing Village', duration: '2 hrs', ticket: 'Free', petPolicy: 'Friendly' },
-          { time: '12:00', type: 'hotel', title: 'Check-out' },
-          { time: '13:30', type: 'transport', title: 'Return to Shanghai', duration: '2 hrs', price: '¥200 gas' },
-        ],
-      },
-    ];
-
-  const currentItinerary = plan?.itinerary_days?.length ? plan.itinerary_days : fallbackItinerary;
+  const currentItinerary = plan?.itinerary_days?.length ? plan.itinerary_days : [];
   const currentPlan = recommendedPlan;
 
   return (
@@ -79,10 +45,10 @@ export function PlanningResultPage({ onNavigate, initialEditMode = false, plan }
               </div>
               <div>
                 <h1 className="text-xl font-semibold text-[var(--deep-blue)]">
-                  {isEditMode ? `${currentPlan.name} Plan - Edit Mode` : 'Your Pet-Friendly Trip to Hangzhou'}
+                  {isEditMode ? `${currentPlan.name} Plan - Edit Mode` : (plan?.title || 'Trip Plan')}
                 </h1>
                 <p className="text-sm text-[var(--muted-foreground)]">
-                  {isEditMode ? 'Customize your itinerary' : plan ? `${plan.dates} · ${plan.route}` : '3 days · May 15-17, 2026 · Shanghai to Hangzhou'}
+                  {isEditMode ? 'Customize your itinerary' : plan ? `${plan.dates} · ${plan.route}` : 'No plan loaded.'}
                 </p>
               </div>
             </div>

@@ -1261,4 +1261,201 @@ export function adaptDayPlan(api: any): DayPlanProps {
 - Remaining production upgrades (non-blocking for V1 internal launch):
   1. Replace lightweight identity with real auth/session middleware.
   2. Move JSON persistence to managed DB for multi-instance deployment.
-  3. Remove/archive legacy unused Chinese-only components before public release packaging.
+3. Remove/archive legacy unused Chinese-only components before public release packaging.
+
+---
+
+## 2026-04-26 Real-Data Enforcement + Input Flow Fix
+
+- Fixed **Home input -> Info completion** connection:
+  - Added `onStartPlanning(prompt)` path in `HomeDashboard`.
+  - `App.tsx` now stores home prompt and passes it into `InfoCompletionPage`.
+  - `InfoCompletionPage` now parses prompt hints (destination/days/budget/transport) and pre-fills form fields.
+  - `InfoCompletionPage` now also pre-fills from real user `profile` values.
+
+- Enforced **real backend data only** on frontend API client:
+  - Removed silent fallback returns from `src/app/api/client.ts`.
+  - API errors now throw explicit errors instead of returning mock plan/profile/trips.
+  - Kept only an empty `fallbackProfile` shape for initial local state typing.
+
+- Reduced mock-like fallback rendering in active pages:
+  - `PlanningResultPage` no longer injects hardcoded demo itinerary when `plan` is missing.
+  - `MapRoutePage` fallback content replaced with minimal empty placeholders (no fake itinerary).
+
+- Enforced **live model/tool chain** on backend planning:
+  - `PET_AGENT_USE_LIVE` default switched to enabled.
+  - Added strict real-data gate in `POST /api/trips/plan`:
+    - if request would fall back, API now returns `503` with clear reason instead of serving fallback plan.
+  - Added explicit strict-mode behavior via env `PET_AGENT_STRICT_REAL` (default `1`).
+
+- Validation:
+  - Frontend build passed (`npm run build`).
+  - Backend strict mode test returned `503` when live chain/network was unavailable, proving fallback is blocked.
+
+---
+
+## 2026-04-26 New User End-to-End Retest (Continue)
+
+### What Was Retested
+
+- Simulated a brand-new user end-to-end through:
+  - login
+  - profile read/write
+  - plan create
+  - start trip
+  - map
+  - emergency replan + decision
+  - complete trip
+  - review
+  - trip list back-check
+
+### Fixes Applied During This Retest
+
+- Backend
+  - Removed default fake trip injection (`sample-hangzhou`) from `GET /api/users/{user_id}/trips`.
+  - Tightened strict real mode in `POST /api/trips/plan`:
+    - if live planner returns no itinerary candidates, API now returns `503`.
+  - Replaced hardcoded static attractions/restaurants in plan normalization with live-derived fields when available.
+  - Added deep currency marker cleanup for response payloads (`楼` -> `¥`) after plan normalization.
+
+- Environment
+  - Installed missing backend dependency `azure-cosmos` into active runtime (`D:\Python\python.exe`), enabling full backend import path.
+
+### Current Test Results
+
+- **Non-strict flow (`PET_AGENT_USE_LIVE=0`, `PET_AGENT_STRICT_REAL=0`)**
+  - Full new-user path passes.
+  - New user trip list is now empty until first real trip is created (expected).
+
+- **Strict real flow (`PET_AGENT_USE_LIVE=1`, `PET_AGENT_STRICT_REAL=1`)**
+  - Correctly fails with `503` when live planner returns no itinerary candidates.
+  - This is now intentional guard behavior (no fake plan in strict mode).
+
+### Remaining Real-Data Blockers
+
+1. **P0** Azure Foundry auth path is not fully configured in this machine/session:
+   - `DefaultAzureCredential` chain fails.
+   - Local Azure CLI profile file permission issue:
+     - `C:\Users\蔡岳成\.azure\azureProfile.json` access denied.
+2. **P0** Live planner frequently returns no itinerary candidates in current runtime, which blocks strict mode by design.
+3. **P1** Some UI text still contains corrupted currency/legacy symbols in active pages and should be cleaned in a final UX polish pass.
+
+---
+
+## 2026-04-26 Launch Hardening (Strict Real Path Pass)
+
+### Backend Hardening Completed
+
+- `Pet-agentv11/helper.py`
+  - Switched LLM client init priority to **API-key Azure OpenAI first** (`AZURE_OPENAI_ENDPOINT` + `AZURE_OPENAI_API_KEY`) to avoid local `DefaultAzureCredential` dependency.
+  - Kept Foundry identity path as fallback.
+  - Added GPT-5 request defaults:
+    - `reasoning_effort=low` when omitted
+    - minimum `max_completion_tokens` floor for GPT-5 calls to avoid empty-output (`finish_reason=length` with blank content).
+  - Updated direct dispatcher call to use unified `openai_chat(...)` wrapper.
+
+- `Pet-agentv11/api.py`
+  - Removed fake new-user sample trip behavior (trip list now truly empty before first plan).
+  - Tightened strict mode guard:
+    - strict mode rejects if no live itinerary data.
+  - Added live itinerary fallback pipeline when Agent3 returns empty itineraries:
+    1. parse live model JSON plan output
+    2. normalize alternate keys (`itinerary`, `stops`, `activities`) into `itineraries`
+    3. if still empty, request model for strict `stops` JSON and build itinerary
+  - Added candidate-to-itinerary synthesizer from live scored candidates.
+  - Normalized currency strings in responses and cleaned legacy marker artifacts.
+
+### Frontend Polish Completed
+
+- `front_end/src/app/components/HomeDashboard.tsx`
+  - Cleaned budget/readiness and example prompt currency text to `CNY`.
+  - Removed malformed trip separator symbols in trip list rows.
+
+- `front_end/src/app/components/InfoCompletionPage.tsx`
+  - Hardened prompt budget parser to support `CNY/RMB` + symbol/number formats.
+
+### Verification Results (Latest)
+
+- Frontend build: `npm run build` ✅
+- Strict real-data API E2E (new user full path) ✅
+  - login
+  - profile get/update
+  - plan (strict real mode)
+  - trip get/start
+  - map
+  - emergency replan + decision
+  - complete
+  - review get/post
+  - trip list reflects completed trip
+- Additional live HTTP verification against running backend (`127.0.0.1:8000`) ✅
+  - `POST /api/trips/plan` now returns `itinerary_days` aligned with requested trip duration (e.g., 3-day request -> 3 day blocks).
+
+### Runtime URLs (Current Session)
+
+- Frontend dev server: `http://127.0.0.1:5173`
+- Backend API: `http://127.0.0.1:8000`
+
+---
+
+## 2026-04-26 Final Pre-Launch Self QA + Packaging Check
+
+### A) Real End-to-End QA (Strict Real Mode)
+
+- Environment used:
+  - `PET_AGENT_USE_LIVE=1`
+  - `PET_AGENT_STRICT_REAL=1`
+- Real user-path API flow executed and passed:
+  1. `POST /api/session/login`
+  2. `GET /api/users/{user_id}/profile`
+  3. `PUT /api/users/{user_id}/profile`
+  4. `POST /api/trips/plan`
+  5. `GET /api/trips/{trip_id}`
+  6. `POST /api/trips/{trip_id}/start`
+  7. `GET /api/trips/{trip_id}/map`
+  8. `POST /api/trips/{trip_id}/emergency-replan`
+  9. `POST /api/trips/{trip_id}/emergency-decision`
+  10. `POST /api/trips/{trip_id}/complete`
+  11. `GET /api/trips/{trip_id}/review`
+  12. `POST /api/trips/{trip_id}/review`
+  13. `GET /api/users/{user_id}/trips`
+- Key assertions passed:
+  - trip created with `status=planned`
+  - itinerary generated for requested duration (`days=3`)
+  - map payload day count matches itinerary day count
+  - completed trip visible in user trip history
+
+### B) Build / Packaging Check
+
+- Frontend production build: `npm run build` ✅
+  - output files:
+    - `front_end/dist/index.html`
+    - `front_end/dist/assets/index-*.css`
+    - `front_end/dist/assets/index-*.js`
+- Backend runtime health: `GET /health` ✅
+- Dev preview availability:
+  - frontend `http://127.0.0.1:5173` ✅
+  - backend `http://127.0.0.1:8000` ✅
+
+### C) Last-Mile Code Polish Included
+
+- Removed Map page static warning banner that could mislead users with hardcoded scenario text.
+- Removed Map page fake hospital placeholder item; now empty-state data is truly empty when backend has none.
+- Prompt budget parsing supports `CNY/RMB` + symbol formats consistently.
+
+### D) Test/Release Notes
+
+- `pytest -q` in current repo includes network-coupled integration files under `dynamic_toolsV5` and fails in restricted network contexts; this is not a product-route failure.
+- There are currently no stable isolated unit/integration test files covering only API contracts, so launch confidence is based on strict real-path API smoke and frontend build verification.
+
+### E) Remaining Go-Live Blockers
+
+1. **P0 Security blocker**: `Pet-agentv11/.env` is tracked in git and currently contains real credentials.
+   - Required before external launch:
+     - remove secrets from git history/repo tracking
+     - rotate all exposed keys
+     - switch to secure secret injection (environment/secret manager).
+2. **P1 Release hygiene**: exclude runtime logs/cache artifacts from release package:
+   - `Pet-agentv11/api.out.log`
+   - `Pet-agentv11/api.err.log`
+   - `Pet-agentv11/__pycache__/`
+   - transient pytest temp/cache dirs (`pytest-cache-files-*`, `.pytest_cache/`)

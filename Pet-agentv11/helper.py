@@ -72,6 +72,7 @@ from dotenv import load_dotenv
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
 from azure.cosmos import CosmosClient
+from openai import AzureOpenAI, OpenAI
 
 load_dotenv()
 
@@ -80,6 +81,10 @@ COSMOS_KEY = os.getenv("COSMOS_KEY")
 DATABASE_ID = os.getenv("COSMOS_DATABASE_ID")
 CONTAINER_ID = os.getenv("COSMOS_CONTAINER_ID")
 FOUNDRY_PROJECT_ENDPOINT = os.getenv("FOUNDRY_PROJECT_ENDPOINT")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+AZURE_OPENAI_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION", "2024-10-21")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 def _required_env(name: str, value: Optional[str]) -> str:
@@ -88,15 +93,20 @@ def _required_env(name: str, value: Optional[str]) -> str:
     return str(value).strip()
 
 
-COSMOS_ENDPOINT = _required_env("COSMOS_ENDPOINT", COSMOS_ENDPOINT)
-COSMOS_KEY = _required_env("COSMOS_KEY", COSMOS_KEY)
-DATABASE_ID = _required_env("COSMOS_DATABASE_ID", DATABASE_ID)
-CONTAINER_ID = _required_env("COSMOS_CONTAINER_ID", CONTAINER_ID)
-FOUNDRY_PROJECT_ENDPOINT = _required_env("FOUNDRY_PROJECT_ENDPOINT", FOUNDRY_PROJECT_ENDPOINT)
-
-cosmos_client = CosmosClient(COSMOS_ENDPOINT, COSMOS_KEY)
-database = cosmos_client.get_database_client(DATABASE_ID)
-container = database.get_container_client(CONTAINER_ID)
+cosmos_client = None
+database = None
+container = None
+try:
+    if COSMOS_ENDPOINT and COSMOS_KEY and DATABASE_ID and CONTAINER_ID:
+        cosmos_client = CosmosClient(COSMOS_ENDPOINT, COSMOS_KEY)
+        database = cosmos_client.get_database_client(DATABASE_ID)
+        container = database.get_container_client(CONTAINER_ID)
+except Exception as exc:
+    if os.getenv("MEMORY_DEBUG") == "1":
+        print(f"[MEMORY DEBUG] Cosmos initialization failed: {exc}")
+    cosmos_client = None
+    database = None
+    container = None
 QWEATHER_API_KEY = os.getenv("QWEATHER_API_KEY")
 QWEATHER_API_HOST = os.getenv("QWEATHER_API_HOST")
 GAODE_API_KEY = os.getenv("GAODE_API_KEY")
@@ -122,11 +132,38 @@ if SERPAPI_BASE_URL.endswith("/search"):
     SERPAPI_BASE_URL = SERPAPI_BASE_URL + ".json"
 LIVE_TOOL_TIMEOUT = float(os.getenv("LIVE_TOOL_TIMEOUT_SECONDS", "3.0"))
 
-project_client = AIProjectClient(
-    endpoint=FOUNDRY_PROJECT_ENDPOINT,
-    credential=DefaultAzureCredential()
-)
-openai_client = project_client.get_openai_client()
+def _build_openai_client():
+    # Prefer explicit API-key based Azure OpenAI for reliable local development.
+    if AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_API_KEY:
+        return AzureOpenAI(
+            azure_endpoint=AZURE_OPENAI_ENDPOINT,
+            api_key=AZURE_OPENAI_API_KEY,
+            api_version=AZURE_OPENAI_API_VERSION,
+        )
+
+    # Fallback: Azure Foundry project client via Entra identity.
+    if FOUNDRY_PROJECT_ENDPOINT:
+        try:
+            project_client = AIProjectClient(
+                endpoint=FOUNDRY_PROJECT_ENDPOINT,
+                credential=DefaultAzureCredential()
+            )
+            return project_client.get_openai_client()
+        except Exception as exc:
+            if os.getenv("LATENCY_DEBUG") == "1":
+                print(f"[LATENCY] Foundry client init failed: {exc}")
+
+    # Last fallback: standard OpenAI API key (if provided).
+    if OPENAI_API_KEY:
+        return OpenAI(api_key=OPENAI_API_KEY)
+
+    raise RuntimeError(
+        "No usable LLM client configuration found. Set AZURE_OPENAI_ENDPOINT + "
+        "AZURE_OPENAI_API_KEY, or configure FOUNDRY_PROJECT_ENDPOINT with Azure identity."
+    )
+
+
+openai_client = _build_openai_client()
 
 # Per-agent model configuration (env-overridable)
 AGENT1_MODEL = os.getenv("AGENT1_MODEL", "gpt-5-mini")
@@ -150,11 +187,16 @@ def openai_chat(messages, model: str = None, max_tokens: int = None, **kwargs):
         call_args = {"model": chosen, "messages": messages}
         # allow callers to override token param by passing max_tokens or max_completion_tokens in kwargs
         call_args.update(filtered_kwargs)
-        if max_tokens is not None and 'max_tokens' not in call_args and 'max_completion_tokens' not in call_args:
-            # Some newer gpt-5 deployments expect 'max_completion_tokens' instead of 'max_tokens'
+        if isinstance(chosen, str) and 'gpt-5' in chosen and 'reasoning_effort' not in call_args:
+            call_args['reasoning_effort'] = os.getenv("OPENAI_REASONING_EFFORT", "low")
+        if 'max_tokens' not in call_args and 'max_completion_tokens' not in call_args:
+            # Some newer gpt-5 deployments expect max_completion_tokens and may need
+            # a larger budget to emit final text after reasoning.
             if isinstance(chosen, str) and 'gpt-5' in chosen:
-                call_args['max_completion_tokens'] = max_tokens
-            else:
+                floor = int(os.getenv("OPENAI_GPT5_MIN_COMPLETION_TOKENS", "1400"))
+                requested = max_tokens if max_tokens is not None else floor
+                call_args['max_completion_tokens'] = max(int(requested), floor)
+            elif max_tokens is not None:
                 call_args['max_tokens'] = max_tokens
         completion = openai_client.chat.completions.create(**call_args)
         elapsed = time.time() - start
@@ -173,10 +215,14 @@ def openai_chat_stream(messages, model: str = None, max_tokens: int = None, **kw
     filtered_kwargs = {k: v for k, v in kwargs.items() if v is not None}
     call_args = {"model": chosen, "messages": messages, "stream": True}
     call_args.update(filtered_kwargs)
-    if max_tokens is not None and 'max_tokens' not in call_args and 'max_completion_tokens' not in call_args:
+    if isinstance(chosen, str) and 'gpt-5' in chosen and 'reasoning_effort' not in call_args:
+        call_args['reasoning_effort'] = os.getenv("OPENAI_REASONING_EFFORT", "low")
+    if 'max_tokens' not in call_args and 'max_completion_tokens' not in call_args:
         if isinstance(chosen, str) and 'gpt-5' in chosen:
-            call_args['max_completion_tokens'] = max_tokens
-        else:
+            floor = int(os.getenv("OPENAI_GPT5_MIN_COMPLETION_TOKENS", "1400"))
+            requested = max_tokens if max_tokens is not None else floor
+            call_args['max_completion_tokens'] = max(int(requested), floor)
+        elif max_tokens is not None:
             call_args['max_tokens'] = max_tokens
     for chunk in openai_client.chat.completions.create(**call_args):
         delta = chunk.choices[0].delta.content if chunk.choices else None
@@ -249,34 +295,69 @@ def _request_json(url: str, params: Dict[str, Any], service: str) -> Dict[str, A
 def cosmos_query_user_profile(user_name: str):
     query = "SELECT * FROM c WHERE c.type='user_profile' AND c.user_id=@user_name"
     params = [{"name": "@user_name", "value": user_name}]
-    return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    try:
+        return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] cosmos_query_user_profile failed: {exc}")
+        return []
 
 def cosmos_query_dog_profile(breed_name: str):
     query = "SELECT * FROM c WHERE c.type='dog_profile' AND c.breed_name=@breed_name"
     params = [{"name": "@breed_name", "value": breed_name}]
-    return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    try:
+        return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] cosmos_query_dog_profile failed: {exc}")
+        return []
 
 def cosmos_query_cat_profile(breed_name: str):
     query = "SELECT * FROM c WHERE c.type='cat_profile' AND c.breed_name=@breed_name"
     params = [{"name": "@breed_name", "value": breed_name}]
-    return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    try:
+        return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] cosmos_query_cat_profile failed: {exc}")
+        return []
 
 def cosmos_query_rules():
     query = "SELECT * FROM c WHERE c.type='rule'"
-    return list(container.query_items(query=query, enable_cross_partition_query=True))
+    try:
+        return list(container.query_items(query=query, enable_cross_partition_query=True))
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] cosmos_query_rules failed: {exc}")
+        return []
 
 def cosmos_query_agent_policy():
     query = "SELECT * FROM c WHERE c.type='agent_policy'"
-    return list(container.query_items(query=query, enable_cross_partition_query=True))
+    try:
+        return list(container.query_items(query=query, enable_cross_partition_query=True))
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] cosmos_query_agent_policy failed: {exc}")
+        return []
 
 def cosmos_query_pet_travel_experience(city: str = None):
     """Retrieve social/travel experience entries: pitfall avoidance, accommodation tips, pet travel advice."""
     if city:
         query = "SELECT * FROM c WHERE c.type='pet_travel_experience' AND (c.city=@city OR NOT IS_DEFINED(c.city))"
         params = [{"name": "@city", "value": city}]
-        return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+        try:
+            return list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+        except Exception as exc:
+            if os.getenv("MEMORY_DEBUG") == "1":
+                print(f"[MEMORY DEBUG] cosmos_query_pet_travel_experience(city) failed: {exc}")
+            return []
     query = "SELECT * FROM c WHERE c.type='pet_travel_experience'"
-    return list(container.query_items(query=query, enable_cross_partition_query=True))
+    try:
+        return list(container.query_items(query=query, enable_cross_partition_query=True))
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] cosmos_query_pet_travel_experience failed: {exc}")
+        return []
 
 def get_or_create_user_profile(user_name: str):
     # Try to load existing profile
@@ -721,7 +802,13 @@ def save_message(session_id, role, content, user_name=None):
         "content": content,
         "timestamp": datetime.now(UTC).isoformat()
     }
-    container.create_item(doc)
+    if container is None:
+        return
+    try:
+        container.create_item(doc)
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] save_message failed: {exc}")
 
 
 def load_recent_conversation(session_id, user_name, limit=10):
@@ -736,7 +823,14 @@ def load_recent_conversation(session_id, user_name, limit=10):
         {"name": "@session_id", "value": session_id},
         {"name": "@user_name", "value": user_name},
     ]
-    items = list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    if container is None:
+        return []
+    try:
+        items = list(container.query_items(query=query, parameters=params, enable_cross_partition_query=True))
+    except Exception as exc:
+        if os.getenv("MEMORY_DEBUG") == "1":
+            print(f"[MEMORY DEBUG] load_recent_conversation failed: {exc}")
+        return []
     return list(reversed(items[:limit]))
 
 
@@ -871,9 +965,9 @@ def decide_agents(user_prompt: str, intent: dict, lang: Optional[str] = None) ->
         {"role": "user", "content": f"Intent: {json.dumps(intent, ensure_ascii=False)}\nUser: {user_prompt}"},
     ]
     try:
-        completion = openai_client.chat.completions.create(
-            model="gpt-5-mini",
+        completion = openai_chat(
             messages=messages,
+            model=os.getenv("AGENT1_MODEL", AGENT1_MODEL),
             max_tokens=300
         )
         raw = completion.choices[0].message.content
