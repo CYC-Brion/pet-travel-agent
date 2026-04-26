@@ -1,0 +1,2001 @@
+{
+  "search_metadata": {
+    "id": "69e9df5b9d26cf7153a8a959",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/xWq4fFDMlT4KmFHGubWHtA/69e9df5b9d26cf7153a8a959.json",
+    "created_at": "2026-04-23 08:59:07 UTC",
+    "processed_at": "2026-04-23 08:59:07 UTC",
+    "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=us&curr=CNY&tfs=CBwQAhoeEgoyMDI2LTA1LTAxagcIARIDU0hBcgcIARIDUEVLGh4SCjIwMjYtMDUtMDNqBwgBEgNQRUtyBwgBEgNTSEFAAUgBcAGYAQE&tfu=EgIIAQ",
+    "raw_html_file": "https://serpapi.com/searches/xWq4fFDMlT4KmFHGubWHtA/69e9df5b9d26cf7153a8a959.html",
+    "prettify_html_file": "https://serpapi.com/searches/xWq4fFDMlT4KmFHGubWHtA/69e9df5b9d26cf7153a8a959.prettify",
+    "total_time_taken": 0.81
+  },
+  "search_parameters": {
+    "engine": "google_flights",
+    "hl": "en",
+    "gl": "us",
+    "departure_id": "SHA",
+    "arrival_id": "PEK",
+    "outbound_date": "2026-05-01",
+    "return_date": "2026-05-03",
+    "adults": 1,
+    "currency": "CNY"
+  },
+  "best_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 08:20"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 10:40"
+          },
+          "duration": 140,
+          "airplane": "Airbus A330",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7602",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "On-demand video",
+            "Carbon emissions estimate: 120 kg"
+          ]
+        }
+      ],
+      "total_duration": 140,
+      "carbon_emissions": {
+        "this_flight": 120000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 6
+      },
+      "price": 5016,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pJVlRjMk1ESWFDZ2lZSnhBQUdnTkRUbGs0SEhDWnZnUT0iLFtbIlNIQSIsIjIwMjYtMDUtMDEiLCJQRUsiLG51bGwsIkhVIiwiNzYwMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 11:15"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 13:30"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7604",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "On-demand video",
+            "Carbon emissions estimate: 120 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 120000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 6
+      },
+      "price": 5016,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pJVlRjMk1EUWFDZ2lZSnhBQUdnTkRUbGs0SEhDWnZnUT0iLFtbIlNIQSIsIjIwMjYtMDUtMDEiLCJQRUsiLG51bGwsIkhVIiwiNzYwNCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 12:10"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 14:20"
+          },
+          "duration": 130,
+          "airplane": "Airbus A330",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7606",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 101 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 102000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -10
+      },
+      "price": 5016,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pJVlRjMk1EWWFDZ2lZSnhBQUdnTkRUbGs0SEhDWnZnUT0iLFtbIlNIQSIsIjIwMjYtMDUtMDEiLCJQRUsiLG51bGwsIkhVIiwiNzYwNiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 19:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 21:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7608",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 101 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 102000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -10
+      },
+      "price": 5016,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pJVlRjMk1EZ2FDZ2lZSnhBQUdnTkRUbGs0SEhDWnZnUT0iLFtbIlNIQSIsIjIwMjYtMDUtMDEiLCJQRUsiLG51bGwsIkhVIiwiNzYwOCJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 20:15"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 22:30"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "Hainan",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+          "travel_class": "Economy",
+          "flight_number": "HU 7612",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 101 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 102000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -10
+      },
+      "price": 5016,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/HU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pJVlRjMk1USWFDZ2lZSnhBQUdnTkRUbGs0SEhDWnZnUT0iLFtbIlNIQSIsIjIwMjYtMDUtMDEiLCJQRUsiLG51bGwsIkhVIiwiNzYxMiJdXV0="
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 12:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 14:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5109",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 94 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 95000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -16
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1EazRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMDkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 12:25"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 14:45"
+          },
+          "duration": 140,
+          "airplane": "Boeing 787",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1502",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 140,
+      "carbon_emissions": {
+        "this_flight": 91000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU1ESTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MDIiXV1d"
+    }
+  ],
+  "other_flights": [
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 18:55"
+          },
+          "arrival_airport": {
+            "name": "Yantai Penglai International Airport",
+            "id": "YNT",
+            "time": "2026-05-01 20:35"
+          },
+          "duration": 100,
+          "airplane": "Boeing 737",
+          "airline": "Shandong",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+          "travel_class": "Economy",
+          "flight_number": "SC 7618",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 82 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Yantai Penglai International Airport",
+            "id": "YNT",
+            "time": "2026-05-01 22:40"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-02 00:05"
+          },
+          "duration": 85,
+          "airplane": "Airbus A321neo",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1594",
+          "ticket_also_sold_by": [
+            "Shandong"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat USB outlet",
+            "Stream media to your device",
+            "Carbon emissions estimate: 60 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 125,
+          "name": "Yantai Penglai International Airport",
+          "id": "YNT"
+        }
+      ],
+      "total_duration": 310,
+      "carbon_emissions": {
+        "this_flight": 143000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 27
+      },
+      "price": 6580,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZzFUUXpjMk1UaDhRMEV4TlRrMEdnb0l0RE1RQUJvRFEwNVpPQnh3bmZFRiIsW1siU0hBIiwiMjAyNi0wNS0wMSIsIllOVCIsbnVsbCwiU0MiLCI3NjE4Il0sWyJZTlQiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1OTQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 22:25"
+          },
+          "arrival_airport": {
+            "name": "Qingdao Jiaodong International Airport",
+            "id": "TAO",
+            "time": "2026-05-02 00:10"
+          },
+          "duration": 105,
+          "airplane": "Boeing 737",
+          "airline": "Shandong",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+          "travel_class": "Economy",
+          "flight_number": "SC 4656",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 72 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Qingdao Jiaodong International Airport",
+            "id": "TAO",
+            "time": "2026-05-02 07:10"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-02 08:45"
+          },
+          "duration": 95,
+          "airplane": "Boeing 737",
+          "airline": "Shandong",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+          "travel_class": "Economy",
+          "flight_number": "SC 4641",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 67 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 420,
+          "name": "Qingdao Jiaodong International Airport",
+          "id": "TAO",
+          "overnight": true
+        }
+      ],
+      "total_duration": 620,
+      "carbon_emissions": {
+        "this_flight": 140000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 24
+      },
+      "price": 7820,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZzFUUXpRMk5UWjhVME0wTmpReEdnb0lqRDBRQUJvRFEwNVpPQnh3bHY4RyIsW1siU0hBIiwiMjAyNi0wNS0wMSIsIlRBTyIsbnVsbCwiU0MiLCI0NjU2Il0sWyJUQU8iLCIyMDI2LTA1LTAyIiwiUEVLIixudWxsLCJTQyIsIjQ2NDEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 22:25"
+          },
+          "arrival_airport": {
+            "name": "Qingdao Jiaodong International Airport",
+            "id": "TAO",
+            "time": "2026-05-02 00:10"
+          },
+          "duration": 105,
+          "airplane": "Boeing 737",
+          "airline": "Shandong",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+          "travel_class": "Economy",
+          "flight_number": "SC 4656",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 72 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Qingdao Jiaodong International Airport",
+            "id": "TAO",
+            "time": "2026-05-02 07:55"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-02 09:30"
+          },
+          "duration": 95,
+          "airplane": "Airbus A320",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1526",
+          "ticket_also_sold_by": [
+            "Shandong"
+          ],
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Stream media to your device",
+            "Carbon emissions estimate: 88 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 465,
+          "name": "Qingdao Jiaodong International Airport",
+          "id": "TAO",
+          "overnight": true
+        }
+      ],
+      "total_duration": 665,
+      "carbon_emissions": {
+        "this_flight": 161000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 42
+      },
+      "price": 8730,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/multi.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZzFUUXpRMk5UWjhRMEV4TlRJMkdnb0lta1FRQUJvRFEwNVpPQnh3ck9jSCIsW1siU0hBIiwiMjAyNi0wNS0wMSIsIlRBTyIsbnVsbCwiU0MiLCI0NjU2Il0sWyJUQU8iLCIyMDI2LTA1LTAyIiwiUEVLIixudWxsLCJDQSIsIjE1MjYiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 13:15"
+          },
+          "arrival_airport": {
+            "name": "Qingdao Jiaodong International Airport",
+            "id": "TAO",
+            "time": "2026-05-01 15:00"
+          },
+          "duration": 105,
+          "airplane": "Boeing 737MAX 8 Passenger",
+          "airline": "Shandong",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "SC 4654",
+          "legroom": "32 in",
+          "extensions": [
+            "Below average legroom (32 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 62 kg"
+          ]
+        },
+        {
+          "departure_airport": {
+            "name": "Qingdao Jiaodong International Airport",
+            "id": "TAO",
+            "time": "2026-05-01 18:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 19:30"
+          },
+          "duration": 90,
+          "airplane": "Boeing 737",
+          "airline": "Shandong",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+          "travel_class": "Economy",
+          "flight_number": "SC 4651",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "Carbon emissions estimate: 67 kg"
+          ]
+        }
+      ],
+      "layovers": [
+        {
+          "duration": 180,
+          "name": "Qingdao Jiaodong International Airport",
+          "id": "TAO"
+        }
+      ],
+      "total_duration": 375,
+      "carbon_emissions": {
+        "this_flight": 130000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 15
+      },
+      "price": 9100,
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/SC.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZzFUUXpRMk5UUjhVME0wTmpVeEdnb0lqRWNRQUJvRFEwNVpPQnh3MlpFSSIsW1siU0hBIiwiMjAyNi0wNS0wMSIsIlRBTyIsbnVsbCwiU0MiLCI0NjU0Il0sWyJUQU8iLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJTQyIsIjQ2NTEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 07:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 09:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5099",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 94 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 95000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -16
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVd09UazRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUwOTkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 07:55"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 10:10"
+          },
+          "duration": 135,
+          "airplane": "Boeing 787",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Premium Economy",
+          "flight_number": "CA 1564",
+          "legroom": "37 in",
+          "extensions": [
+            "Above average legroom (37 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 153 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 154000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 36
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU5qUTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1NjQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 08:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 10:10"
+          },
+          "duration": 130,
+          "airplane": "Boeing 777",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5101",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 110 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 110000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -3
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1ERTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMDEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 08:55"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 11:10"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Business Class",
+          "flight_number": "CA 1590",
+          "extensions": [
+            "Lie flat seat",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 509 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 509000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 350
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU9UQTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1OTAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 09:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 11:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5103",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 93 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 93000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -18
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1ETTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMDMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 09:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 12:00"
+          },
+          "duration": 150,
+          "airplane": "Airbus A321",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5153",
+          "legroom": "29 in",
+          "extensions": [
+            "Below average legroom (29 in)",
+            "In-seat USB outlet",
+            "Carbon emissions estimate: 121 kg"
+          ]
+        }
+      ],
+      "total_duration": 150,
+      "carbon_emissions": {
+        "this_flight": 122000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 8
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE5UTTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxNTMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 10:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 12:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5105",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 123000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1EVTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMDUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 11:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 13:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5107",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 93 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 93000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -18
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1EYzRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMDciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 11:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 13:45"
+          },
+          "duration": 135,
+          "airplane": "Boeing 787",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1508",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 91000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU1EZzRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MDgiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 13:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 15:10"
+          },
+          "duration": 130,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5111",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat USB outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 93 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 93000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -18
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1URTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMTEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 13:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 15:45"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5157",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 123000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE5UYzRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxNTciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 13:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 16:00"
+          },
+          "duration": 150,
+          "airplane": "Boeing 777",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1520",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 111 kg"
+          ]
+        }
+      ],
+      "total_duration": 150,
+      "carbon_emissions": {
+        "this_flight": 111000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -2
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU1qQTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MjAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 14:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 16:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5113",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "Carbon emissions estimate: 116 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 117000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 4
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1UTTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMTMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 14:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 16:45"
+          },
+          "duration": 135,
+          "airplane": "Comac C919",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5159",
+          "legroom": "30 in",
+          "extensions": [
+            "Average legroom (30 in)",
+            "In-seat power & USB outlets",
+            "Stream media to your device"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "typical_for_this_route": 113000
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE5UazRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxNTkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 14:45"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 17:15"
+          },
+          "duration": 150,
+          "airplane": "Boeing 787",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1524",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 150,
+      "carbon_emissions": {
+        "this_flight": 91000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU1qUTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MjQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 15:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 17:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5115",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 94 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 95000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -16
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1UVTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMTUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 15:25"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 17:45"
+          },
+          "duration": 140,
+          "airplane": "Boeing 787",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1558",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 102 kg"
+          ]
+        }
+      ],
+      "total_duration": 140,
+      "carbon_emissions": {
+        "this_flight": 103000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU5UZzRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1NTgiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 16:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 18:15"
+          },
+          "duration": 135,
+          "airplane": "Boeing 777",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5117",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 110 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 110000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -3
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1UYzRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMTciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 16:35"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 19:00"
+          },
+          "duration": 145,
+          "airplane": "Airbus A350",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1534",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Free Wi-Fi",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 103 kg"
+          ]
+        }
+      ],
+      "total_duration": 145,
+      "carbon_emissions": {
+        "this_flight": 103000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU16UTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MzQiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 17:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 19:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5119",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 123000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1UazRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMTkiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 17:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 20:15"
+          },
+          "duration": 165,
+          "airplane": "Airbus A330",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1518",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 127 kg"
+          ]
+        }
+      ],
+      "total_duration": 165,
+      "carbon_emissions": {
+        "this_flight": 127000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 12
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU1UZzRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MTgiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 18:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 20:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5121",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 123000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1qRTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMjEiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 18:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 21:15"
+          },
+          "duration": 165,
+          "airplane": "Boeing 787",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1522",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 91 kg"
+          ]
+        }
+      ],
+      "total_duration": 165,
+      "carbon_emissions": {
+        "this_flight": 91000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -19
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU1qSTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MjIiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 19:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 21:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5123",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 94 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 95000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -16
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1qTTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMjMiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 20:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 22:10"
+          },
+          "duration": 130,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5125",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 94 kg"
+          ]
+        }
+      ],
+      "total_duration": 130,
+      "carbon_emissions": {
+        "this_flight": 95000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -16
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1qVTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMjUiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 20:25"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 22:50"
+          },
+          "duration": 145,
+          "airplane": "Airbus A330",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1550",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 102 kg"
+          ]
+        }
+      ],
+      "total_duration": 145,
+      "carbon_emissions": {
+        "this_flight": 103000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU5UQTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1NTAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 21:00"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 23:15"
+          },
+          "duration": 135,
+          "airplane": "Airbus A330",
+          "airline": "China Eastern",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+          "travel_class": "Economy",
+          "flight_number": "MU 5127",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "Wi-Fi for a fee",
+            "In-seat power & USB outlets",
+            "On-demand video",
+            "Carbon emissions estimate: 123 kg"
+          ]
+        }
+      ],
+      "total_duration": 135,
+      "carbon_emissions": {
+        "this_flight": 123000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 9
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/MU.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pOVlRVeE1qYzRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJNVSIsIjUxMjciXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 21:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-01 23:55"
+          },
+          "duration": 145,
+          "airplane": "Boeing 777",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1510",
+          "legroom": "32 in",
+          "extensions": [
+            "Above average legroom (32 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 111 kg"
+          ]
+        }
+      ],
+      "total_duration": 145,
+      "carbon_emissions": {
+        "this_flight": 111000,
+        "typical_for_this_route": 113000,
+        "difference_percent": -2
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU1UQTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1MTAiXV1d"
+    },
+    {
+      "flights": [
+        {
+          "departure_airport": {
+            "name": "Shanghai Hongqiao International Airport",
+            "id": "SHA",
+            "time": "2026-05-01 22:30"
+          },
+          "arrival_airport": {
+            "name": "Beijing Capital International Airport",
+            "id": "PEK",
+            "time": "2026-05-02 00:55"
+          },
+          "duration": 145,
+          "airplane": "Airbus A330",
+          "airline": "Air China",
+          "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+          "travel_class": "Economy",
+          "flight_number": "CA 1566",
+          "legroom": "31 in",
+          "extensions": [
+            "Average legroom (31 in)",
+            "In-seat power outlet",
+            "On-demand video",
+            "Carbon emissions estimate: 130 kg"
+          ]
+        }
+      ],
+      "total_duration": 145,
+      "carbon_emissions": {
+        "this_flight": 131000,
+        "typical_for_this_route": 113000,
+        "difference_percent": 16
+      },
+      "type": "Round trip",
+      "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/CA.png",
+      "departure_token": "WyJDalJJYlhNNVdHaEpjRWQyVW10QlJXOWZSa0ZDUnkwdExTMHRMUzB0TFc5NVlXSXhPVUZCUVVGQlIyNXdNekZ6VEVoTVJUSkJFZ1pEUVRFMU5qWTRIQT09IixbWyJTSEEiLCIyMDI2LTA1LTAxIiwiUEVLIixudWxsLCJDQSIsIjE1NjYiXV1d"
+    }
+  ],
+  "price_insights": {
+    "lowest_price": 5016,
+    "price_level": "high",
+    "typical_price_range": [
+      3200,
+      4550
+    ],
+    "price_history": [
+      [
+        1771689600,
+        3996
+      ],
+      [
+        1771776000,
+        3996
+      ],
+      [
+        1771862400,
+        3996
+      ],
+      [
+        1771948800,
+        3996
+      ],
+      [
+        1772035200,
+        3996
+      ],
+      [
+        1772121600,
+        3996
+      ],
+      [
+        1772208000,
+        3996
+      ],
+      [
+        1772294400,
+        3996
+      ],
+      [
+        1772380800,
+        3996
+      ],
+      [
+        1772467200,
+        3996
+      ],
+      [
+        1772553600,
+        3996
+      ],
+      [
+        1772640000,
+        3996
+      ],
+      [
+        1772726400,
+        4586
+      ],
+      [
+        1772812800,
+        4686
+      ],
+      [
+        1772899200,
+        4096
+      ],
+      [
+        1772985600,
+        4096
+      ],
+      [
+        1773072000,
+        4096
+      ],
+      [
+        1773158400,
+        4686
+      ],
+      [
+        1773244800,
+        4536
+      ],
+      [
+        1773331200,
+        4732
+      ],
+      [
+        1773417600,
+        4732
+      ],
+      [
+        1773504000,
+        4732
+      ],
+      [
+        1773590400,
+        4732
+      ],
+      [
+        1773676800,
+        4732
+      ],
+      [
+        1773763200,
+        4732
+      ],
+      [
+        1773849600,
+        4732
+      ],
+      [
+        1773936000,
+        4732
+      ],
+      [
+        1774022400,
+        4882
+      ],
+      [
+        1774108800,
+        4882
+      ],
+      [
+        1774195200,
+        4882
+      ],
+      [
+        1774281600,
+        4882
+      ],
+      [
+        1774368000,
+        4882
+      ],
+      [
+        1774454400,
+        4892
+      ],
+      [
+        1774540800,
+        4096
+      ],
+      [
+        1774627200,
+        4302
+      ],
+      [
+        1774713600,
+        4892
+      ],
+      [
+        1774800000,
+        4892
+      ],
+      [
+        1774886400,
+        4892
+      ],
+      [
+        1774972800,
+        4880
+      ],
+      [
+        1775059200,
+        4880
+      ],
+      [
+        1775145600,
+        4880
+      ],
+      [
+        1775232000,
+        4880
+      ],
+      [
+        1775318400,
+        4880
+      ],
+      [
+        1775404800,
+        5080
+      ],
+      [
+        1775491200,
+        5080
+      ],
+      [
+        1775577600,
+        5080
+      ],
+      [
+        1775664000,
+        5080
+      ],
+      [
+        1775750400,
+        5080
+      ],
+      [
+        1775836800,
+        5080
+      ],
+      [
+        1775923200,
+        5080
+      ],
+      [
+        1776009600,
+        5080
+      ],
+      [
+        1776096000,
+        5080
+      ],
+      [
+        1776182400,
+        5080
+      ],
+      [
+        1776268800,
+        5016
+      ],
+      [
+        1776355200,
+        5016
+      ],
+      [
+        1776441600,
+        5080
+      ],
+      [
+        1776528000,
+        5080
+      ],
+      [
+        1776614400,
+        5016
+      ],
+      [
+        1776700800,
+        5016
+      ],
+      [
+        1776787200,
+        5016
+      ],
+      [
+        1776873600,
+        5016
+      ]
+    ]
+  },
+  "airports": [
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "SHA",
+            "name": "Shanghai Hongqiao International Airport"
+          },
+          "city": "Shanghai",
+          "country": "China",
+          "country_code": "CN",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTujsAS0i3-zbeimLQQ8RJnTX80xFZm7VnTsswhTD6W1aHQZWxzA7pNb0BMAVpelCNQq3SEx1592gylHw",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf_rHrecM1vgBbjjdc3hHmMhc7Ur5d25JUiJtkb1TFjyb8o00dh6hVYtkXSkreGSokUxE8IQygysyFoMm4DaIoR8oEdOOr1fKHxMByxDQ"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "PEK",
+            "name": "Beijing Capital International Airport"
+          },
+          "city": "Beijing",
+          "country": "China",
+          "country_code": "CN",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9v_tNYxaummsU2qbFn8zuYzkcG0x6qCvqB2gbBnx-2FVlZZPsnkvUXGk07vxotk-0vRQMUYCjj2d4Wg",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzsj_yw6o3vb8i54_D21VgI5rTohxexQkZ0TrZKDKJwTSKw2yqnRYLoIcBWIY50BlHo-OPMm68zbUO-qnFvmQmm6jvtWPwo7WOzjNGX_A"
+        }
+      ]
+    },
+    {
+      "departure": [
+        {
+          "airport": {
+            "id": "PEK",
+            "name": "Beijing Capital International Airport"
+          },
+          "city": "Beijing",
+          "country": "China",
+          "country_code": "CN",
+          "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ9v_tNYxaummsU2qbFn8zuYzkcG0x6qCvqB2gbBnx-2FVlZZPsnkvUXGk07vxotk-0vRQMUYCjj2d4Wg",
+          "thumbnail": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSzsj_yw6o3vb8i54_D21VgI5rTohxexQkZ0TrZKDKJwTSKw2yqnRYLoIcBWIY50BlHo-OPMm68zbUO-qnFvmQmm6jvtWPwo7WOzjNGX_A"
+        }
+      ],
+      "arrival": [
+        {
+          "airport": {
+            "id": "SHA",
+            "name": "Shanghai Hongqiao International Airport"
+          },
+          "city": "Shanghai",
+          "country": "China",
+          "country_code": "CN",
+          "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTujsAS0i3-zbeimLQQ8RJnTX80xFZm7VnTsswhTD6W1aHQZWxzA7pNb0BMAVpelCNQq3SEx1592gylHw",
+          "thumbnail": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSf_rHrecM1vgBbjjdc3hHmMhc7Ur5d25JUiJtkb1TFjyb8o00dh6hVYtkXSkreGSokUxE8IQygysyFoMm4DaIoR8oEdOOr1fKHxMByxDQ"
+        }
+      ]
+    }
+  ]
+}

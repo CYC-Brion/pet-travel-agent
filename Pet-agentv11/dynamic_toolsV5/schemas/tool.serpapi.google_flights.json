@@ -1,0 +1,72 @@
+{
+  "name": "serpapi.google_flights",
+  "description": "Google Flights search via SerpApi. Searches for flight prices, schedules, airlines, and carbon emissions between two airports.",
+  "input_schema": {
+    "type": "object",
+    "required": ["departure_id", "arrival_id", "outbound_date"],
+    "properties": {
+      "departure_id": { "type": "string", "description": "Departure airport IATA code (e.g. 'SHA' for Shanghai Hongqiao, 'PVG' for Shanghai Pudong)." },
+      "arrival_id": { "type": "string", "description": "Arrival airport IATA code (e.g. 'PEK' for Beijing Capital)." },
+      "outbound_date": { "type": "string", "description": "Outbound departure date, format YYYY-MM-DD." },
+      "return_date": { "type": "string", "description": "Return date for round trip, format YYYY-MM-DD. Optional for one-way." },
+      "adults": { "type": "integer", "default": 1, "description": "Number of adults." },
+      "children": { "type": "integer", "default": 0, "description": "Number of children. Optional." },
+      "infants": { "type": "integer", "default": 0, "description": "Number of infants. Optional." },
+      "currency": { "type": "string", "default": "CNY", "description": "Currency code. Optional." },
+      "stops_filter": { "type": "string", "enum": ["0", "1", "2"], "description": "Max stops: 0=nonstop only, 1=1 stop, 2=any. Optional." },
+      "airline": { "type": "string", "description": "Filter by airline code (e.g. 'CA' for Air China). Optional." },
+      "price_max": { "type": "integer", "description": "Maximum price filter. Optional." },
+      "sort_by": { "type": "string", "enum": ["price", "duration", "departure_time"], "description": "Sort results by. Optional." }
+    }
+  },
+  "examples": {
+    "input": {
+      "departure_id": "SHA",
+      "arrival_id": "PEK",
+      "outbound_date": "2026-05-01",
+      "return_date": "2026-05-03",
+      "adults": 1,
+      "currency": "CNY"
+    },
+    "output_success": {
+      "ok": true,
+      "request_id": "mock-reqid-fl-001",
+      "data": {
+        "source": "google_flights",
+        "search_parameters": {
+          "departure_id": "SHA",
+          "arrival_id": "PEK",
+          "outbound_date": "2026-05-01",
+          "return_date": "2026-05-03",
+          "currency": "CNY"
+        },
+        "best_flights": [
+          {
+            "price": 5016,
+            "type": "Round trip",
+            "total_duration": 140,
+            "carbon_emissions": {
+              "this_flight": 120000,
+              "difference_percent": 6
+            },
+            "flights": [
+              {
+                "departure_airport": { "id": "SHA", "name": "Shanghai Hongqiao", "time": "2026-05-01 08:20" },
+                "arrival_airport": { "id": "PEK", "name": "Beijing Capital", "time": "2026-05-01 10:40" },
+                "duration": 140,
+                "airline": "Hainan",
+                "flight_number": "HU 7602",
+                "airplane": "Airbus A330",
+                "travel_class": "Economy"
+              }
+            ]
+          }
+        ],
+        "other_flights": [],
+        "search_information": {
+          "total_results": 40
+        }
+      }
+    }
+  }
+}

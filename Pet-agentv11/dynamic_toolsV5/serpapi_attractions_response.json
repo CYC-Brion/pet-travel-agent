@@ -1,0 +1,1253 @@
+{
+  "search_metadata": {
+    "id": "69e9df67018c48629825342b",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/rV0EKzDcvSBWIIEHKtI3wg/69e9df67018c48629825342b.json",
+    "created_at": "2026-04-23 08:59:19 UTC",
+    "processed_at": "2026-04-23 08:59:19 UTC",
+    "google_maps_url": "https://www.google.com/maps/search/attraction+near+Bund%2C+Shanghai//?hl=zh-CN&gl=cn",
+    "raw_html_file": "https://serpapi.com/searches/rV0EKzDcvSBWIIEHKtI3wg/69e9df67018c48629825342b.html",
+    "prettify_html_file": "https://serpapi.com/searches/rV0EKzDcvSBWIIEHKtI3wg/69e9df67018c48629825342b.prettify",
+    "total_time_taken": 1.26
+  },
+  "search_parameters": {
+    "engine": "google_maps",
+    "type": "search",
+    "q": "attraction near Bund, Shanghai",
+    "google_domain": "google.com",
+    "hl": "zh-CN",
+    "gl": "cn"
+  },
+  "search_information": {
+    "local_results_state": "Results for exact spelling",
+    "query_displayed": "attraction near Bund, Shanghai"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "外滩",
+      "place_id": "ChIJYUiHi1dwsjURZK_REO37Vk0",
+      "data_id": "0x35b270578b874861:0x4d56fbed10d1af64",
+      "data_cid": "5572918584525565796",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270578b874861%3A0x4d56fbed10d1af64&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270578b874861%3A0x4d56fbed10d1af64&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.240261099999998,
+        "longitude": 121.49057699999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJYUiHi1dwsjURZK_REO37Vk0",
+      "provider_id": "/m/02bbzq",
+      "rating": 4.7,
+      "reviews": 7113,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "历史古迹"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "historic_site"
+      ],
+      "address": "上海市黄浦区外滩, 中山东一路, 邮政编码: 200002",
+      "open_state": "营业中",
+      "description": "著名滨江步道，漫步于此可欣赏城市美景. 1500 米长的滨江大道，历史悠久，沿岸展示了独特的现代和殖民建筑。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍停车场"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 2,
+      "title": "上海中心大厦",
+      "place_id": "ChIJcT52JmpwsjURKKp8uyIQKjU",
+      "data_id": "0x35b2706a26763e71:0x352a1022bb7caa28",
+      "data_cid": "3830892174392470056",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2706a26763e71%3A0x352a1022bb7caa28&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2706a26763e71%3A0x352a1022bb7caa28&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.233518,
+        "longitude": 121.505618
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJcT52JmpwsjURKKp8uyIQKjU",
+      "provider_id": "/m/03y4m5c",
+      "rating": 4.6,
+      "reviews": 3012,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市浦东新区陆家嘴, 银城中路501号, 邮政编码: 200120",
+      "open_state": "正在营业 · 结束营业时间：21:30",
+      "hours": "正在营业 · 结束营业时间：21:30",
+      "operating_hours": {
+        "星期四": "08:30–21:30",
+        "星期五": "08:30–21:30",
+        "星期六": "08:30–21:30",
+        "星期日": "08:30–21:30",
+        "星期一": "08:30–21:30",
+        "星期二": "08:30–21:30",
+        "星期三": "08:30–21:30"
+      },
+      "phone": "021 6199 9766",
+      "description": "127 层高的摩天大楼，设有 2 个观景台. 632 米高的摩天大楼，设有餐厅、酒吧、商店、2 个观景台和 1 家酒店。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍停车场",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "餐馆",
+            "卫生间"
+          ]
+        },
+        {
+          "planning": [
+            "需要预约",
+            "建议提前购票"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 3,
+      "title": "上海外滩观光隧道",
+      "place_id": "ChIJJa-yxFdwsjURZAmtWrNzrXg",
+      "data_id": "0x35b27057c4b2af25:0x78ad73b35aad0964",
+      "data_cid": "8695733669679925604",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b27057c4b2af25%3A0x78ad73b35aad0964&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b27057c4b2af25%3A0x78ad73b35aad0964&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.239518,
+        "longitude": 121.49060999999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJJa-yxFdwsjURZAmtWrNzrXg",
+      "provider_id": "/g/155s4315",
+      "rating": 3.7,
+      "reviews": 687,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区外滩, 中山东一路349号, 邮政编码: 200002",
+      "phone": "021 5888 6000",
+      "description": "可欣赏灯光秀的水下观光车之旅. 自动观光车穿过黄浦江下的隧道，四周闪烁着五颜六色的灯光，还有悠扬动听的音乐。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "餐馆",
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 4,
+      "title": "外滩观光隧道",
+      "place_id": "ChIJlX301ftwsjURctF3CNRJjvQ",
+      "data_id": "0x35b270fbd5f47d95:0xf48e49d40877d172",
+      "data_cid": "17622103566971294066",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270fbd5f47d95%3A0xf48e49d40877d172&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270fbd5f47d95%3A0xf48e49d40877d172&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2390196,
+        "longitude": 121.4969881
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJlX301ftwsjURctF3CNRJjvQ",
+      "provider_id": "/g/1tj1khwc",
+      "rating": 4.1,
+      "reviews": 1641,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市浦东新区陆家嘴, 丰和路98号, 邮政编码: 200120",
+      "open_state": "正在营业 · 结束营业时间：22:30",
+      "hours": "正在营业 · 结束营业时间：22:30",
+      "operating_hours": {
+        "星期四": "08:00–22:30",
+        "星期五": "08:00–22:30",
+        "星期六": "08:00–22:30",
+        "星期日": "08:00–22:30",
+        "星期一": "08:00–22:30",
+        "星期二": "08:00–22:30",
+        "星期三": "08:00–22:30"
+      },
+      "phone": "021 5888 6000",
+      "extensions": [
+        {
+          "accessibility": [
+            "无障碍入口"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 5,
+      "title": "外滩艺术馆",
+      "place_id": "ChIJl5iScFlwsjURrxjFkrgVh-U",
+      "data_id": "0x35b2705970929897:0xe58715b892c518af",
+      "data_cid": "16539212039021992111",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705970929897%3A0xe58715b892c518af&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705970929897%3A0xe58715b892c518af&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.235985,
+        "longitude": 121.486404
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJl5iScFlwsjURrxjFkrgVh-U",
+      "provider_id": "/g/1tdntx5b",
+      "rating": 4.7,
+      "reviews": 84,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区, 汉口路193号, 邮政编码: 200002",
+      "phone": "021 6321 2110",
+      "extensions": [
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 6,
+      "title": "上海外滩美术馆",
+      "place_id": "ChIJT1xoHFdwsjURamegJ7KLg88",
+      "data_id": "0x35b270571c685c4f:0xcf838bb227a0676a",
+      "data_cid": "14952948785085441898",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270571c685c4f%3A0xcf838bb227a0676a&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270571c685c4f%3A0xcf838bb227a0676a&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.241018999999998,
+        "longitude": 121.48751899999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJT1xoHFdwsjURamegJ7KLg88",
+      "provider_id": "/m/0wjg5n6",
+      "rating": 4.3,
+      "reviews": 93,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "画廊",
+        "博物馆",
+        "美术馆"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "art_gallery",
+        "museum",
+        "art_museum"
+      ],
+      "address": "上海市黄浦区外滩, 虎丘路20号, 邮政编码: 200085",
+      "open_state": "正在营业 · 结束营业时间：18:00",
+      "hours": "正在营业 · 结束营业时间：18:00",
+      "operating_hours": {
+        "星期四": "10:00–18:00",
+        "星期五": "10:00–18:00",
+        "星期六": "10:00–18:00",
+        "星期日": "10:00–18:00",
+        "星期一": "休息",
+        "星期二": "10:00–18:00",
+        "星期三": "10:00–18:00"
+      },
+      "phone": "021 3310 9985",
+      "extensions": [
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 7,
+      "title": "上海博物馆",
+      "place_id": "ChIJPWUSbWlwsjURbNvIw3tOTE0",
+      "data_id": "0x35b270696d12653d:0x4d4c4e7bc3c8db6c",
+      "data_cid": "5569913132623125356",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270696d12653d%3A0x4d4c4e7bc3c8db6c&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270696d12653d%3A0x4d4c4e7bc3c8db6c&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.228330699999997,
+        "longitude": 121.4755278
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJPWUSbWlwsjURbNvIw3tOTE0",
+      "provider_id": "/m/025qnr",
+      "rating": 4.3,
+      "reviews": 1257,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "博物馆",
+        "美术馆"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "museum",
+        "art_museum"
+      ],
+      "address": "上海市黄浦区人民广场, 人民大道201号, 邮政编码: 200003",
+      "open_state": "即将结束营业 · 17:00 · 开始营业时间：周五09:00",
+      "hours": "即将结束营业 · 17:00 · 开始营业时间：周五09:00",
+      "operating_hours": {
+        "星期四": "09:00–17:00",
+        "星期五": "09:00–17:00",
+        "星期六": "09:00–17:00",
+        "星期日": "09:00–17:00",
+        "星期一": "09:00–17:00",
+        "星期二": "09:00–17:00",
+        "星期三": "09:00–17:00"
+      },
+      "phone": "021 6372 3500",
+      "website": "http://www.shanghaimuseum.net/",
+      "description": "现代博物馆，展品有古文物. 可免费参观的巨型博物馆，展品丰富多样，包括青铜器和玉器、雕塑和绘画品。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍停车场",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "餐馆",
+            "卫生间"
+          ]
+        },
+        {
+          "planning": [
+            "建议提前购票"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        },
+        {
+          "parking": [
+            "免费停车场",
+            "收费停车场"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 8,
+      "title": "豫园",
+      "place_id": "ChIJidPZMUGHrTUR29eIuHbpoIQ",
+      "data_id": "0x35ad874131d9d389:0x84a0e976b888d7db",
+      "data_cid": "9556895105391581147",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35ad874131d9d389%3A0x84a0e976b888d7db&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35ad874131d9d389%3A0x84a0e976b888d7db&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2272355,
+        "longitude": 121.492094
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJidPZMUGHrTUR29eIuHbpoIQ",
+      "provider_id": "/m/08x38k",
+      "rating": 4.5,
+      "reviews": 4962,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "景点",
+        "植物园"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "attraction",
+        "botanical_garden"
+      ],
+      "address": "上海市黄浦区四牌楼, 邮政编码: 200000",
+      "open_state": "已结束营业 · 开始营业时间：周五09:00",
+      "hours": "已结束营业 · 开始营业时间：周五09:00",
+      "operating_hours": {
+        "星期四": "09:00–16:30",
+        "星期五": "09:00–16:30",
+        "星期六": "09:00–16:30",
+        "星期日": "09:00–16:30",
+        "星期一": "休息",
+        "星期二": "09:00–16:30",
+        "星期三": "09:00–16:30"
+      },
+      "phone": "021 6326 0830",
+      "website": "https://www.yugarden.com.cn/page/articleView/index.html",
+      "description": "蜿蜒曲折的著名古典园林. 占地 5 英亩的花园，建于 1577 年，拥有明代的亭台、池塘、假山和拱形桥梁。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 9,
+      "title": "黄浦公园",
+      "place_id": "ChIJT9XkLVZwsjURXPyqAiggZYk",
+      "data_id": "0x35b270562de4d54f:0x8965202802aafc5c",
+      "data_cid": "9900354712059444316",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270562de4d54f%3A0x8965202802aafc5c&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270562de4d54f%3A0x8965202802aafc5c&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.241431,
+        "longitude": 121.49082
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJT9XkLVZwsjURXPyqAiggZYk",
+      "provider_id": "/m/0cgjvb",
+      "rating": 4.5,
+      "reviews": 175,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "公园"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "park"
+      ],
+      "address": "上海市黄浦区外滩, 中山东一路500号, 邮政编码: 200002",
+      "phone": "021 5308 2636",
+      "description": "建于 19 世纪的欧式公园. 这是中国第一个欧式公园，建于 1886 年，现在设有一座纪念塔和一个历史博物馆。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口"
+          ]
+        },
+        {
+          "amenities": [
+            "公用洗手间"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 10,
+      "title": "外滩历史纪念馆",
+      "place_id": "ChIJVQusqfhwsjURtYHdgiCiXEI",
+      "data_id": "0x35b270f8a9ac0b55:0x425ca22082dd81b5",
+      "data_cid": "4781875164878832053",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270f8a9ac0b55%3A0x425ca22082dd81b5&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270f8a9ac0b55%3A0x425ca22082dd81b5&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2423,
+        "longitude": 121.491473
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJVQusqfhwsjURtYHdgiCiXEI",
+      "provider_id": "/g/11lgptvbjz",
+      "rating": 4.8,
+      "reviews": 78,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区外滩, 中山东一路475号, 邮政编码: 200120",
+      "phone": "021 5308 8987",
+      "extensions": [
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 11,
+      "title": "东方明珠电视塔",
+      "place_id": "ChIJ29SwJftwsjURZYXg4jufPhY",
+      "data_id": "0x35b270fb25b0d4db:0x163e9f3be2e08565",
+      "data_cid": "1602893596948727141",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270fb25b0d4db%3A0x163e9f3be2e08565&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270fb25b0d4db%3A0x163e9f3be2e08565&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.239688899999997,
+        "longitude": 121.49975529999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJ29SwJftwsjURZYXg4jufPhY",
+      "provider_id": "/m/025ql5",
+      "rating": 4.6,
+      "reviews": 7375,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市浦东新区陆家嘴, 世纪大道1号, 邮政编码: 200120",
+      "open_state": "营业中",
+      "phone": "021 5879 1888",
+      "description": "标志性铁塔，可观赏城市景观. 未来派电视塔（高 468 米），设有历史博物馆和旋转餐厅，可在塔上观赏城市景观。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "餐馆",
+            "卫生间"
+          ]
+        },
+        {
+          "planning": [
+            "建议提前购票"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 12,
+      "title": "上海老街",
+      "place_id": "ChIJV5LAV4twsjURVTbWYnxGe8M",
+      "data_id": "0x35b2708b57c09257:0xc37b467c62d63655",
+      "data_cid": "14085929759579453013",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2708b57c09257%3A0xc37b467c62d63655&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2708b57c09257%3A0xc37b467c62d63655&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.225319,
+        "longitude": 121.4969443
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJV5LAV4twsjURVTbWYnxGe8M",
+      "provider_id": "/g/1tgpw617",
+      "rating": 4.4,
+      "reviews": 787,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区四牌楼, 宝带弄, 邮政编码: 200010",
+      "open_state": "营业中",
+      "description": "坐落着古老建筑的繁华街道. 古老的宝塔式建筑，是这个拥有商店和景点的繁华老街中的一大亮点。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "餐馆",
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 13,
+      "title": "田子坊",
+      "place_id": "ChIJ2-UI76F6sjURj_HAeG5PMhE",
+      "data_id": "0x35b27aa1ef08e5db:0x11324f6e78c0f18f",
+      "data_cid": "1239140183371215247",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b27aa1ef08e5db%3A0x11324f6e78c0f18f&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b27aa1ef08e5db%3A0x11324f6e78c0f18f&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.208811999999998,
+        "longitude": 121.468898
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJ2-UI76F6sjURj_HAeG5PMhE",
+      "provider_id": "/m/080h18v",
+      "rating": 4.2,
+      "reviews": 1928,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区, 泰康路210弄号, 邮政编码: 200023",
+      "open_state": "24 小时营业",
+      "hours": "24 小时营业",
+      "operating_hours": {
+        "星期四": "24小时营业",
+        "星期五": "24小时营业",
+        "星期六": "24小时营业",
+        "星期日": "24小时营业",
+        "星期一": "24小时营业",
+        "星期二": "24小时营业",
+        "星期三": "24小时营业"
+      },
+      "website": "https://www.marcotogni.it/tianzifang/",
+      "description": "历史悠久的街区，艺术气息浓厚. 这片曾经的法租界街巷狭窄，以其古香古色的商店、咖啡馆和酒吧而闻名。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "餐馆",
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "无障碍停车场"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 14,
+      "title": "豫园老街",
+      "place_id": "ChIJP5OCAWBwsjURfYtYWcmjxXU",
+      "data_id": "0x35b270600182933f:0x75c5a3c959588b7d",
+      "data_cid": "8486369158032296829",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270600182933f%3A0x75c5a3c959588b7d&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270600182933f%3A0x75c5a3c959588b7d&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.227392,
+        "longitude": 121.491391
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJP5OCAWBwsjURfYtYWcmjxXU",
+      "provider_id": "/g/1tdp30_r",
+      "rating": 4.6,
+      "reviews": 857,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区四牌楼, 豫园新路, 豫园, 邮政编码: 200120",
+      "website": "http://www.yuyuantm.com.cn/yuyuan/cn/HotBuy/KingdomOfSmallCommodities-1.aspx",
+      "description": "始建于 1907 年且内有商店和餐馆的市场. 这片老购物区内有诸多餐馆，并林立着出售各式用品、纪念品和工艺品的精品店。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "餐馆",
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 15,
+      "title": "点春堂",
+      "place_id": "ChIJH-XdTvVwsjURHYscj5w0XQI",
+      "data_id": "0x35b270f54edde51f:0x25d349c8f1c8b1d",
+      "data_cid": "170350207930501917",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270f54edde51f%3A0x25d349c8f1c8b1d&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270f54edde51f%3A0x25d349c8f1c8b1d&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.227565,
+        "longitude": 121.49230299999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJH-XdTvVwsjURHYscj5w0XQI",
+      "provider_id": "/g/1ynnq2t48",
+      "rating": 4.6,
+      "reviews": 13,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "景点"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "scenic_spot"
+      ],
+      "address": "上海市黄浦区四牌楼, 邮政编码: 200120",
+      "open_state": "营业中",
+      "phone": "021 6326 0830"
+    },
+    {
+      "position": 16,
+      "title": "静安寺",
+      "place_id": "ChIJVV1KHv5vsjURQgiHHZfGW3o",
+      "data_id": "0x35b26ffe1e4a5d55:0x7a5bc6971d870842",
+      "data_cid": "8816859047845627970",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b26ffe1e4a5d55%3A0x7a5bc6971d870842&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b26ffe1e4a5d55%3A0x7a5bc6971d870842&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.223518799999997,
+        "longitude": 121.445284
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJVV1KHv5vsjURQgiHHZfGW3o",
+      "provider_id": "/m/04kpch",
+      "rating": 4.5,
+      "reviews": 1193,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "宗教场所",
+        "佛教寺庙"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "place_of_worship",
+        "buddhist_temple"
+      ],
+      "address": "上海市静安区久光, 南京西路1686号, 邮政编码: 200040",
+      "open_state": "即将结束营业 · 17:00 · 开始营业时间：周五07:30",
+      "hours": "即将结束营业 · 17:00 · 开始营业时间：周五07:30",
+      "operating_hours": {
+        "星期四": "07:30–17:00",
+        "星期五": "07:30–17:00",
+        "星期六": "07:30–17:00",
+        "星期日": "07:30–17:00",
+        "星期一": "07:30–17:00",
+        "星期二": "07:30–17:00",
+        "星期三": "07:30–17:00"
+      },
+      "phone": "021 6256 6366",
+      "description": "历史悠久的佛教寺庙群. 历史悠久的佛教寺庙群，有三个主要的大殿和一尊巨大的玉佛坐像。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "无障碍停车场"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 17,
+      "title": "陈毅广场",
+      "place_id": "ChIJ08r06FdwsjURXz69RojoIMQ",
+      "data_id": "0x35b27057e8f4cad3:0xc420e88846bd3e5f",
+      "data_cid": "14132551302688620127",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b27057e8f4cad3%3A0xc420e88846bd3e5f&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b27057e8f4cad3%3A0xc420e88846bd3e5f&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.238992999999997,
+        "longitude": 121.49051499999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJ08r06FdwsjURXz69RojoIMQ",
+      "provider_id": "/g/11bxc69ttc",
+      "rating": 4.5,
+      "reviews": 593,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市虹口区外滩, 中山东一路, 邮政编码: 200002",
+      "extensions": [
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 18,
+      "title": "南京路步行街",
+      "place_id": "ChIJ443NM0NwsjURrWjV1_GoGSU",
+      "data_id": "0x35b2704333cd8de3:0x2519a8f1d7d568ad",
+      "data_cid": "2673353610482772141",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2704333cd8de3%3A0x2519a8f1d7d568ad&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2704333cd8de3%3A0x2519a8f1d7d568ad&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.234720999999997,
+        "longitude": 121.474898
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJ443NM0NwsjURrWjV1_GoGSU",
+      "provider_id": "/g/1tdlf8y2",
+      "rating": 4.6,
+      "reviews": 2006,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地",
+        "景点"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction",
+        "scenic_spot"
+      ],
+      "address": "上海市黄浦区, 南京路步行街, 邮政编码: 200001",
+      "open_state": "24 小时营业",
+      "hours": "24 小时营业",
+      "operating_hours": {
+        "星期四": "24小时营业",
+        "星期五": "24小时营业",
+        "星期六": "24小时营业",
+        "星期日": "24小时营业",
+        "星期一": "24小时营业",
+        "星期二": "24小时营业",
+        "星期三": "24小时营业"
+      },
+      "phone": "021 6352 6638",
+      "description": "云集夜生活场所和购物商店的知名大街. 这条热闹非凡的标志性大街两旁林立着诸多纪念品店、街头摊位和餐厅，另有街头艺人表演。",
+      "extensions": [
+        {
+          "service_options": [
+            "门店服务"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口"
+          ]
+        }
+      ],
+      "service_options": {
+        "门店服务": true
+      }
+    },
+    {
+      "position": 19,
+      "title": "外滩中心",
+      "place_id": "ChIJ67Ok6V5wsjURRf14LQbyVEk",
+      "data_id": "0x35b2705ee9a4b3eb:0x4954f2062d78fd45",
+      "data_cid": "5284114371159063877",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705ee9a4b3eb%3A0x4954f2062d78fd45&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705ee9a4b3eb%3A0x4954f2062d78fd45&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.232647,
+        "longitude": 121.487265
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJ67Ok6V5wsjURRf14LQbyVEk",
+      "provider_id": "/m/08vmkk",
+      "rating": 4.5,
+      "reviews": 71,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区, 延安东路222号, 邮政编码: 200128",
+      "open_state": "营业中",
+      "phone": "021 6335 0000",
+      "website": "http://www.bundcenter.com/",
+      "extensions": [
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ]
+    },
+    {
+      "position": 20,
+      "title": "上海古城墙",
+      "place_id": "ChIJ35sIJGdwsjURJh4_HKXS_3w",
+      "data_id": "0x35b2706724089bdf:0x7cffd2a51c3f1e26",
+      "data_cid": "9007149386349616678",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2706724089bdf%3A0x7cffd2a51c3f1e26&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2706724089bdf%3A0x7cffd2a51c3f1e26&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.227,
+        "longitude": 121.484551
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJ35sIJGdwsjURJh4_HKXS_3w",
+      "provider_id": "/g/11cnpg1msc",
+      "rating": 3.9,
+      "reviews": 54,
+      "unclaimed_listing": true,
+      "type": "旅游胜地",
+      "types": [
+        "旅游胜地"
+      ],
+      "type_id": "tourist_attraction",
+      "type_ids": [
+        "tourist_attraction"
+      ],
+      "address": "上海市黄浦区, 柳泉弄, 邮政编码: 200010",
+      "extensions": [
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "信用卡"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ]
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps&gl=cn&google_domain=google.com&hl=zh-CN&q=attraction+near+Bund%2C+Shanghai&start=20&type=search"
+  }
+}

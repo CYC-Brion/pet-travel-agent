@@ -1,0 +1,59 @@
+{
+  "name": "google.hotels.detail",
+  "description": "Google Hotels hotel/vacation rental detail query, fetches detailed info by property_token.",
+  "input_schema": {
+    "type": "object",
+    "required": ["property_token", "check_in_date", "check_out_date"],
+    "properties": {
+      "property_token": { "type": "string", "description": "Unique property_token for hotel/vacation rental." },
+      "check_in_date": { "type": "string", "description": "Check-in date, format YYYY-MM-DD." },
+      "check_out_date": { "type": "string", "description": "Check-out date, format YYYY-MM-DD." },
+      "adults": { "type": "integer", "default": 2, "description": "Number of adults, default 2." },
+      "children": { "type": "integer", "default": 0, "description": "Number of children, default 0." },
+      "children_ages": { "type": "string", "description": "Children ages, separated by comma, e.g. '5,8'. Count must match 'children'." },
+      "gl": { "type": "string", "description": "Country code, e.g. 'us'. Optional." },
+      "hl": { "type": "string", "description": "Language code, e.g. 'en'. Optional." },
+      "currency": { "type": "string", "description": "Currency code, e.g. 'USD'. Optional." }
+    }
+  },
+  "examples": {
+    "input": {
+      "property_token": "ChgIxxxxxx",
+      "check_in_date": "2026-05-01",
+      "check_out_date": "2026-05-03"
+    },
+    "output_success": {
+      "ok": true,
+      "request_id": "mock-reqid-002",
+      "data": {
+        "source": "google_hotels",
+        "type": "hotel",
+        "name": "Hyatt on the Bund Shanghai",
+        "description": "Luxury riverside hotel with gym, restaurant, and SPA.",
+        "link": "https://www.hyatt.com/en-US/hotel/china/hyatt-on-the-bund-shanghai/shagh",
+        "property_token": "ChgIxxxxxx",
+        "gps_coordinates": { "latitude": 31.243, "longitude": 121.490 },
+        "check_in_time": "15:00",
+        "check_out_time": "12:00",
+        "rate_per_night": { "lowest": "¥1200", "extracted_lowest": 1200 },
+        "total_rate": { "lowest": "¥2400", "extracted_lowest": 2400 },
+        "prices": [
+          { "source": "Booking.com", "rate_per_night": { "lowest": "¥1200", "extracted_lowest": 1200 } }
+        ],
+        "overall_rating": 4.7,
+        "reviews": 3200,
+        "hotel_class": "5-star hotel",
+        "amenities": ["Free Wi-Fi", "Gym", "SPA"],
+        "images": [
+          { "thumbnail": "https://example.com/thumb.jpg", "original_image": "https://example.com/original.jpg" }
+        ],
+        "health_and_safety": {
+          "groups": [
+            { "title": "Cleaning measures", "list": [ { "title": "Disinfectant used to clean", "available": true } ] }
+          ]
+        },
+        "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&property_token=ChgIxxxxxx"
+      }
+    }
+  }
+}

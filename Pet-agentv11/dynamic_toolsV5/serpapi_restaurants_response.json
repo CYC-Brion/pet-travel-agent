@@ -1,0 +1,2067 @@
+{
+  "search_metadata": {
+    "id": "69e9df5f6539a2b58ca0f114",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/dZNqy2BISJzPczDz8iQ63Q/69e9df5f6539a2b58ca0f114.json",
+    "created_at": "2026-04-23 08:59:11 UTC",
+    "processed_at": "2026-04-23 08:59:11 UTC",
+    "google_maps_url": "https://www.google.com/maps/search/restaurant+near+Bund%2C+Shanghai//?hl=zh-CN&gl=cn",
+    "raw_html_file": "https://serpapi.com/searches/dZNqy2BISJzPczDz8iQ63Q/69e9df5f6539a2b58ca0f114.html",
+    "prettify_html_file": "https://serpapi.com/searches/dZNqy2BISJzPczDz8iQ63Q/69e9df5f6539a2b58ca0f114.prettify",
+    "total_time_taken": 1.13
+  },
+  "search_parameters": {
+    "engine": "google_maps",
+    "type": "search",
+    "q": "restaurant near Bund, Shanghai",
+    "google_domain": "google.com",
+    "hl": "zh-CN",
+    "gl": "cn"
+  },
+  "search_information": {
+    "local_results_state": "Results for exact spelling",
+    "query_displayed": "restaurant near Bund, Shanghai"
+  },
+  "local_results": [
+    {
+      "position": 1,
+      "title": "ＭＥＲＣＡＴＯ",
+      "place_id": "ChIJvyekmVhwsjURATsh25Jn61Y",
+      "data_id": "0x35b2705899a427bf:0x56eb6792db213b01",
+      "data_cid": "6263213587228080897",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705899a427bf%3A0x56eb6792db213b01&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705899a427bf%3A0x56eb6792db213b01&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.23417,
+        "longitude": 121.49076
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJvyekmVhwsjURATsh25Jn61Y",
+      "provider_id": "/g/11swy2p90d",
+      "rating": 4.6,
+      "reviews": 83,
+      "price": "¥100-150",
+      "extracted_price": 100,
+      "unclaimed_listing": true,
+      "type": "西餐厅",
+      "types": [
+        "西餐厅"
+      ],
+      "type_id": "western_restaurant",
+      "type_ids": [
+        "western_restaurant"
+      ],
+      "address": "3号外滩三号, CN 上海市 黄浦区 中山东一路 3, 6层, 邮政编码: 200002",
+      "phone": "021 6321 9922",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "咖啡",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 2,
+      "title": "米氏西餐厅",
+      "place_id": "ChIJqYnfC-xbAjQR19ox5ZG4dkk",
+      "data_id": "0x34025bec0bdf89a9:0x4976b891e531dad7",
+      "data_cid": "5293621348775615191",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x34025bec0bdf89a9%3A0x4976b891e531dad7&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x34025bec0bdf89a9%3A0x4976b891e531dad7&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2344527,
+        "longitude": 121.4905596
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJqYnfC-xbAjQR19ox5ZG4dkk",
+      "provider_id": "/m/0h1d816",
+      "rating": 4.1,
+      "reviews": 170,
+      "price": "$$$$",
+      "extracted_price": null,
+      "unclaimed_listing": true,
+      "type": "西餐厅",
+      "types": [
+        "西餐厅"
+      ],
+      "type_id": "western_restaurant",
+      "type_ids": [
+        "western_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 广东路20号, 邮政编码: 200002",
+      "open_state": "已结束营业 · 开始营业时间：17:30",
+      "hours": "已结束营业 · 开始营业时间：17:30",
+      "operating_hours": {
+        "星期四": "11:30–14:30, 17:30–22:30",
+        "星期五": "11:30–14:30, 17:30–22:30",
+        "星期六": "11:30–14:30, 17:30–22:30",
+        "星期日": "11:30–14:30, 17:30–22:30",
+        "星期一": "11:30–14:30, 17:30–22:30",
+        "星期二": "11:30–14:30, 17:30–22:30",
+        "星期三": "11:30–14:30, 17:30–22:30"
+      },
+      "phone": "021 6350 9988",
+      "website": "http://m-restaurantgroup.com/",
+      "extensions": [
+        {
+          "service_options": [
+            "露天座位",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "美味茶饮",
+            "美味葡萄酒",
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "咖啡",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "早午餐",
+            "午餐",
+            "晚餐",
+            "餐饮承办",
+            "甜品",
+            "座位",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适",
+            "浪漫"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订午餐",
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "service_options": [
+            "送货"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "送货": false
+      }
+    },
+    {
+      "position": 3,
+      "title": "Ｍｒ＆Ｍｒｓ Ｂｕｎｄ",
+      "place_id": "ChIJKyuYjFdwsjURvVe38TrKPJU",
+      "data_id": "0x35b270578c982b2b:0x953cca3af1b757bd",
+      "data_cid": "10753692364766140349",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270578c982b2b%3A0x953cca3af1b757bd&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270578c982b2b%3A0x953cca3af1b757bd&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.238439999999997,
+        "longitude": 121.48979
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJKyuYjFdwsjURvVe38TrKPJU",
+      "provider_id": "/g/11swqxn3qj",
+      "rating": 4.5,
+      "reviews": 133,
+      "price": "¥500+",
+      "extracted_price": 500,
+      "unclaimed_listing": true,
+      "type": "西餐厅",
+      "types": [
+        "西餐厅"
+      ],
+      "type_id": "western_restaurant",
+      "type_ids": [
+        "western_restaurant"
+      ],
+      "address": "上海市黄浦区 18, 中山东一路18号, 6层外滩１８号, 邮政编码: 200002",
+      "phone": "021 6323 9898",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "美味葡萄酒",
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "酒精饮料",
+            "咖啡",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "早午餐",
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 4,
+      "title": "花马天堂云南餐厅",
+      "place_id": "ChIJG6CAc2hwsjURCsVLmf-JOtk",
+      "data_id": "0x35b270687380a01b:0xd93a89ff994bc50a",
+      "data_cid": "15652975185761125642",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270687380a01b%3A0xd93a89ff994bc50a&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270687380a01b%3A0xd93a89ff994bc50a&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2324333,
+        "longitude": 121.49065209999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJG6CAc2hwsjURCsVLmf-JOtk",
+      "provider_id": "/g/1tj1_k46",
+      "rating": 4.2,
+      "reviews": 527,
+      "price": "$$",
+      "extracted_price": null,
+      "unclaimed_listing": true,
+      "type": "中餐馆",
+      "types": [
+        "中餐馆"
+      ],
+      "type_id": "chinese_restaurant",
+      "type_ids": [
+        "chinese_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 延安东路17号, 邮政编码: 200002",
+      "open_state": "已结束营业 · 开始营业时间：17:30",
+      "hours": "已结束营业 · 开始营业时间：17:30",
+      "operating_hours": {
+        "星期四": "11:00–13:30, 17:30–22:00",
+        "星期五": "11:00–13:30, 17:30–22:00",
+        "星期六": "11:00–13:30, 17:30–22:00",
+        "星期日": "11:00–13:30, 17:30–22:00",
+        "星期一": "11:00–13:30, 17:30–22:00",
+        "星期二": "11:00–13:30, 17:30–22:00",
+        "星期三": "11:00–13:30, 17:30–22:00"
+      },
+      "phone": "021 6330 0967",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "鸡尾酒很棒",
+            "咖啡好喝",
+            "美味茶饮",
+            "美味葡萄酒",
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "咖啡",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜",
+            "夜宵"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "高档",
+            "环境舒适",
+            "浪漫",
+            "休闲"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订",
+            "经常需要等位"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "无障碍停车场"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 5,
+      "title": "外滩三号",
+      "place_id": "ChIJqYnfC-xbAjQRvZ3NzPv1dEY",
+      "data_id": "0x34025bec0bdf89a9:0x4674f5fbcccd9dbd",
+      "data_cid": "5076953141775015357",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x34025bec0bdf89a9%3A0x4674f5fbcccd9dbd&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x34025bec0bdf89a9%3A0x4674f5fbcccd9dbd&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.234171,
+        "longitude": 121.490759
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJqYnfC-xbAjQRvZ3NzPv1dEY",
+      "provider_id": "/g/1td5d3g5",
+      "rating": 4.4,
+      "reviews": 88,
+      "unclaimed_listing": true,
+      "address": "上海市黄浦区外滩, 邮政编码: 200002",
+      "phone": "021 6323 3355"
+    },
+    {
+      "position": 6,
+      "title": "ＴｈｅＦｅｌｌａｓ",
+      "place_id": "ChIJV2ZbVV9wsjURcX1MBkGPazc",
+      "data_id": "0x35b2705f555b6657:0x376b8f41064c7d71",
+      "data_cid": "3993443004035399025",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705f555b6657%3A0x376b8f41064c7d71&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705f555b6657%3A0x376b8f41064c7d71&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.23247,
+        "longitude": 121.49127999999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJV2ZbVV9wsjURcX1MBkGPazc",
+      "provider_id": "/g/11swvpx7y1",
+      "rating": 4.6,
+      "reviews": 198,
+      "price": "¥250-300",
+      "extracted_price": 250,
+      "unclaimed_listing": true,
+      "type": "西餐厅",
+      "types": [
+        "西餐厅"
+      ],
+      "type_id": "western_restaurant",
+      "type_ids": [
+        "western_restaurant"
+      ],
+      "address": "7, 黄浦区延安东路7号, CN 上海市, 7楼仟宸大厦, 邮政编码: 200002",
+      "open_state": "营业中",
+      "phone": "021 6316 9119",
+      "extensions": [
+        {
+          "service_options": [
+            "露天座位",
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "甜点美味",
+            "屋顶座位"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "咖啡",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "座位",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 7,
+      "title": "上海姥姥家常饭馆",
+      "place_id": "ChIJK4yc-VhwsjURNlWee-wBmco",
+      "data_id": "0x35b27058f99c8c2b:0xca9901ec7b9e5536",
+      "data_cid": "14598701782296057142",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b27058f99c8c2b%3A0xca9901ec7b9e5536&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b27058f99c8c2b%3A0xca9901ec7b9e5536&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.235477,
+        "longitude": 121.489036
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJK4yc-VhwsjURNlWee-wBmco",
+      "provider_id": "/g/1whdgbr0",
+      "rating": 4,
+      "reviews": 827,
+      "price": "¥100-150",
+      "extracted_price": 100,
+      "unclaimed_listing": true,
+      "type": "中餐馆",
+      "types": [
+        "中餐馆"
+      ],
+      "type_id": "chinese_restaurant",
+      "type_ids": [
+        "chinese_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 福州路70号, 邮政编码: 200002",
+      "open_state": "正在营业 · 结束营业时间：22:00",
+      "hours": "正在营业 · 结束营业时间：22:00",
+      "operating_hours": {
+        "星期四": "10:30–22:00",
+        "星期五": "10:30–22:00",
+        "星期六": "10:30–22:00",
+        "星期日": "10:30–22:00",
+        "星期一": "10:30–22:00",
+        "星期二": "10:30–22:00",
+        "星期三": "10:30–22:00"
+      },
+      "phone": "021 6321 6613",
+      "website": "http://citynotes.me/2017/shanghaigrandmother",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "美味茶饮"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "酒精饮料",
+            "啤酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "atmosphere": [
+            "环境舒适",
+            "热门",
+            "休闲"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "无障碍停车场"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 8,
+      "title": "Taste of China",
+      "place_id": "ChIJU4jWEllwsjURwXx6p77bW3g",
+      "data_id": "0x35b2705912d68853:0x785bdbbea77a7cc1",
+      "data_cid": "8672767119332113601",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705912d68853%3A0x785bdbbea77a7cc1&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705912d68853%3A0x785bdbbea77a7cc1&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.235243099999998,
+        "longitude": 121.4858488
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJU4jWEllwsjURwXx6p77bW3g",
+      "provider_id": "/g/11xwb0mqfp",
+      "rating": 5,
+      "reviews": 25,
+      "unclaimed_listing": true,
+      "type": "餐馆",
+      "types": [
+        "餐馆"
+      ],
+      "type_id": "restaurant",
+      "type_ids": [
+        "restaurant"
+      ],
+      "address": "THE BUND CITY HALL PLAZA 270 Henan Middle Road, Unit, 黄浦区上海市",
+      "open_state": "正在营业 · 结束营业时间：22:00",
+      "hours": "正在营业 · 结束营业时间：22:00",
+      "operating_hours": {
+        "星期四": "10:00–22:00",
+        "星期五": "10:00–22:00",
+        "星期六": "10:00–22:00",
+        "星期日": "10:00–22:00",
+        "星期一": "10:00–22:00",
+        "星期二": "10:00–22:00",
+        "星期三": "10:00–22:00"
+      },
+      "phone": "150 2148 8899",
+      "website": "https://sg.trip.com/tasteofchina?locale=en_sg",
+      "extensions": [
+        {
+          "service_options": [
+            "堂食"
+          ]
+        },
+        {
+          "popular_for": [
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "dining_options": [
+            "晚餐",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "crowd": [
+            "团队"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true
+      }
+    },
+    {
+      "position": 9,
+      "title": "The House of Roosevelt",
+      "place_id": "ChIJrw--GVhwsjURcDAraVEUnsg",
+      "data_id": "0x35b2705819be0faf:0xc89e1451692b3070",
+      "data_cid": "14456014193795215472",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705819be0faf%3A0xc89e1451692b3070&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705819be0faf%3A0xc89e1451692b3070&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.240389999999998,
+        "longitude": 121.489972
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJrw--GVhwsjURcDAraVEUnsg",
+      "provider_id": "/g/1td0dhmr",
+      "rating": 4.6,
+      "reviews": 82,
+      "unclaimed_listing": true,
+      "type": "中餐馆",
+      "types": [
+        "中餐馆"
+      ],
+      "type_id": "chinese_restaurant",
+      "type_ids": [
+        "chinese_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 中山东一路27号, 邮政编码: 200002",
+      "phone": "021 2322 0800",
+      "website": "http://27bund.com/",
+      "extensions": [
+        {
+          "service_options": [
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "甜点美味",
+            "屋顶座位"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适",
+            "休闲"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true
+      }
+    },
+    {
+      "position": 10,
+      "title": "Hakkasan",
+      "place_id": "ChIJZSpH9VlwsjUR7zaGKzQLiGE",
+      "data_id": "0x35b27059f5472a65:0x61880b342b8636ef",
+      "data_cid": "7027879537208080111",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b27059f5472a65%3A0x61880b342b8636ef&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b27059f5472a65%3A0x61880b342b8636ef&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2383985,
+        "longitude": 121.4896917
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJZSpH9VlwsjUR7zaGKzQLiGE",
+      "provider_id": "/g/1q2w01q1g",
+      "rating": 4.4,
+      "reviews": 240,
+      "price": "¥500+",
+      "extracted_price": 500,
+      "unclaimed_listing": true,
+      "type": "粤菜馆",
+      "types": [
+        "粤菜馆"
+      ],
+      "type_id": "cantonese_restaurant",
+      "type_ids": [
+        "cantonese_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 中山东一路18号, 邮政编码: 200125",
+      "open_state": "即将开始营业 · 17:00",
+      "hours": "即将开始营业 · 17:00",
+      "operating_hours": {
+        "星期四": "17:00–23:00",
+        "星期五": "11:00–14:30, 17:00–23:00",
+        "星期六": "11:00–14:30, 17:00–23:00",
+        "星期日": "11:00–14:30, 17:00–23:00",
+        "星期一": "17:00–23:00",
+        "星期二": "17:00–23:00",
+        "星期三": "17:00–23:00"
+      },
+      "phone": "021 6321 5888",
+      "website": "https://hakkasan.com/shanghai/",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "咖啡",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "早午餐",
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "高档",
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订",
+            "经常需要等位"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 11,
+      "title": "ＰＯＰ美式餐厅",
+      "place_id": "ChIJvyekmVhwsjURON90B831ldI",
+      "data_id": "0x35b2705899a427bf:0xd295f5cd0774df38",
+      "data_cid": "15174304780436954936",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705899a427bf%3A0xd295f5cd0774df38&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705899a427bf%3A0xd295f5cd0774df38&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.23417,
+        "longitude": 121.49076
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJvyekmVhwsjURON90B831ldI",
+      "provider_id": "/g/11swygpx_b",
+      "rating": 4.3,
+      "reviews": 61,
+      "unclaimed_listing": true,
+      "type": "西餐厅",
+      "types": [
+        "西餐厅"
+      ],
+      "type_id": "western_restaurant",
+      "type_ids": [
+        "western_restaurant"
+      ],
+      "address": "3, 黄浦区中山东一路3号, CN 上海市, 7层外滩三号, 邮政编码: 200002",
+      "phone": "021 6321 0909",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "鸡尾酒很棒",
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 12,
+      "title": "ＧＯＯＤＦＥＬＬＡＳ",
+      "place_id": "ChIJNdZDAPZwsjURlP_4quEpw_s",
+      "data_id": "0x35b270f60043d635:0xfbc329e1aaf8ff94",
+      "data_cid": "18141389773191315348",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270f60043d635%3A0xfbc329e1aaf8ff94&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270f60043d635%3A0xfbc329e1aaf8ff94&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.23258,
+        "longitude": 121.49143
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJNdZDAPZwsjURlP_4quEpw_s",
+      "provider_id": "/g/11rv7xhm2l",
+      "rating": 4.5,
+      "reviews": 121,
+      "unclaimed_listing": true,
+      "type": "西餐厅",
+      "types": [
+        "西餐厅"
+      ],
+      "type_id": "western_restaurant",
+      "type_ids": [
+        "western_restaurant"
+      ],
+      "address": "7, 黄浦区, 延安东路7号, CN 上海市, 邮政编码: 200120",
+      "phone": "021 6323 2188",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "咖啡",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 13,
+      "title": "宝莱纳餐厅滨江店",
+      "place_id": "ChIJhyIs2fxwsjURfSAWpsML9AE",
+      "data_id": "0x35b270fcd92c2287:0x1f40bc3a616207d",
+      "data_cid": "140750423288324221",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270fcd92c2287%3A0x1f40bc3a616207d&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270fcd92c2287%3A0x1f40bc3a616207d&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2341496,
+        "longitude": 121.4985921
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJhyIs2fxwsjURfSAWpsML9AE",
+      "provider_id": "/g/1td1g_dm",
+      "rating": 4.2,
+      "reviews": 188,
+      "unclaimed_listing": true,
+      "type": "餐馆",
+      "types": [
+        "餐馆"
+      ],
+      "type_id": "restaurant",
+      "type_ids": [
+        "restaurant"
+      ],
+      "address": "上海市浦东新区, 滨江大道2967号, 风光亭",
+      "open_state": "正在营业 · 结束营业时间：01:00",
+      "hours": "正在营业 · 结束营业时间：01:00",
+      "operating_hours": {
+        "星期四": "11:00–01:00",
+        "星期五": "11:00–01:00",
+        "星期六": "11:00–01:00",
+        "星期日": "11:00–01:00",
+        "星期一": "11:00–01:00",
+        "星期二": "11:00–01:00",
+        "星期三": "11:00–01:00"
+      },
+      "phone": "021 6888 3935",
+      "extensions": [
+        {
+          "service_options": [
+            "露天座位",
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "鸡尾酒很棒",
+            "美味啤酒",
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间",
+            "无障碍座席"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "酒水限时优惠",
+            "咖啡",
+            "快餐",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜",
+            "夜宵"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "座位",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适",
+            "休闲"
+          ]
+        },
+        {
+          "crowd": [
+            "大学生",
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 14,
+      "title": "龙凤厅",
+      "place_id": "ChIJlV-WkVdwsjURIwrGJIHT3UA",
+      "data_id": "0x35b2705791965f95:0x40ddd38124c60a23",
+      "data_cid": "4674124539901643299",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705791965f95%3A0x40ddd38124c60a23&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705791965f95%3A0x40ddd38124c60a23&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.239030999999997,
+        "longitude": 121.489474
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJlV-WkVdwsjURIwrGJIHT3UA",
+      "provider_id": "/g/1t_hw_86",
+      "rating": 4.4,
+      "reviews": 33,
+      "price": "$$$",
+      "extracted_price": null,
+      "unclaimed_listing": true,
+      "type": "中餐馆",
+      "types": [
+        "中餐馆",
+        "亚洲风味餐馆",
+        "粤菜馆",
+        "上海风味餐馆"
+      ],
+      "type_id": "chinese_restaurant",
+      "type_ids": [
+        "chinese_restaurant",
+        "asian_restaurant",
+        "cantonese_restaurant",
+        "shanghainese_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 南京东路20号, 和平饭店, 邮政编码: 200002",
+      "open_state": "已结束营业 · 开始营业时间：17:30",
+      "hours": "已结束营业 · 开始营业时间：17:30",
+      "operating_hours": {
+        "星期四": "11:30–14:30, 17:30–22:00",
+        "星期五": "11:30–14:30, 17:30–22:00",
+        "星期六": "11:30–14:30, 17:30–22:00",
+        "星期日": "11:30–14:30, 17:30–22:00",
+        "星期一": "11:30–14:30, 17:30–22:00",
+        "星期二": "11:30–14:30, 17:30–22:00",
+        "星期三": "11:30–14:30, 17:30–22:00"
+      },
+      "phone": "021 6138 6880",
+      "website": "http://www.fairmont.cn/peace-hotel-shanghai/dining/dragonphoenix/",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍卫生间"
+          ]
+        },
+        {
+          "offerings": [
+            "酒精饮料",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 15,
+      "title": "宏玲餐厅",
+      "place_id": "ChIJtRuqRF9wsjUR_D6LCeFsxYk",
+      "data_id": "0x35b2705f44aa1bb5:0x89c56ce1098b3efc",
+      "data_cid": "9927460667391688444",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705f44aa1bb5%3A0x89c56ce1098b3efc&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705f44aa1bb5%3A0x89c56ce1098b3efc&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2316079,
+        "longitude": 121.49059199999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJtRuqRF9wsjUR_D6LCeFsxYk",
+      "provider_id": "/g/1tdm69x9",
+      "rating": 4.7,
+      "reviews": 24,
+      "unclaimed_listing": true,
+      "type": "中餐馆",
+      "types": [
+        "中餐馆"
+      ],
+      "type_id": "chinese_restaurant",
+      "type_ids": [
+        "chinese_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 四川南路29号, 邮政编码: 200002",
+      "phone": "021 6330 3509",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "酒精饮料",
+            "啤酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "atmosphere": [
+            "环境舒适",
+            "休闲"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 16,
+      "title": "El Willy",
+      "place_id": "ChIJTRtxy_VwsjURyzviz9A0zKg",
+      "data_id": "0x35b270f5cb711b4d:0xa8cc34d0cfe23bcb",
+      "data_cid": "12163154765066419147",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b270f5cb711b4d%3A0xa8cc34d0cfe23bcb&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b270f5cb711b4d%3A0xa8cc34d0cfe23bcb&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.230677999999997,
+        "longitude": 121.49398699999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJTRtxy_VwsjURyzviz9A0zKg",
+      "provider_id": "/m/0zb_gky",
+      "rating": 4.2,
+      "reviews": 95,
+      "unclaimed_listing": true,
+      "type": "西班牙风味餐馆",
+      "types": [
+        "西班牙风味餐馆"
+      ],
+      "type_id": "spanish_restaurant",
+      "type_ids": [
+        "spanish_restaurant"
+      ],
+      "address": "上海市黄浦区外滩, 中山东二路22号501号, 邮政编码: 200128",
+      "open_state": "已结束营业 · 开始营业时间：18:00",
+      "hours": "已结束营业 · 开始营业时间：18:00",
+      "operating_hours": {
+        "星期四": "11:30–14:30, 18:00–22:30",
+        "星期五": "11:30–14:30, 18:00–22:30",
+        "星期六": "11:30–15:00, 18:00–22:30",
+        "星期日": "11:30–15:00, 18:00–22:30",
+        "星期一": "11:30–14:30, 18:00–22:30",
+        "星期二": "11:30–14:30, 18:00–22:30",
+        "星期三": "11:30–14:30, 18:00–22:30"
+      },
+      "phone": "021 5404 5757",
+      "website": "http://www.elwillygroup.com/elwilly/?lang=zh-hans",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "酒精饮料",
+            "咖啡",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "早午餐",
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适",
+            "休闲"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        },
+        {
+          "children": [
+            "适合儿童"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "无障碍停车场"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 17,
+      "title": "滴水洞湘菜馆",
+      "place_id": "ChIJjeHh2w5wsjUR9hQ4sr9Kv2Q",
+      "data_id": "0x35b2700edbe1e18d:0x64bf4abfb23814f6",
+      "data_cid": "7259603311533757686",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2700edbe1e18d%3A0x64bf4abfb23814f6&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2700edbe1e18d%3A0x64bf4abfb23814f6&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.2212143,
+        "longitude": 121.4601398
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJjeHh2w5wsjUR9hQ4sr9Kv2Q",
+      "provider_id": "/g/1vwlm3zh",
+      "rating": 4.4,
+      "reviews": 189,
+      "unclaimed_listing": true,
+      "type": "中餐馆",
+      "types": [
+        "中餐馆",
+        "湘菜馆"
+      ],
+      "type_id": "chinese_restaurant",
+      "type_ids": [
+        "chinese_restaurant",
+        "hunan_style_restaurant"
+      ],
+      "address": "上海市卢湾区, 茂名南路56号, 邮政编码: 200041",
+      "open_state": "正在营业 · 结束营业时间：22:00",
+      "hours": "正在营业 · 结束营业时间：22:00",
+      "operating_hours": {
+        "星期四": "10:30–22:00",
+        "星期五": "10:30–22:00",
+        "星期六": "10:30–22:00",
+        "星期日": "10:30–22:00",
+        "星期一": "10:30–22:00",
+        "星期二": "10:30–22:00",
+        "星期三": "10:30–22:00"
+      },
+      "phone": "021 6253 2689",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐",
+            "独自用餐"
+          ]
+        },
+        {
+          "offerings": [
+            "酒精饮料",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "atmosphere": [
+            "环境舒适",
+            "休闲"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "unsupported_extensions": [
+        {
+          "accessibility": [
+            "无障碍入口",
+            "无障碍停车场",
+            "无障碍座席"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 18,
+      "title": "上海外滩华尔道夫酒店",
+      "place_id": "ChIJdygopllwsjURKvsS1lXMBM4",
+      "data_id": "0x35b27059a6282877:0xce04cc55d612fb2a",
+      "data_cid": "14845214940755852074",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b27059a6282877%3A0xce04cc55d612fb2a&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b27059a6282877%3A0xce04cc55d612fb2a&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.233438,
+        "longitude": 121.48984899999999
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJdygopllwsjURKvsS1lXMBM4",
+      "provider_id": "/g/1tfybl0w",
+      "rating": 4.5,
+      "reviews": 539,
+      "price": "US$301",
+      "extracted_price": 301,
+      "unclaimed_listing": true,
+      "type": "宾馆",
+      "types": [
+        "宾馆"
+      ],
+      "type_id": "hotel",
+      "type_ids": [
+        "hotel"
+      ],
+      "address": "上海市黄浦区外滩, 中山东一路2号, 邮政编码: 200002",
+      "phone": "021 6322 9988",
+      "website": "https://waldorfastoriahotels.com.cn/zh-cn/hotel/shanghai/waldorf-astoria-shanghai-SHAWAWA/index.html",
+      "description": "内设 3 间餐厅和一个泳池的奢华酒店. 富丽堂皇的酒店，拥有装饰华丽的客房和套房、3 间优雅餐厅、室内游泳池和水疗中心。",
+      "amenities": [
+        "游泳池",
+        "水疗",
+        "健身中心",
+        "免费 Wi-Fi"
+      ]
+    },
+    {
+      "position": 19,
+      "title": "兰亭小馆外滩店",
+      "place_id": "ChIJ3WmKFVdwsjURJOeUhGeTSuU",
+      "data_id": "0x35b27057158a69dd:0xe54a93678494e724",
+      "data_cid": "16522180255777351460",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b27057158a69dd%3A0xe54a93678494e724&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b27057158a69dd%3A0xe54a93678494e724&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.24034,
+        "longitude": 121.48704
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJ3WmKFVdwsjURJOeUhGeTSuU",
+      "provider_id": "/g/11swy640rt",
+      "rating": 5,
+      "reviews": 1,
+      "unclaimed_listing": true,
+      "type": "中餐馆",
+      "types": [
+        "中餐馆"
+      ],
+      "type_id": "chinese_restaurant",
+      "type_ids": [
+        "chinese_restaurant"
+      ],
+      "address": "上海市黄浦区 490, 四川中路490号, 邮政编码: 200002",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    },
+    {
+      "position": 20,
+      "title": "ＴＨＥ ＮＥＳＴ",
+      "place_id": "ChIJN_yzBFdwsjURkJY5ap6MXEU",
+      "data_id": "0x35b2705704b3fc37:0x455c8c9e6a399690",
+      "data_cid": "4998024298489288336",
+      "reviews_link": "https://serpapi.com/search.json?data_id=0x35b2705704b3fc37%3A0x455c8c9e6a399690&engine=google_maps_reviews&hl=zh-CN",
+      "photos_link": "https://serpapi.com/search.json?data_id=0x35b2705704b3fc37%3A0x455c8c9e6a399690&engine=google_maps_photos&hl=zh-CN",
+      "gps_coordinates": {
+        "latitude": 31.24082,
+        "longitude": 121.48777
+      },
+      "place_id_search": "https://serpapi.com/search.json?engine=google_maps&google_domain=google.com&hl=zh-CN&place_id=ChIJN_yzBFdwsjURkJY5ap6MXEU",
+      "provider_id": "/g/11rv36xh_l",
+      "rating": 4.3,
+      "reviews": 34,
+      "unclaimed_listing": true,
+      "type": "西餐厅",
+      "types": [
+        "西餐厅"
+      ],
+      "type_id": "western_restaurant",
+      "type_ids": [
+        "western_restaurant"
+      ],
+      "address": "上海市黄浦区 130, 北京东路130号, 6楼, 邮政编码: 200002",
+      "phone": "021 6308 7669",
+      "extensions": [
+        {
+          "service_options": [
+            "外带",
+            "堂食"
+          ]
+        },
+        {
+          "highlights": [
+            "鸡尾酒很棒",
+            "甜点美味"
+          ]
+        },
+        {
+          "popular_for": [
+            "午餐",
+            "晚餐"
+          ]
+        },
+        {
+          "offerings": [
+            "鸡尾酒",
+            "酒精饮料",
+            "烈性酒",
+            "啤酒",
+            "葡萄酒",
+            "小盘菜"
+          ]
+        },
+        {
+          "dining_options": [
+            "午餐",
+            "晚餐",
+            "甜品",
+            "餐桌服务"
+          ]
+        },
+        {
+          "amenities": [
+            "卫生间",
+            "现场有酒吧"
+          ]
+        },
+        {
+          "atmosphere": [
+            "潮流",
+            "环境舒适"
+          ]
+        },
+        {
+          "crowd": [
+            "团队",
+            "游客"
+          ]
+        },
+        {
+          "planning": [
+            "推荐预订晚餐",
+            "接受预订"
+          ]
+        },
+        {
+          "payments": [
+            "借记卡",
+            "信用卡",
+            "NFC 移动支付"
+          ]
+        }
+      ],
+      "service_options": {
+        "堂食": true,
+        "外带": true
+      }
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps&gl=cn&google_domain=google.com&hl=zh-CN&q=restaurant+near+Bund%2C+Shanghai&start=20&type=search"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "serpapi.google_maps_attractions",
+  "description": "Google Maps tourist attractions search via SerpApi. Searches for attractions, sightseeing spots, and points of interest by location keyword, returns rating, reviews, address, hours, and description. Note: ticket pricing is not available through this API.",
+  "input_schema": {
+    "type": "object",
+    "required": ["q"],
+    "properties": {
+      "q": { "type": "string", "description": "Search query, e.g. 'attraction near Bund, Shanghai'." },
+      "hl": { "type": "string", "default": "zh-CN", "description": "Language code. Optional." },
+      "gl": { "type": "string", "default": "cn", "description": "Country code. Optional." },
+      "start": { "type": "integer", "default": 0, "description": "Pagination start index. Optional." }
+    }
+  },
+  "examples": {
+    "input": {
+      "q": "attraction near Bund, Shanghai",
+      "hl": "zh-CN",
+      "gl": "cn"
+    },
+    "output_success": {
+      "ok": true,
+      "request_id": "mock-reqid-att-001",
+      "data": {
+        "source": "google_maps",
+        "total_results": 20,
+        "local_results": [
+          {
+            "title": "外滩",
+            "type": "旅游胜地",
+            "rating": 4.7,
+            "reviews": 7113,
+            "address": "上海市黄浦区外滩, 中山东一路",
+            "hours": "24 hours",
+            "description": "著名滨江步道，漫步于此可欣赏城市美景。",
+            "gps_coordinates": { "latitude": 31.240, "longitude": 121.491 }
+          }
+        ]
+      }
+    }
+  },
+  "note": "门票价格数据需要通过 Klook/Viator/GetYourGuide 等专用 API 获取，需要商务合作或合作伙伴账号。"
+}

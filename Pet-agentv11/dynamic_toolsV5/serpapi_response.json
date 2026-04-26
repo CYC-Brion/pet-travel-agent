@@ -1,0 +1,2987 @@
+{
+  "search_metadata": {
+    "id": "69e9aa123d3656f29d55a2d7",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/eKwtvFq7bBQEaKJkA5mbcQ/69e9aa123d3656f29d55a2d7.json",
+    "created_at": "2026-04-23T05:11:46.559Z",
+    "processed_at": "2026-04-23T05:11:46.561Z",
+    "google_hotels_url": "https://www.google.com/_/TravelFrontendUi/data/batchexecute?rpcids=AtySUc&source-path=/travel/search&hl=en&gl=us&rt=c&soc-app=162&soc-platform=1&soc-device=1",
+    "raw_html_file": "https://serpapi.com/searches/eKwtvFq7bBQEaKJkA5mbcQ/69e9aa123d3656f29d55a2d7.html",
+    "prettify_html_file": "https://serpapi.com/searches/eKwtvFq7bBQEaKJkA5mbcQ/69e9aa123d3656f29d55a2d7.prettify",
+    "total_time_taken": {
+      "float": 2.3016602993011475
+    }
+  },
+  "search_parameters": {
+    "engine": "google_hotels",
+    "q": "外滩",
+    "gl": "us",
+    "hl": "en",
+    "currency": "CNY",
+    "check_in_date": "2026-05-01",
+    "check_out_date": "2026-05-03",
+    "adults": 2,
+    "children": 0,
+    "sort_by": "8"
+  },
+  "search_information": {
+    "total_results": 122
+  },
+  "brands": [
+    {
+      "id": 33,
+      "name": "Accor Live Limitless",
+      "children": [
+        {
+          "id": 8,
+          "name": "Fairmont Hotels and Resorts"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Hanting"
+    },
+    {
+      "id": 37,
+      "name": "Hyatt",
+      "children": [
+        {
+          "id": 288,
+          "name": "Hyatt"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "IHG Hotels & Resorts",
+      "children": [
+        {
+          "id": 56,
+          "name": "Holiday Inn Express"
+        },
+        {
+          "id": 297,
+          "name": "Regent"
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Marriott Bonvoy",
+      "children": [
+        {
+          "id": 256,
+          "name": "Edition"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "type": "hotel",
+      "name": "Fairmont Peace Hotel",
+      "description": "Elegant quarters in a sophisticated hotel with upscale restaurants, a plush spa & an indoor pool.",
+      "property_token": "ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.2390388,
+        "longitude": 121.4895427
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥3,163",
+        "extracted_lowest": 3163,
+        "before_taxes_fees": "CN¥2,713",
+        "extracted_before_taxes_fees": 2713
+      },
+      "total_rate": {
+        "lowest": "CN¥6,327",
+        "extracted_lowest": 6327,
+        "before_taxes_fees": "CN¥5,426",
+        "extracted_before_taxes_fees": 5426
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "34 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/KLvY4SmtG2KdoS3uFae5ZcAefo3GZhPgbgezsLcK0WrmkBwmLt-C8oTRmiiVrhk8UJwBcTywXXa0POi5Qt2HbeIEoKt_0W7JMjwbOQkpa-ZnpiLa5uWqahwPZYCw45bbYWeOs4rIRgF8o8kogMrkkttQNpXj7SM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/13/136522/136522a_hb_p_011.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/OMl4ZJ05vRv0qGyhoR8pfIwJPKD7S8sltgqMCJM4BPPbcAo325P5WZSrM3a37eWt5pQvoxoA0ZCmIdu1oHq7naT-ziVrTurozbnOB1P_r1e66QFF_9ZMOQGuC44-mK7eeKMDOaEjFKknl_QHdN9PnOaQnN2Yrw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/32/9c/8f/french-suite-bedroom.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/aEIWcN-h6oJEVqEgbUepuj4PSfoLHZeL0JUxV3feg1hCKGnJqq4O40HQJ0JfLCTRFr52wnmXUz1BYhu1_0-AfAVq8EhHz0_wx55u-ZyhTX5r1l8EYDabe_99o8Ufl3pRPfF2io30Xlsr2hx15tf57jC7GheOBCE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/13/136522/136522a_hb_a_005.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/3pUGQAkiFJ4mVWsrmO8HOk-uWNx1xJxZsAiQflU93CICdU_g0s8S9aKqZv6ZQL-RfqNAgbsPXuVUW4-WCXieKOWa66Nc7hIGQHbiKFexl5JHXek4TnogRm6xjnF5x4J55xLgcr6NEah38CmRPO918uFPsWkGUw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/13/136522/136522a_hb_ro_023.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/412CUm9t0aY6ueace1ayaKfY21A04Ji5D7PjEh6Ge8bNpCXmiXpZQHqT8qrkZKGmWKZEP4TzbNlM5lXa5-QGXEplSOjX91daciNZ6f0TbKiQLO1MknCb1_FGS-49kxewr3r_vPMyyBbFmyTT7N4XbVPTVJ-6Lg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/01/d1/7d/ca/fairmont-peace-hotel.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/XfMJEy1sr8nya9zGAXZ17tq6Y8lr2tpRLQ26u8c3DYVZIua7IqzuGBkSgH0IGtRJgkm-M2077FUbGPiRn2Lx69ajKJKlWfn7RY2lA6cDx8ysubAgG3mW5AystR9sP2Q_2md1q8Wun0LkWFVAchae5CZ_Wag1Z6A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/13/136522/136522a_hb_k_006.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Ngm3aJoRHYIEBUQkvlKbkoYKmppgoo7cp6cV694s8FceF6uHxqawlM9BFM0Kdqu4Tg8lJkoxbHQKZ3QQuTLA5fv0LDTxZmcPxV3SwWW6P1NDU3mb0gppZ4hhFtRr3rrTfkk8YIcmrFTANuXqGSVxJGTGVE9IOfo=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAEHsaQcFABNi25-34UDgCUDczGOVUss"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Gaw4XpJ8ZDOvCcWzivFHXaMlmpWezrLzAkFM6AMCBT4LXUqfNe3voyIySiEvhJEta3pNB4CMYfANO9dE8FW41McAWBtDCUU3oG2ixX_dDl615jPWV5ichWCt0Cuk-42B_Nx9g4zNSdvpV1kOkRDx5MY-kZKWFFA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/13/136522/136522a_hb_l_011.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/GyOGkwtFWq6O5mAUboiVswfkjhJpe83IFeSAHHuxzTL4LjYAP1a3Kmrs98J1rDwq9BvrHXWrmeDX5BCnOmqmNLc765TpR8zyhuuvxAGkhGLMJByEeQSwH0rESEP2QaUmlRfV1a2koZ3N9Vikdck-E7kEPOT9W54=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/13/136522/136522a_hb_ro_014.jpg"
+        }
+      ],
+      "overall_rating": 4.6,
+      "reviews": 906,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 675
+        },
+        {
+          "stars": 4,
+          "count": 178
+        },
+        {
+          "stars": 3,
+          "count": 32
+        },
+        {
+          "stars": 2,
+          "count": 1
+        },
+        {
+          "stars": 1,
+          "count": 20
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Nightlife",
+          "description": "Nightlife",
+          "total_mentioned": 57,
+          "positive": 48,
+          "negative": 6,
+          "neutral": 3,
+          "category_token": "jCBqW3ica1yRnFiSmp5fVDl5pV9mekZJTmZaKiOCCQDpcg2i",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jCBqW3ica1yRnFiSmp5fVDl5pV9mekZJTmZaKiOCCQDpcg2i&engine=google_hotels_reviews&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 114,
+          "positive": 105,
+          "negative": 7,
+          "neutral": 2,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 140,
+          "positive": 132,
+          "negative": 3,
+          "neutral": 5,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 72,
+          "positive": 66,
+          "negative": 0,
+          "neutral": 6,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE"
+        },
+        {
+          "name": "Bar",
+          "description": "Bar or lounge",
+          "total_mentioned": 35,
+          "positive": 30,
+          "negative": 3,
+          "neutral": 2,
+          "category_token": "qI-Rpnica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirjYiAXAMhXDEE",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qI-Rpnica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirjYiAXAMhXDEE&engine=google_hotels_reviews&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE"
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 35,
+          "positive": 31,
+          "negative": 1,
+          "neutral": 3,
+          "category_token": "Rr34mHica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmox4xIQHwDoCw2H",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=Rr34mHica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmox4xIQHwDoCw2H&engine=google_hotels_reviews&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Free parking",
+        "Indoor pool",
+        "Hot tub",
+        "Air conditioning",
+        "Fitness center",
+        "Spa",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "eco_certified": true,
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE"
+    },
+    {
+      "type": "hotel",
+      "name": "The Peninsula Shanghai",
+      "description": "High-end hotel offering 3 elegant restaurants, 2 bars & river views, plus a spa with an indoor pool.",
+      "link": "https://www.peninsula.com/zh-cn/shanghai/5-star-luxury-hotel-bund",
+      "property_token": "ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.2408079,
+        "longitude": 121.48875619999998
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥3,394",
+        "extracted_lowest": 3394,
+        "before_taxes_fees": "CN¥3,202",
+        "extracted_before_taxes_fees": 3202
+      },
+      "total_rate": {
+        "lowest": "CN¥6,787",
+        "extracted_lowest": 6787,
+        "before_taxes_fees": "CN¥6,403",
+        "extracted_before_taxes_fees": 6403
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "3 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "31 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/Bxy9kZzShQdjychGbS4YN0Yj-dohh-G9MjrabjR13Cby7_utfkVgldtHx9wkB3jp3dR2sZ-FuRmxWYIyNdIfKz49XtRrN7XHjBP5_4lIBWqMMhu1k1wvZRLk2yWzZmeLF4SV4UrtwyLLS6ien-mbXbf5R_lASDY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/3/0/74/460/512/The-Lobby---Lanscape%2C-The-Peninsula-Shanghai_R.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/kagMK7XXpWukYyk4AYRBnrXQ-2_vUq3WiqHmCfKGFeSrH4UAW5ctL_phDXDRmvRGG8Req5J6aiTpZi8h3ew9FNCwoUctVo1adI6YbxqpXy88Gdzh8Eq_KcWs-TdIhE6NWNFhQ5tHRy4Bibi833mEd2S6gZo1Nw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/3/0/74/460/520/The-Peninsula-Shanghai-Luxury-Limousine-Fleet_R.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHhUgyNoetvy6xgFMjQG4TnqDd3-haKYWq3XeCgOfUYhJ2Zr3OFQSIMQiRiZRK8WtZjnS_3NQze3hN7JJuUhYJnpH7MUuD77jPhTq5w4gODedZlvKHl2gzPevmCHkHRK1t3B-8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHhUgyNoetvy6xgFMjQG4TnqDd3-haKYWq3XeCgOfUYhJ2Zr3OFQSIMQiRiZRK8WtZjnS_3NQze3hN7JJuUhYJnpH7MUuD77jPhTq5w4gODedZlvKHl2gzPevmCHkHRK1t3B-8=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/gp2xQyxR_qTy70a5bFzofUMb46FVZS05OGIUercDYc5BF9PvdAuVRru0cDsI6mwRnMEthpVCH3AfkXtJJurbe2uw1mlHS2PpB-nFRAqRO4Mm9VYOKk0VnJ9sBYJtvOjnf0RI3ZCWp9no_pV46yU5Te31aSW6Ng=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/3/0/74/460/528/Xuhui-Meeting-Room---round-table-meeting-setup_R.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/kJDQ37nZJ6Xl608OiiJSnNugcJ1ZypVZRh09jqbEJTryvNTgCxKqFGDyINSwhO-3v2jrlFyNw51WL0tiNgNVpVrXuX4Aaep4S4v9prkIYCdtCocLHap4rq4UChnHhW-Lw2ncG63EQx2-6t9vEr5DKbGUd3RI4Og=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/66/401/859/Sir-Ellys-terrace-bar_R.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/1qJDp9I5aWcePm-15Dwd0K61Bijcx-zcuwcMxtp_j0O7az5v-UOJBve7sl8WM-MsCJ9AAPAp96ic5v2o-8Uq7hYBOycE4A3olx1ZB8Av98uml-CHazsfN-t8Kimh0T5ywuf5vWDhidyGeSUCYOblMPQ2HbuL_lE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/3/0/74/460/536/Jingan-Meeting-Room_R.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/crCp32snQqDAl9b3Sx_gjFoEPEv26z4X0BcmRETSd1V2IMID2I5mMt75OosyV-EFWBs0YInPB0gyRENWG-T4ki01bbF7aJkX0wuYU7MZYXxSdEuLUtbA2jWgwE2OpeL6FAg1qAtYqZPPff6c_5_VmFuXGov4TGg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/ee/28/cf/deluxe-garden-suite-bedroom.jpg?w=2100&h=1300&s=1"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/EsB2OLj_XHfRQFYTLz6Qss7MqNpUZn7jWBCs8XzBZq_1nHZAuAmZEXwWggcfXfT36fJ2QsUS_vDpLWi4WTIR9x9_KeiPYFnHUjUpsbyyy6l2CZn7jEg6PCjeZkGNf2iwpPioU-ha5tyiHumaQRORkEP6C3m7jA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/3/0/74/460/504/Sir-Elly_s-Main-Dining-Room%2C-The-Peninsula-Shanghai_R.jpg"
+        }
+      ],
+      "overall_rating": 4.6,
+      "reviews": 189,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 147
+        },
+        {
+          "stars": 4,
+          "count": 22
+        },
+        {
+          "stars": 3,
+          "count": 11
+        },
+        {
+          "stars": 2,
+          "count": 1
+        },
+        {
+          "stars": 1,
+          "count": 8
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 44,
+          "positive": 33,
+          "negative": 10,
+          "neutral": 1,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 39,
+          "positive": 34,
+          "negative": 3,
+          "neutral": 2,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE"
+        },
+        {
+          "name": "Nightlife",
+          "description": "Nightlife",
+          "total_mentioned": 9,
+          "positive": 9,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "pLe_Cnica1yRnFiSmp5fVDl5pV9mekZJTmZaKgOCCQDpZw2h",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=pLe_Cnica1yRnFiSmp5fVDl5pV9mekZJTmZaKgOCCQDpZw2h&engine=google_hotels_reviews&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 25,
+          "positive": 20,
+          "negative": 4,
+          "neutral": 1,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE"
+        },
+        {
+          "name": "Bar",
+          "description": "Bar or lounge",
+          "total_mentioned": 11,
+          "positive": 8,
+          "negative": 1,
+          "neutral": 2,
+          "category_token": "qI-Rpnica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirjYiAXAMhXDEE",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qI-Rpnica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirjYiAXAMhXDEE&engine=google_hotels_reviews&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE"
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 14,
+          "positive": 7,
+          "negative": 6,
+          "neutral": 1,
+          "category_token": "g2mTLnica1yRnFiSmp5fVDl5pVNRamJ2WmJxCQOCCQDn-g2T",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=g2mTLnica1yRnFiSmp5fVDl5pVNRamJ2WmJxCQOCCQDn-g2T&engine=google_hotels_reviews&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE"
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Free parking",
+        "Indoor pool",
+        "Hot tub",
+        "Air conditioning",
+        "Fitness center",
+        "Spa",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE"
+    },
+    {
+      "type": "hotel",
+      "name": "The Shanghai EDITION",
+      "description": "Refined quarters in an elegant hotel offering 3 restaurants & 2 bars, plus a gym & spa treatments.",
+      "link": "https://www.editionhotels.com/shanghai/",
+      "property_token": "ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.237886000000003,
+        "longitude": 121.48591599999999
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥3,927",
+        "extracted_lowest": 3927,
+        "before_taxes_fees": "CN¥3,705",
+        "extracted_before_taxes_fees": 3705
+      },
+      "total_rate": {
+        "lowest": "CN¥7,854",
+        "extracted_lowest": 7854,
+        "before_taxes_fees": "CN¥7,410",
+        "extracted_before_taxes_fees": 7410
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "33 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/3jvkhB5nmldeOdXAGoluPvqI_wvi9AcSe_OOBI1D_L103WoANP1kt03w8f9shwDKp5aOGKHJvnejgiTT7g9Q0ML1GcuHZvo30S6KGQunvI9nzRMRfywPuKTlhq1z4pIMEaTUU5ZGzlNG2liQNPwZmImHUiNZTTc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/74/cf/83/view-from-bathroom.jpg?w=1900&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/7t-2zV9n47hDtdq_IJuf_ZTtfbDS9_52yro2vwjmHdilFyJlw-NgNdPnZHkm3XN22QAse6vnegj6wxoT5XRclSvTNRjOYZwxW1IuFw0yy6ZMOSwRFE5q7zC7dKwPqKFbY8spLqXO0NdEip-x_JtIjabV_0BeaZE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/69/692763/692763a_hb_ro_108_20260116_152709.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEmgf2Ju4HBcKB6FPQvjpNmT8yUferzYMrDGVJYPw78OiijmIpLgOrxQ4TJhWt1M7yCT7zgdK6_lkCNm_UtKQyAmx1xf0-XzShvZoUYRH_V2UjXcJLEjbHjINMFTN6lv5WhrEY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEmgf2Ju4HBcKB6FPQvjpNmT8yUferzYMrDGVJYPw78OiijmIpLgOrxQ4TJhWt1M7yCT7zgdK6_lkCNm_UtKQyAmx1xf0-XzShvZoUYRH_V2UjXcJLEjbHjINMFTN6lv5WhrEY=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEJ_catJZw0EAQ6E_SD1Hj75IcW0T3PJm8A-xW-lEM_-eV8E4k4KkI2ASyYuqkivpsYCGRNcuJPWo_qACTpYf5YocOMb0azIe1TwMmTv5gpziYKikPcDX7d38JtToyE28HwCoJr=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEJ_catJZw0EAQ6E_SD1Hj75IcW0T3PJm8A-xW-lEM_-eV8E4k4KkI2ASyYuqkivpsYCGRNcuJPWo_qACTpYf5YocOMb0azIe1TwMmTv5gpziYKikPcDX7d38JtToyE28HwCoJr=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/AKcdQod-amvPnV60pFlMovINgPTNu4VqqlZxop_xXrEL5PLSD6WfjJITi9DkWcX7b0OSopYkmx4M6_f9ILz3WL7glG9jxU5erfpYN6ktTO52Y0PTRReOPhqUIaSJyR64ImCdWj3AcAj-a81JFLXgcUGypM_i73w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/7/0/167/492/329/shaeb-hiya-6802-hor-clsc_O.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/NV4VqxNQddKMyIlIonPSDPD0nn7ULk4Y0WTFZTcbTOq2VeCZJeXeinTpDoL_wc3N_MKJEoF8FldghkjRBjalL_jbhPPF0pStqUEtDAGeoTrHj5LkWIpho3eWI8VZZ5lnxtndAuvZjVTphojBxSsVvB7R5zUQzg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/69/692763/692763a_hb_ro_181_20260129_180236.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/MMm5uMn2wKGfx_OKx_dj4mJ4YCmx4kzr-wYTeUWTwKB34xhtblzff1lpGt7hFZWQghLKZ8mA4L1pXxyYL_dXYOtFVDxjNT1p1BaVylssNyl0Z_mx99qYnB8xNGlypNVMp_AU_gSKq80LtqtCZqGzd41SNRkcb6w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/69/692763/692763a_hb_r_017.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/p1uk_ey1c9MS6Lm31Sn6x_4KEn-1iszFMGwuTqHrha8PukdXv2LeC1D3g1Fm13xW06K-lnz1Jiu9dOhBMF9u57pnbgqnkj_-slYa4BIe_8QqsxHJz6duX7tYutdYOcvwc7xEq6VxROzGNzkh0HjCslcXrjaN3w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/69/692763/692763a_hb_w_013.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/1P2PESPCbKzjQFpQyS6SDegIyEQmjr_5eSmr_Q8BuF-n88YK5VwsDUTV9kaj-H-pn40JocX8N4vPMdfYPt6-e8e33wy9T8xD1oprTELSUvhEYy1vvoDAgrYVnMVzcvc4iBTvsbkgByM0w1JbpejaZqeFk11XRw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/69/692763/692763a_hb_w_006.jpg"
+        }
+      ],
+      "overall_rating": 4.5,
+      "reviews": 251,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 183
+        },
+        {
+          "stars": 4,
+          "count": 35
+        },
+        {
+          "stars": 3,
+          "count": 13
+        },
+        {
+          "stars": 2,
+          "count": 4
+        },
+        {
+          "stars": 1,
+          "count": 16
+        }
+      ],
+      "location_rating": 4.5,
+      "reviews_breakdown": [
+        {
+          "name": "Bar",
+          "description": "Bar or lounge",
+          "total_mentioned": 38,
+          "positive": 26,
+          "negative": 8,
+          "neutral": 4,
+          "category_token": "qI-Rpnica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirjYiAXAMhXDEE",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qI-Rpnica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirjYiAXAMhXDEE&engine=google_hotels_reviews&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 67,
+          "positive": 50,
+          "negative": 13,
+          "neutral": 4,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB"
+        },
+        {
+          "name": "Dining",
+          "description": "Food and Beverage",
+          "total_mentioned": 37,
+          "positive": 27,
+          "negative": 8,
+          "neutral": 2,
+          "category_token": "2aMhPHica1yRnFiSmp5fVDl5o1t-fopCYl6KglNqWWpRYnoq4zKXzLzMvHQAKAwO6A",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=2aMhPHica1yRnFiSmp5fVDl5o1t-fopCYl6KglNqWWpRYnoq4zKXzLzMvHQAKAwO6A&engine=google_hotels_reviews&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB"
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 32,
+          "positive": 21,
+          "negative": 3,
+          "neutral": 8,
+          "category_token": "Rr34mHica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmox4xIQHwDoCw2H",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=Rr34mHica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmox4xIQHwDoCw2H&engine=google_hotels_reviews&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 47,
+          "positive": 37,
+          "negative": 4,
+          "neutral": 6,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 39,
+          "positive": 32,
+          "negative": 4,
+          "neutral": 3,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Parking",
+        "Indoor pool",
+        "Hot tub",
+        "Air conditioning",
+        "Fitness center",
+        "Spa",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Atour Hotel Shanghai Bund Nanjing East Road",
+      "property_token": "ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.235104999999997,
+        "longitude": 121.488254
+      },
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥1,384",
+        "extracted_lowest": 1384,
+        "before_taxes_fees": "CN¥1,305",
+        "extracted_before_taxes_fees": 1305
+      },
+      "total_rate": {
+        "lowest": "CN¥2,768",
+        "extracted_lowest": 2768,
+        "before_taxes_fees": "CN¥2,611",
+        "extracted_before_taxes_fees": 2611
+      },
+      "nearby_places": [
+        {
+          "name": "Shanghai Tower",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "31 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFn_IdOkUSBRhQ2yqqwlW-1FonCR7l87BOWGge49jjTDcdgPZgOtp5o0mpYFuzxp6wF4PCQzQcOmBTNut7w-zt8WBTzNC8hqTqJjeEF88Veos9C6-9Qr3mRe79hTiYzgmIX-iE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFn_IdOkUSBRhQ2yqqwlW-1FonCR7l87BOWGge49jjTDcdgPZgOtp5o0mpYFuzxp6wF4PCQzQcOmBTNut7w-zt8WBTzNC8hqTqJjeEF88Veos9C6-9Qr3mRe79hTiYzgmIX-iE=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHcFGG8DIcp0sMSEGoS5QKHXBq_7xSjWcBn2LzyXYxYXVyzcVSlgNBDA9VAejL0exgyhTo2HdQigJXo4sMkNbus_udxubh0_BLiXSux3UIyOLLRt-O58NGvKnXB8FmEMNYvkX4z=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHcFGG8DIcp0sMSEGoS5QKHXBq_7xSjWcBn2LzyXYxYXVyzcVSlgNBDA9VAejL0exgyhTo2HdQigJXo4sMkNbus_udxubh0_BLiXSux3UIyOLLRt-O58NGvKnXB8FmEMNYvkX4z=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFj8cwpMstpPHyoegxKQ1vdvAm4yZhrBrk5PwhzmPn6I81Jhtg7bq9V58SUfjCtOyBmm7X50-29Tit0mthjgd2DeDEGPVF6HgGiNmJdnaXfZ7yayNIFUm9zqlnYMzFDbgtd7J6UNyw1riii=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFj8cwpMstpPHyoegxKQ1vdvAm4yZhrBrk5PwhzmPn6I81Jhtg7bq9V58SUfjCtOyBmm7X50-29Tit0mthjgd2DeDEGPVF6HgGiNmJdnaXfZ7yayNIFUm9zqlnYMzFDbgtd7J6UNyw1riii=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/nYVEaBFFYHw8rO_RqeaQzQSfisdwmdSHqZt0rb6x6fpSLmU_PCHXzmgYTMmN7iH9ZX8wRAVIRdNxqG3zUARS5uvfnyOUpl5f-xJeGVUTJPHgHmGs1-x0_bF-H1GFIji68xDimFyJ9bgNFb_qG104-n6GM_-faQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/ae/d1/aed155df4dff6faae1aef8389962bb710269024f.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGplAs-Q0fTpl4qoD8mXkTp9AsZ5YDRWirSF8f3aUpfPrsqjksN_-CtiXZMzZmPmaHF5Z_86AxNQla3htcYaWMMNEzeH5HnJkAIZ9RZBAMBIzTPRzdG2OqKk7tL3rLMjdJvVTPfeZKY5U8D=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGplAs-Q0fTpl4qoD8mXkTp9AsZ5YDRWirSF8f3aUpfPrsqjksN_-CtiXZMzZmPmaHF5Z_86AxNQla3htcYaWMMNEzeH5HnJkAIZ9RZBAMBIzTPRzdG2OqKk7tL3rLMjdJvVTPfeZKY5U8D=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDsBU6vxAZAAKVSHceytTs-IvCie5KRv30q7Y3aCVLwPc-p54cTuNuGvraDDZVnSOdYU9kLn1PLZ4Zr_N8yW0CqET83fGXIHnBTJxgP9Q6G6prDnIPcBOgr4qb4WQGDL4eWt46HQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFDsBU6vxAZAAKVSHceytTs-IvCie5KRv30q7Y3aCVLwPc-p54cTuNuGvraDDZVnSOdYU9kLn1PLZ4Zr_N8yW0CqET83fGXIHnBTJxgP9Q6G6prDnIPcBOgr4qb4WQGDL4eWt46HQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEsdwbQ5oe5Maz9_RX27CZbtAK1m1odgBT2IbqcTqYxDLLOAhNSi5lkhfYqXdJ-z8c5rA-6ch_jqAKGGKW4dOAv6onuEf0jZNEmHLdi_bj5oBHj2CcA1s8BMFVy3WmB6HoJN0ZR=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEsdwbQ5oe5Maz9_RX27CZbtAK1m1odgBT2IbqcTqYxDLLOAhNSi5lkhfYqXdJ-z8c5rA-6ch_jqAKGGKW4dOAv6onuEf0jZNEmHLdi_bj5oBHj2CcA1s8BMFVy3WmB6HoJN0ZR=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQUumX0GzD-vjPgdscwc_rPKco0-IIzXId3VwFqGzswjz9d__vBK7Yh1vdgl6vRoS9SrjOapGcP5TybjZmd_ZTsQG7jsbxzdyY0qu9D6p4OCI7JaE1hBMeQjexnVLzcvBB0jQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEQUumX0GzD-vjPgdscwc_rPKco0-IIzXId3VwFqGzswjz9d__vBK7Yh1vdgl6vRoS9SrjOapGcP5TybjZmd_ZTsQG7jsbxzdyY0qu9D6p4OCI7JaE1hBMeQjexnVLzcvBB0jQ=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/OCt4r2zLwOF6xIKXp8zKbkB15wGCHcXSvZv4NMvJjDftZVTidAgptEuAmEcTzKO5EKSb7EK0KmGT_8vvggdzBP17nYikJum9zIAwJqATeufuXB8KdNX8SnhVeEs5SK8UgGxHj0ILa0yy3Yub0waP3iMYOJJorWY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/32/4d/60/52/caption.jpg?w=1900&h=1400&s=1"
+        }
+      ],
+      "overall_rating": 4.6,
+      "reviews": 109,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 79
+        },
+        {
+          "stars": 4,
+          "count": 23
+        },
+        {
+          "stars": 3,
+          "count": 3
+        },
+        {
+          "stars": 2,
+          "count": 1
+        },
+        {
+          "stars": 1,
+          "count": 3
+        }
+      ],
+      "location_rating": 4.5,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 20,
+          "positive": 16,
+          "negative": 1,
+          "neutral": 3,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 21,
+          "positive": 19,
+          "negative": 0,
+          "neutral": 2,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB"
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 8,
+          "positive": 8,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M&engine=google_hotels_reviews&hl=en&property_token=ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 11,
+          "positive": 9,
+          "negative": 1,
+          "neutral": 1,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Free parking",
+        "Restaurant",
+        "Full-service laundry"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Jinjiang Metropolo Hotel Classiq - Bund Circle Shanghai",
+      "property_token": "ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.235239999999997,
+        "longitude": 121.48739099999999
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥1,030",
+        "extracted_lowest": 1030,
+        "before_taxes_fees": "CN¥971",
+        "extracted_before_taxes_fees": 971
+      },
+      "total_rate": {
+        "lowest": "CN¥2,059",
+        "extracted_lowest": 2059,
+        "before_taxes_fees": "CN¥1,943",
+        "extracted_before_taxes_fees": 1943
+      },
+      "nearby_places": [
+        {
+          "name": "Shanghai Tower",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "31 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/0F1yRa0mcpSZM96kGdJENBxLEgj-XpVotzKcpWhM737-g70jr10zfm25w68EZLBWuHJRmXjiJ-VLlJs6eO1yAo06LDm7pGTwxZYspsG1hXoS5IJPoxb4oEfGqBqV-L7AuL7YstI9QqA8O7t-SBZnx1OtNxJ6ag=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/2000000/1170000/1168000/1167964/e10cb34e_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE5klDi2jnOpAit619EA4dMKaQDIyYSFIm5gY2iCMpo779nccumVfF_wbWvk76kCrXb6sUyQ9yHnbaEIDfDZ7UziyO90EfM4hFY74P4viuoX59z-Vhgsv0A1kPtlCHgR8hHuOhc0Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE5klDi2jnOpAit619EA4dMKaQDIyYSFIm5gY2iCMpo779nccumVfF_wbWvk76kCrXb6sUyQ9yHnbaEIDfDZ7UziyO90EfM4hFY74P4viuoX59z-Vhgsv0A1kPtlCHgR8hHuOhc0Q=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/IN4p0VuXVwLrpq4PXgwpoO4LT-vA5xtMETDYpo2t6LVf1YeghYdQGIlyt8qtyI-t904h44ESBUp6Y22MFJAtsbUGGidChebJfKFJWlyPzV7lk95CQTSciG4a2mJdoy0Qq0tjYgQFPMm4p8gFduR1yNZcH8a_gA4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/2000000/1170000/1168000/1167964/9eb6e0ac_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/ffyJ533hs2J0oWXtTE1O_cAirQBbhIuYCvvXi9SaTpqBFV5vy-axSUhTTFX7gQZ1pVvhEl5tKA0dZvVtVBKD9KfFza8kQlejTVYkQ1tPcIs6-jgHK1L0UiOcPwrl7vdtdBya9sK0PwXn5HGt-fxBf8Qu3OLiow=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/2000000/1170000/1168000/1167964/02c678dc_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Izrhs-q0SzDWYD_Cb80tBeotD67eCV3znk-M_azraRgCWro0oopRZuIwMbM9pxoKeB9q1DGw8IU8Dw8oqhSSUe3gyQLkMwcqNMhMLoCGoHRn44sTyM4ED-gDPDzUm0K5zhYTvTQzzbRXJZ5iUkXlAUx1lpWPMh0=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/2b/71/2b716438ea8725608b0728fb3d3fef14d217ebad.JPEG"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAElFEXdChAhx6jmlzbNsvt4M7G9esDbgf9a0-1xm6rjVy5nGk1rs8u28H7YVDqqA_fY3SgP5bzJyHKxNiYq2IclQxoTPuzZE_A7TeR0kUj7yka7i6GyvAEXQtsUe5Q540hq64cg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAElFEXdChAhx6jmlzbNsvt4M7G9esDbgf9a0-1xm6rjVy5nGk1rs8u28H7YVDqqA_fY3SgP5bzJyHKxNiYq2IclQxoTPuzZE_A7TeR0kUj7yka7i6GyvAEXQtsUe5Q540hq64cg=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpBLr37cGzf9lSuUvSBvUWowzTsXMIP8RdnHisswXBabMupu7z3Y2fw4h_YIf08OhRgLFKDCEBJhbJtj23eUlgONqshNJcG967jjTTUkM5bxZ92JCtFZZquuDKATwXeq5J4oU6=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpBLr37cGzf9lSuUvSBvUWowzTsXMIP8RdnHisswXBabMupu7z3Y2fw4h_YIf08OhRgLFKDCEBJhbJtj23eUlgONqshNJcG967jjTTUkM5bxZ92JCtFZZquuDKATwXeq5J4oU6=s10000"
+        }
+      ],
+      "overall_rating": 4.4,
+      "reviews": 154,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 96
+        },
+        {
+          "stars": 4,
+          "count": 40
+        },
+        {
+          "stars": 3,
+          "count": 12
+        },
+        {
+          "stars": 2,
+          "count": 3
+        },
+        {
+          "stars": 1,
+          "count": 3
+        }
+      ],
+      "location_rating": 4.5,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 22,
+          "positive": 18,
+          "negative": 0,
+          "neutral": 4,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 17,
+          "positive": 16,
+          "negative": 0,
+          "neutral": 1,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 10,
+          "positive": 8,
+          "negative": 0,
+          "neutral": 2,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ"
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 7,
+          "positive": 6,
+          "negative": 1,
+          "neutral": 0,
+          "category_token": "3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M&engine=google_hotels_reviews&hl=en&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ"
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 5,
+          "positive": 3,
+          "negative": 1,
+          "neutral": 1,
+          "category_token": "JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G&engine=google_hotels_reviews&hl=en&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Fitness center",
+        "Restaurant",
+        "Room service",
+        "Full-service laundry",
+        "Accessible",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ"
+    },
+    {
+      "type": "hotel",
+      "name": "Shanghai Fish Inn East Nanjing Road",
+      "property_token": "ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.239921000000002,
+        "longitude": 121.48532999999998
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "34 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHqFt9IE5CR4t9ZdrMGhS3I8X9xFrY4u1SRO1G3qrtTCzkuTXNbPg1Ij3ftnMysFDyVli3qC4UncpBsBbMvHl8OK2zHnpiFdxdvZ-z0Pk9wH5nWxvlHWEL0d09OKuGq9-k25abz=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHqFt9IE5CR4t9ZdrMGhS3I8X9xFrY4u1SRO1G3qrtTCzkuTXNbPg1Ij3ftnMysFDyVli3qC4UncpBsBbMvHl8OK2zHnpiFdxdvZ-z0Pk9wH5nWxvlHWEL0d09OKuGq9-k25abz=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFy1jxeMtqRvynw8wLfQbQItsrkdUofXsUAXYkhpqLiPKUn2q55d_cHncV3fhlDxj7DI9MUMHn7D6Hnn6jjM1gDRpqDuzFThGEKQxSjMLiZrQWg3VeHW6MatdJ1KWyIo9ZVDrrDLdlktnZe=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFy1jxeMtqRvynw8wLfQbQItsrkdUofXsUAXYkhpqLiPKUn2q55d_cHncV3fhlDxj7DI9MUMHn7D6Hnn6jjM1gDRpqDuzFThGEKQxSjMLiZrQWg3VeHW6MatdJ1KWyIo9ZVDrrDLdlktnZe=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/YlDQ4sAJLPVRrhDkEsmXdO7odiDHDPtB75a88w94j1wTBoP16Jw79tvcMHOKTjo2cbYJp0R5Pw0a-vQF3H9vl2iely8brY6rDQGEcs1d6wjKAJ_Lb1NFbS8ZPVezwkHiCeFtg3I-b0VNXnFKx5hoGMCBiZqg0ZQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/68/686974/686974a_hb_l_012_20260227_151513.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/lzYSK4DvTYsg6h02-DJ72zNTLWhJj-sA3-3lP27Nx7AhBXoZaSWwewVmcSkouqUDeQ5fZdYqeaFoHzwLoYE_QM1JAuOp47dE6oeBoXjOP1MZiVBi-hxvOkQ5wDDzKiW1hXSrBmMXRKqiUrdXNMgkDNgavtGeNw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/68/686974/686974a_hb_w_003.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/E9ab2kkOWZ8eNvxRZhgJkIskMYCTS1gaENrK1GyoDSVouYKPSjoLo_7ld3L7bQ7kxtmhxFcgcMPDrI1GcaQLtcqPoLKDWLU1mzMO6E9OfYTot5v-z67SUR1Ku2tOHVTdZ43ztlzNkGJ7pBvKvNPaWX9k0W2I9Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/13000000/12960000/12956300/12956291/a94abaa2_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGDwHQRZc3Y4Fs5yxR8WuESNHDBUsIrzwL36aAt-3TeMui-ppINf8hvCPWIFuI6AUQSogZPohZ4mlaipbcf0DFaFEe0r0aKv7qiQr_2s5LB7XsfEE13qJXUWxiNHXOkBcdCYOYA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGDwHQRZc3Y4Fs5yxR8WuESNHDBUsIrzwL36aAt-3TeMui-ppINf8hvCPWIFuI6AUQSogZPohZ4mlaipbcf0DFaFEe0r0aKv7qiQr_2s5LB7XsfEE13qJXUWxiNHXOkBcdCYOYA=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHoy-5K3-YN6FEhyDT0gGj8ee8nakfYbM7ScDo_ayMkicB1rJ9T9o9Kwvh7eq8i8rcGzJ6_-jDClxHZNsYgkvDPl-o2D-c6ETzsWE6YbGwYmGT-B5BE2JzNGCUIQ2SrbqCvtM567A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHoy-5K3-YN6FEhyDT0gGj8ee8nakfYbM7ScDo_ayMkicB1rJ9T9o9Kwvh7eq8i8rcGzJ6_-jDClxHZNsYgkvDPl-o2D-c6ETzsWE6YbGwYmGT-B5BE2JzNGCUIQ2SrbqCvtM567A=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFaRrDFWCFW4VVMpD79dQfQPBzjT5iYvcf74y2uIeE40z2rmR6QDquUesz_M5ARM4uY5zzSc2Lfd0n0_ZeSjoPVVn_JygDcFe96dWOvkO440YPWjVonHme9ICYIsL2Hm_XqUrISwdfQFEhz=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFaRrDFWCFW4VVMpD79dQfQPBzjT5iYvcf74y2uIeE40z2rmR6QDquUesz_M5ARM4uY5zzSc2Lfd0n0_ZeSjoPVVn_JygDcFe96dWOvkO440YPWjVonHme9ICYIsL2Hm_XqUrISwdfQFEhz=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGmsVQO6sYagPhFdNCpqZuKtpy44NE9bQanrywKjmten5zdRasT33rSmDYI1giNbv_0beRKI6_cqLWzvXNW8X1iNosxrexGAodTbmmbsm86Afmvyh-pbclHR_nrSNerEAN_y7P9=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGmsVQO6sYagPhFdNCpqZuKtpy44NE9bQanrywKjmten5zdRasT33rSmDYI1giNbv_0beRKI6_cqLWzvXNW8X1iNosxrexGAodTbmmbsm86Afmvyh-pbclHR_nrSNerEAN_y7P9=s10000"
+        }
+      ],
+      "overall_rating": 4.2,
+      "reviews": 1227,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 614
+        },
+        {
+          "stars": 4,
+          "count": 380
+        },
+        {
+          "stars": 3,
+          "count": 176
+        },
+        {
+          "stars": 2,
+          "count": 29
+        },
+        {
+          "stars": 1,
+          "count": 28
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 37,
+          "positive": 32,
+          "negative": 2,
+          "neutral": 3,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 55,
+          "positive": 51,
+          "negative": 2,
+          "neutral": 2,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB"
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 24,
+          "positive": 20,
+          "negative": 3,
+          "neutral": 1,
+          "category_token": "JXKy3Xica1yRnFiSmp5fVDl5tXNOamJeTmZeanExIzIHACQKD1Q",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=JXKy3Xica1yRnFiSmp5fVDl5tXNOamJeTmZeanExIzIHACQKD1Q&engine=google_hotels_reviews&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB"
+        },
+        {
+          "name": "Dining",
+          "description": "Food and Beverage",
+          "total_mentioned": 28,
+          "positive": 24,
+          "negative": 3,
+          "neutral": 1,
+          "category_token": "2aMhPHica1yRnFiSmp5fVDl5o1t-fopCYl6KglNqWWpRYnoq4zKXzLzMvHQAKAwO6A",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=2aMhPHica1yRnFiSmp5fVDl5o1t-fopCYl6KglNqWWpRYnoq4zKXzLzMvHQAKAwO6A&engine=google_hotels_reviews&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 26,
+          "positive": 26,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB"
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 15,
+          "positive": 12,
+          "negative": 2,
+          "neutral": 1,
+          "category_token": "B2S1iHica1yRnFiSmp5fVDl5pVNRamJ2WmJxCSOCCQDoBQ2U",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=B2S1iHica1yRnFiSmp5fVDl5pVNRamJ2WmJxCSOCCQDoBQ2U&engine=google_hotels_reviews&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB"
+        }
+      ],
+      "amenities": [
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Restaurant",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Oriental Riverside Hotel",
+      "description": "Polished quarters in an upmarket hotel offering an indoor pool, a spa & a gym, plus river views.",
+      "link": "http://www.shicc.net/",
+      "property_token": "ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.239524999999997,
+        "longitude": 121.49687000000002
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥1,158",
+        "extracted_lowest": 1158,
+        "before_taxes_fees": "CN¥1,158",
+        "extracted_before_taxes_fees": 1158
+      },
+      "total_rate": {
+        "lowest": "CN¥2,316",
+        "extracted_lowest": 2316,
+        "before_taxes_fees": "CN¥2,316",
+        "extracted_before_taxes_fees": 2316
+      },
+      "nearby_places": [
+        {
+          "name": "Oriental Pearl TV Tower",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "31 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFFrYsBv2HYKdb3M7ULc0h68ZWuQoVEklu6LTsP2Xm7UnZJM80KDSgpr6eheNoRVZiZyO2RVuE-PUiUcQ0tk1Hpoh4WRo2B3UMU0x9Uii3nISs3z_AKJsGuTw6OyeezP0Uv9gDP=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFFrYsBv2HYKdb3M7ULc0h68ZWuQoVEklu6LTsP2Xm7UnZJM80KDSgpr6eheNoRVZiZyO2RVuE-PUiUcQ0tk1Hpoh4WRo2B3UMU0x9Uii3nISs3z_AKJsGuTw6OyeezP0Uv9gDP=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGEScKem8oCJgMvoQU9Ae1eefwDZZx7C_gTHc57s_ybKuTM8hTj-A75KIXrNFuPnCAvUwoEzEpfVrc_XjZeqyMa3YuYiRRf59vTZqTT5NcYTtUOfdh9ObSy7wjk3GJ8yvK5r2wVeW-VDrc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGEScKem8oCJgMvoQU9Ae1eefwDZZx7C_gTHc57s_ybKuTM8hTj-A75KIXrNFuPnCAvUwoEzEpfVrc_XjZeqyMa3YuYiRRf59vTZqTT5NcYTtUOfdh9ObSy7wjk3GJ8yvK5r2wVeW-VDrc=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/sU2B1ubs1xy5mc0erdJfr16Vsu0ZZQF3Vo1YXPZWMfL826Eg4JYnEbDhngfO96dNOdFDwPlK30kkUQ6K4AIvugkVk4rreKUZtxbYdnz3xG-CoWg0HULSEKb2r1UwwihKV9IWkPAGNH8BmZ8i5HWkZ7wp9wi4xQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/ostrovok/19/23/1923aa1163a9ed23394bff58e3717cf85a636bce.JPEG"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/prludmE0kQ6KgbW_BVG50RwHGWrA4F-lP3JoeqY_XFJBOOI9UGHaN5pbZbaajG01phocCY4RR-tuPHY8b24wWz5_jnA1TWxs69-ievDtN-PnnSbC6b8U7cq1d6QTs8gJJp5GPW3_XsRim-7sRxBPZ89M_NJgNcc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/097629/097629a_hb_w_008.jpg?20240529010648?20250621191518"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/VTFaTOadK6k4nLHqHdrMGDC-msXYPQ2OMT9D3KbTku8UJ-_lMvq0B301iu_h2sFh84C2d5J8R3_tTwQT1EWe_WChrk3n6rqIbq__cU9pA8kd5To_oy-xYCBhqLHB3WnR_nh0sdF5rzoXj6f8EqBZHgHvZLuOln8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/1000000/900000/891000/890909/f9faa0a1_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/q-_uwQ1RO5JEvbgQlN8_-e9eVtpx6ptqWQedaSBWRpF7GuunBBy8pXuYGhUTbZwTcXRY7uBr1_a29A0rvYC8OVsGDmUP5TaI3XDZ6TUkiZgqM5POQWPke2ZsxNhvdt2DNOFERBXLmANF5YGPvUyLvoWXII1mQqU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/1000000/900000/891000/890909/f06f8817_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/fzK7auZoEs3D-WBzYXw4orsjKia0YfN0k6mEUSzRXrnbX-wS-nDwrnAZlgZHgIIbCqNdwKecI_bz8_cnpJfCgFLtAWVoMhKuIKi6NQN6DwVhk2yn2Q9AW7CAvBjSvXGmD1NgYCoLerHOGJbD6YnZnPz7F5k6n24=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/097629/097629a_hb_w_006.jpg?20250205114754?20250621191518"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/wtoonOxNIbhhm9BOxddhiTFi-4aX8JT-tr7zSngE10hUzGZ7_B0wScA-buwjg1J5G_lSl1LEFIgij2uNdALcyEnMdNunnvDe6bshuXa1kzJrFYSMd-JcoMk2EdnPYtVX4RakAMV9vUw0UkqxIgO3pPhOOVNxzQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/097629/097629a_hb_r_007.jpg?20250403190237?20250621191517"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/RKqvuraZTqbrEOYJPrTHk9SXCMGCLNgUL_adgzmDW78c0sbIM9uCvrWVKUynZQsuD1NOK-9XpPrEzkx5gv8mfyveilW1VLrof7wS2XptMPgXqfcmUXI-QUZAphm5x2ZjhdNFgfNj8fNbNRPq3CVHS-rKZq2YKg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAMQT9QAFANKMSUmLeP5v_Ybi9bYgw1M"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 163,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 84
+        },
+        {
+          "stars": 4,
+          "count": 59
+        },
+        {
+          "stars": 3,
+          "count": 13
+        },
+        {
+          "stars": 2,
+          "count": 5
+        },
+        {
+          "stars": 1,
+          "count": 2
+        }
+      ],
+      "location_rating": 4.5,
+      "reviews_breakdown": [
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 14,
+          "positive": 13,
+          "negative": 1,
+          "neutral": 0,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 13,
+          "positive": 11,
+          "negative": 1,
+          "neutral": 1,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 9,
+          "positive": 5,
+          "negative": 3,
+          "neutral": 1,
+          "category_token": "nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw&engine=google_hotels_reviews&hl=en&property_token=ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ"
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 7,
+          "positive": 5,
+          "negative": 2,
+          "neutral": 0,
+          "category_token": "3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M&engine=google_hotels_reviews&hl=en&property_token=ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Free parking",
+        "Indoor pool",
+        "Air conditioning",
+        "Fitness center",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ"
+    },
+    {
+      "type": "hotel",
+      "name": "New Asia Hotel Shanghai",
+      "description": "Refined rooms, some with city views, in an upscale hotel offering 3 restaurants, a bar & a gym.",
+      "property_token": "ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.245186,
+        "longitude": 121.48520899999998
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 AM",
+      "rate_per_night": {
+        "lowest": "CN¥1,074",
+        "extracted_lowest": 1074,
+        "before_taxes_fees": "CN¥1,013",
+        "extracted_before_taxes_fees": 1013
+      },
+      "total_rate": {
+        "lowest": "CN¥2,148",
+        "extracted_lowest": 2148,
+        "before_taxes_fees": "CN¥2,027",
+        "extracted_before_taxes_fees": 2027
+      },
+      "nearby_places": [
+        {
+          "name": "Shanghai Museum",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "34 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "3-star hotel",
+      "extracted_hotel_class": 3,
+      "images": [
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/hDiNVNYO3AoeGHDGDFUv24Trdb9Yf73zzpY-fAEaSR4sMQ5mckC3rt3JrVswH-e8bEovkiT70UtMh2cPqsCSzEgObq9076wdxJdFf8FX_G-5_zPAC6xl8fHq8SEbkYQSV14Rpgmo1kt3xp4-cO4oqzPSauE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAPR1VgQFAM_K9d_E8ZZ_jVjgz7Fo3Mw"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/8SWW5yZecTvhM-ifGEVza7TewKNP5EzrZAfGiCqfCLgP4_Ja1sWbXYQfpjVGi1kl-PQ4DOuwvwnKlcAcpk1d8Qy7kn6y23OIsMTFg9t3e0ajL5wwS21wVijN6BzSER2YJnVP0tLsdOHuVHxYTcfBV5ET7YzBymE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615228/615228a_hb_ro_009_20250424_000911.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/Ce4lUXp1899KvjIVNeSYF7L4C0Botca1r-246GveC1XGRlo9myUaAD0EwcwIh-gwNT4u-wdcUFbiMXcueOhIHgL-10d1jDMiE1KCxPDHLjK9EJYTeSw7cqo1m5D9t1Ta6_MSHI0C-NyqWTpzfrk2DqsrPjgZCYA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615228/615228a_hb_ro_001.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/aruaQoj94sq7fC44RMeJPCDhyqHZxuY13clkfEULWYZZELsdKhQPPVW-pdfWvw5-W4_q0wR00bZXwOoTR-Ocuhm8h2L6-zy4nMq6OEf5Dzit3frTEu9QOgmvPnH9Vpv83OLZtGdOC-FzbdWeORyOpXiIFt_Hr_c=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/50/911/559/lobby_P.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/nBam66aeI2ZkRTwiEz6XpZmyPv7eOXPxZ8sWbi1MkD02TG9b7lf2WMFJYeLhhWnpydZJ9DTr__VQeCqxWe3Dp2zpuWGKCDH2-suVJvPIcIKBPxRINwvAXso6NJjbAHKZlQ4MQfwPcy0PmT0SlikuLLGbnh7nqNY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAAB2VgQFAMCjcVGGBrP2rkSy9N1M8jY"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/vJse1A9IZOFJH3bpjRwUc-u9uNW2sLlXAJ13O3aUNVyzrg_rviTnjyk3yWFLh4f-9pMzBjXM6Y3rlv62p00noG_A4zASooIZybj9UFdxKCweJ_igNp3sSfhvrt2FDEInhyRw8RLWcwT7UaeyVccSbgbAAUtrOoc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615228/615228a_hb_ro_016_20250424_000849.jpg?20250424020849?20250710114907"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/LWV1QYPRozvdTf4uflhrZI58hruT5DmuYIzOy7NZArsMVa6QE9Ab8MJXu5Se6FC1hRXBmEAyCSlo5A0lWsvT7v8T59cyrAmKFeaUhf1821sEE-MQU_RF6NawDcoL1g0nlqdOdmoJ4w-9g1sS0M5UNEm_vvDmBoU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615228/615228a_hb_ro_027_20250424_000758.jpg?20250424020758?20250710114906"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/HOWDRNRKUL4v5MJX7Z1SQJS4e-PIONpwYYLGIcovNMqaSZDe392xe0cPIFYgmlVp9mlZ9iYS7BAlj9utANRkTFQ5He3gXLktOlE1LEGqulCVFygZCBjEsOsZiRW5nUs9fGstzxGepHMVqyUusR76Jiy1BTKeHX4=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615228/615228a_hb_ro_022_20250424_000836.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/XMDi0KqEl6KbiCfzA8b7FC2P6pWefgG9uyxGYnN03YlDF4pdZBjxMIX3MpkjH-GLeD-vbuahaMg3v0UA0pVT1sUtk6qYTojmwq8Js4dNX96HRjZ4tKx01o1waD-BEAJYndA3ooac3x1bqJ-KbMTQZ9uI9Dq2jQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615228/615228a_hb_ro_001_20250424_000915.jpg?20250424020915?20250710114905"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 128,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 66
+        },
+        {
+          "stars": 4,
+          "count": 37
+        },
+        {
+          "stars": 3,
+          "count": 20
+        },
+        {
+          "stars": 2,
+          "count": 2
+        },
+        {
+          "stars": 1,
+          "count": 3
+        }
+      ],
+      "location_rating": 4.3,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 13,
+          "positive": 6,
+          "negative": 7,
+          "neutral": 0,
+          "category_token": "nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw&engine=google_hotels_reviews&hl=en&property_token=ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 8,
+          "positive": 7,
+          "negative": 0,
+          "neutral": 1,
+          "category_token": "xyUYpHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cAZwEAzlYM3Q",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=xyUYpHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cAZwEAzlYM3Q&engine=google_hotels_reviews&hl=en&property_token=ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 9,
+          "positive": 7,
+          "negative": 1,
+          "neutral": 1,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Parking",
+        "Air conditioning",
+        "Fitness center",
+        "Restaurant",
+        "Room service",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Jinjiang Metropolo Classiq Hotel, Off Bund",
+      "description": "Sophisticated hotel offering contemporary rooms & suites, plus a restaurant, a bar & breakfast.",
+      "link": "http://www.metropolohotels.com/",
+      "property_token": "ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.238864000000003,
+        "longitude": 121.488057
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥1,159",
+        "extracted_lowest": 1159,
+        "before_taxes_fees": "CN¥1,094",
+        "extracted_before_taxes_fees": 1094
+      },
+      "total_rate": {
+        "lowest": "CN¥2,318",
+        "extracted_lowest": 2318,
+        "before_taxes_fees": "CN¥2,187",
+        "extracted_before_taxes_fees": 2187
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "5 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "34 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEhV-Ad52wgcJSi7U5FURMj2OaQlM760wU5-jIN0KMqUS0bbNEheqam_G7VThyQhvxfxAux0hsuWO7X8zQ5DfFPtH80C26RgL84aAudde8oe2YKhLjFGFtUBwcN8YkWTnO3HnOj=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEhV-Ad52wgcJSi7U5FURMj2OaQlM760wU5-jIN0KMqUS0bbNEheqam_G7VThyQhvxfxAux0hsuWO7X8zQ5DfFPtH80C26RgL84aAudde8oe2YKhLjFGFtUBwcN8YkWTnO3HnOj=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAESdRFAGE_dI78TGLebi3kT3QVvvr7sLdKhCXUVpE2pu2DoO4KM4uEWD50w-HFix4QyVD0BwT726Nq3zUgDOLsZgdjI9YnO1TYsEO08WAlgWA2g3xcKmX43tW8RaRjA7eqDiEdq=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAESdRFAGE_dI78TGLebi3kT3QVvvr7sLdKhCXUVpE2pu2DoO4KM4uEWD50w-HFix4QyVD0BwT726Nq3zUgDOLsZgdjI9YnO1TYsEO08WAlgWA2g3xcKmX43tW8RaRjA7eqDiEdq=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/6lMkWE9A5dihVd6sf_zLkRFtnAKI3OzTg5gW8GR7FL-vrz8xeUbMUG_pi7EZHUBQlFDeQp8vI1P6GI9dbSsOXixfzaDgivjJ7YS2_H3R48fIdT3IdsZCXkv-R0Bn4Nyro34BBBEpodaOBuCjv-Z320tyGu6OSg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/49/18/77/jinjiang-metropolo-classiq.jpg?w=1300&h=900&s=1"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/pNDueXok9k66mbrOXs-CiGWCalhGt31Aa9sap2zx_VYKTjhsNhysVyXv5vwEU662GW3-wiOkTzWxrgqQSsOCATwn2ReqQ-jzAiPMrUEqNb1eymGxpVIRtrpRDHI7P5g5bN5N9JT7_3USXEbHjpEBiAKa_mKGaQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615131/615131a_hb_a_001.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/qgVV8yuJ7Tg4XAFdhcfyiNOaU76MLSMLupvUQnbE9RYaO45Q4PsHftqVTrgJS0_barGkb7BZ5GV86hfJ_cVfDkQpNyGBuX2E46gFDkCFUxueOljV9O1uIjnAYUGpzPrRycxH7HeCeZy7SOUyT0fazNVjAujCiw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/7a/93/7a939503e380602580d0f49bb6d1846aa3cadbce.jpeg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/qyULfoFPfODHbrjZlkn8ZESl5qP1UGPLmEGW9uvZXFdjy-SE5ApC5lzr2ijKHBleE7IAddNvTUKO5LmoICzVZ52na4Ui2RaK0xploTPxOezieGKtPa39CgmKH_DQkOqVBMjlgqxnEoFoxgjDAvUowALwyb3N9XI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/61/615131/615131a_hb_l_001.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFn3LXAmbSaX-qjiYDAYSisjLRCc9rUCCLZ-bX6Quu2mFUaTXOYOf9OIQlHaTqevqDAiIp7NSHWQjdoYp1dgqbq12PmvJFLgs7WSE6by3aV4zTrPmtSroAk_aS_J42JgWe7MUDt=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFn3LXAmbSaX-qjiYDAYSisjLRCc9rUCCLZ-bX6Quu2mFUaTXOYOf9OIQlHaTqevqDAiIp7NSHWQjdoYp1dgqbq12PmvJFLgs7WSE6by3aV4zTrPmtSroAk_aS_J42JgWe7MUDt=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFLUKpCGsYFNRs_qAAXSrqS6m9SONauA7OlZzoAov3rdgTH-tPYfqDY384N8WusIxPvvxArXMCilO-n4kJsQuyT4GEf97X0sz8f1LXBapF0cKz_y5MFjGTkWkQ5xY_ZlDVYQjbsqg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFLUKpCGsYFNRs_qAAXSrqS6m9SONauA7OlZzoAov3rdgTH-tPYfqDY384N8WusIxPvvxArXMCilO-n4kJsQuyT4GEf97X0sz8f1LXBapF0cKz_y5MFjGTkWkQ5xY_ZlDVYQjbsqg=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHITVSoYkgfNOyUHybYYgsHuIzx-sXrHDITatLFuKTQtF4fHjDijpKcX-erEw5msGITJUQqt1e69b-vfmY5FLQa8XAskJsyPAyvhiIz-KfpfHvSPiqget3YE3clRLCnxP6pRbGiFA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHITVSoYkgfNOyUHybYYgsHuIzx-sXrHDITatLFuKTQtF4fHjDijpKcX-erEw5msGITJUQqt1e69b-vfmY5FLQa8XAskJsyPAyvhiIz-KfpfHvSPiqget3YE3clRLCnxP6pRbGiFA=s10000"
+        }
+      ],
+      "overall_rating": 4.4,
+      "reviews": 76,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 44
+        },
+        {
+          "stars": 4,
+          "count": 23
+        },
+        {
+          "stars": 3,
+          "count": 8
+        },
+        {
+          "stars": 2,
+          "count": 1
+        },
+        {
+          "stars": 1,
+          "count": 0
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 14,
+          "positive": 11,
+          "negative": 0,
+          "neutral": 3,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 11,
+          "positive": 9,
+          "negative": 0,
+          "neutral": 2,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB"
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 6,
+          "positive": 3,
+          "negative": 3,
+          "neutral": 0,
+          "category_token": "JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G&engine=google_hotels_reviews&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB"
+        },
+        {
+          "name": "Sleep",
+          "description": "Sleep",
+          "total_mentioned": 6,
+          "positive": 4,
+          "negative": 2,
+          "neutral": 0,
+          "category_token": "9rMFAXica1yRnFiSmp5fVDl5aXBOamoBA4QCAIaqClc",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=9rMFAXica1yRnFiSmp5fVDl5aXBOamoBA4QCAIaqClc&engine=google_hotels_reviews&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 8,
+          "positive": 5,
+          "negative": 2,
+          "neutral": 1,
+          "category_token": "nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw&engine=google_hotels_reviews&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB"
+        },
+        {
+          "name": "Cleanliness",
+          "description": "Cleanliness",
+          "total_mentioned": 7,
+          "positive": 6,
+          "negative": 0,
+          "neutral": 1,
+          "category_token": "3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=3NLKrXica1yRnFiSmp5fVDl5tXNOamJeTmZeanExAzIHACP9D1M&engine=google_hotels_reviews&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Fitness center",
+        "Bar",
+        "Restaurant",
+        "Full-service laundry",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Broadway Mansions Hotel Shanghai",
+      "description": "Refined quarters in an upscale 1930s hotel with posh dining & a British pub, plus a gym & a spa.",
+      "link": "http://broadwaymansions.com/",
+      "property_token": "ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.244234900000002,
+        "longitude": 121.489902
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥2,886",
+        "extracted_lowest": 2886,
+        "before_taxes_fees": "CN¥2,510",
+        "extracted_before_taxes_fees": 2510
+      },
+      "total_rate": {
+        "lowest": "CN¥5,773",
+        "extracted_lowest": 5773,
+        "before_taxes_fees": "CN¥5,020",
+        "extracted_before_taxes_fees": 5020
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "7 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "32 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/r822DjIPWztpo7cZMI8o6wT_-YAGyWFpENLEbBACMskSP_jglzwlZD_vDBYrRTRt62aC_ehl-nbCEbkEq107aYtkpGaam6qAHjWQLMbDMAGVIZPHOqRnvBsCGIVllBRFHq94J7eZK0q63nc4F9MQKhNtZeDYtg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/de/c8/dec812cca63a6ef8f940bbfac4205871f49978e6.jpeg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/_RFjD9pIeZu-wWPexQET7jLYsaHLMRpZ-0RXVpyQS9NZn_AEpCH-4KOKoxm4PZZkoP2379QqYFxBKR-nBT4ktrkwanXyT1Pc3B6zFvqTfDKJHQfEnDGSkNVhUlryfawRX-PY_nyEphiZmh14XAMqKUfRfoDJcQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/ee/4d/ee4dea4e92990c151a7b42ab8fc838b59ed4f635.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHVhBu3lhV_3St_E3pK54rN5-8KUDlX84TffV9oLRMyBSvPqG00dSk4gW0EHKvySqWaWVaJhvFTSfA74lLFbhHl0B-KhC0sYhaT5zC9UvqbKKSXIR5JU-qeD75DRqYcZXhBCmtqog=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHVhBu3lhV_3St_E3pK54rN5-8KUDlX84TffV9oLRMyBSvPqG00dSk4gW0EHKvySqWaWVaJhvFTSfA74lLFbhHl0B-KhC0sYhaT5zC9UvqbKKSXIR5JU-qeD75DRqYcZXhBCmtqog=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/uvAqiW_Ai4tFFRjmFWXbrNfkr7kL1awlR3mW8KiLhTlHnC_-Z1IgiKrsK2kkMEbIS5O5_BznrK8oTwoSy2ookayOfdbzabSJT1HRkCDO9ftO_cK3LVmdXBemM36UZsJZ3jXr3G3UV3Mm2iMUeGt1Vrv4GcoWyg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/090385/090385a_hb_f_002.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/A4WLD8PxVwBkmGC-tYnaE4pOuRlPR_xDY8hQgCIFDVEpV9m01z13gNl-FKNg8lDCpw_euIWRUpOMV2s-mPyn3BljJpfnwJ2W17L37ovlYVdb_5RGpe2wqJKFFBoYGnec3707YkXgi9v-vqz0WqM_-gwHEjYNCA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/090385/090385a_hb_k_003.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/MGctgSPCaeo8UIp9kqeDfvzAEC7g8zbG92AnExJ0VdiqJw6XSd3bVJNf9nY_KW_ZMD6COEnWw3-qOlCVLTeBWScDBCCTCC92-Aq26DpMhDzHXHpADZMCm5JDwNVJbOS35ZTsjGS7xuzQeZH3LGx_iY-zvv5Aqno=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/1000000/900000/892000/891942/97c2d14f_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/c-yKiqnZl6QftYkeL8hrsN-b6BHnzuXtCWboJFs9D_wnTdW4_WMxZxWHPioQtgGiM1jr8RIZZVOuCpfzQRNmm1S1JnTvstdOFXrrHNW4HXgCXkNKg7A1spE3VUGaFllldlR1TYJ3P1Z_OpWsBtw3Ki8FYcUr5w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/68/207/566/LUIC_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/_gaz5ubj9U3xSuJ7ap9k8dXGQdbjdWli_x13quGB8-sml8XeSRYftpdfuAbl_cfpDibhb4nADZRXxUlUDwVkdf7ztvBCycGuupaQgyqq2pU4V106wX7FN1LKweO0c86Fkdo5pHZMV0m4skQAWaqIv0rr5-4nRA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/090385/090385a_hb_a_002.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Tf4-DjKTOpg0yIyKYfUHIB0ZK-JX18XSLwWjCCOf_6gVvNIKjfxZked1oRtcd7KGA0YfPRueZqi2n832qeryzvy1uowub-jIQkGXjB1Zqsn8ZzElrqk93TMI2H1jMzC2NJgv5lBVQaG2YjWrSaGaYGfD4dItLjY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/090385/090385a_hb_ro_023.jpg"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 103,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 54
+        },
+        {
+          "stars": 4,
+          "count": 35
+        },
+        {
+          "stars": 3,
+          "count": 7
+        },
+        {
+          "stars": 2,
+          "count": 2
+        },
+        {
+          "stars": 1,
+          "count": 5
+        }
+      ],
+      "location_rating": 4.3,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 14,
+          "positive": 11,
+          "negative": 3,
+          "neutral": 0,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 13,
+          "positive": 13,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 7,
+          "positive": 6,
+          "negative": 1,
+          "neutral": 0,
+          "category_token": "nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw&engine=google_hotels_reviews&hl=en&property_token=ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ"
+        },
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 5,
+          "positive": 5,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G&engine=google_hotels_reviews&hl=en&property_token=ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ"
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Free parking",
+        "Air conditioning",
+        "Fitness center",
+        "Spa",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ"
+    },
+    {
+      "type": "hotel",
+      "name": "Regent Shanghai On The Bund",
+      "link": "http://google.com/url?q=https://www.ihg.com/regent/hotels/cn/zh/shanghai/shabn/hoteldetail?fromRedirect=true&qSrt=sBR&qDest=Shanghai,%20China,%20People's%20Republic%20of&setPMCookies=true&mktgvar=go_cmp-22405040536_adg-174751675102_ad-745218580062_kwd-2411372577113_dev-c_ext-&dp=true&showApp=true&gclid=Cj0KCQjw8KrFBhDUARIsAMvIApb6_lB8kF7ObTwyOwmV25xgUmhzho4IhUo1eqJdSk8c2AeoK2jdJOgaAk6DEALw_wcB&cm_mmc=PDSEA-_-G_F-SEAK_FS-SEA_H-GC_HS-CHN_6C_BRS_EXM_MARKET-SHANGHAI&gbraid=0AAAAAD4keY_FjYwtVvE2JxQWmNpRTV-Kx&srb_u=1&qRad=100&qRdU=km&sa=D&source=buganizer&usg=AOvVaw1UVl5rxU0m-DGD8EcS1o5F",
+      "property_token": "ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.2438275,
+        "longitude": 121.49173159999998
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥3,177",
+        "extracted_lowest": 3177,
+        "before_taxes_fees": "CN¥2,725",
+        "extracted_before_taxes_fees": 2725
+      },
+      "total_rate": {
+        "lowest": "CN¥6,355",
+        "extracted_lowest": 6355,
+        "before_taxes_fees": "CN¥5,450",
+        "extracted_before_taxes_fees": 5450
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "35 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/Ap0hkJ-ep-Elb4DhHS241dT-ICLtZ51MjA7Y1lj1WEz6mYlrX04HYPatPaAZoM0AbwU9qKFeoxUcjBBozNEE0AaCv0jZe1nhjl2CA-EUPyYn3Ok-nqGKXeXVAzZPiX1pY9c0kzJx5_s0r9p3O8TaPrKkQOcrCvY=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/7a/e9/7ae90e78839dc8e53ba91fc1f8f1f87021bcbc20.JPEG"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE-btOrN7ljgIXtslW_TfqaQKCcbq7ILu81dymCwLJ3wiGxPWDxr4DniCS8BKDQ7zued56g80EuwfpYUjwjw84ZxRSFEcyTTB6mcF68SysZuxkXMsUd42OTXpQ0oFLZvwx1ifW6=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE-btOrN7ljgIXtslW_TfqaQKCcbq7ILu81dymCwLJ3wiGxPWDxr4DniCS8BKDQ7zued56g80EuwfpYUjwjw84ZxRSFEcyTTB6mcF68SysZuxkXMsUd42OTXpQ0oFLZvwx1ifW6=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/nNE-r_II3KGr9IZdX3jYMoO2DEyWEGLrBBU7jkDVG7NtcHPltH5subS-s-M6ExK7xz4LxvnfUtcSAhb2RJh43XXAu5BjcT1idmB69bB3yLecbTwXIZ-bYP0KdSAef_u16buKkkN-2fg1QtFlDHY9l_Lyds9osw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/210/795/262/SHABN_11028090500_O.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEnXF_6hQwl9ie0pgRMsiF0I9FS90niaYtrxUiGCP6JuoBommUbwcO8ZePBT52sXQzmOmM_1UYbfBlZeb-QQBWqqeWqVZAJeLBSukX4MIPiLO1NYQgzcnu9EHe6mGU_tJlzI-6LY3EwiB7Y=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEnXF_6hQwl9ie0pgRMsiF0I9FS90niaYtrxUiGCP6JuoBommUbwcO8ZePBT52sXQzmOmM_1UYbfBlZeb-QQBWqqeWqVZAJeLBSukX4MIPiLO1NYQgzcnu9EHe6mGU_tJlzI-6LY3EwiB7Y=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/gvNLsau9VM88imGy2mtpBq1qP5FmsLW39s9mUkd4ALv0Nfg1o_mIK8YAZ6oAdYFPtijrEVgJC4TBdC8a3QEvc2vG_FAX9tfMPcNPEnnUdqfFxzaIQBpqjrSbFKj2q72eCGlOBrdn-PaIrTg9lB9yANSU_6_fjao=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/15/152771/152771a_hb_ro_014_20250610_183404.jpg?20250610203404?20250711213858"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/VyCJTHiZvI1b1g51kUSaDixwFNoysVtghLUd11YbtGebUdlsQFvFdgPZpWq9TfkuQ6K40hAFMjYr9l_fLLzRZdZiyNn3wvJFgZ1spWhoPSm5eLo9EFsxKEHghAEZ66VJfxP2wobQQD3b5bmhJPz5aEOi3kRcn-s=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/15/152771/152771a_hb_ro_004_20250610_105725.jpg?20250610125725?20250711213857"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/gO9TsTbb_2mq-5678EOh7zNQ4n8cErYDhbBIJYLLpwlwJC239lyGbRJRZTOU25OcixpcP-zcAuwqMbZ7ZMEfFL63pL0ySEApVY-oFNDwCj5EuJuehUfhpLYr_vcHHwFDB24OoFSw0AcxeBFTTv4T4Hnai5waZg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/1/0/206/294/390/SHABN_10864927422_O.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Z34BdRuHCrZag8NT6G8U4zShtvaBphI-7KoyiNP8DvxDLxq4Cx9_C_AFxdlnD7tzkby3gZYiMosUlLG9N0liXGJTnLUxQy2qmuXcz0bXUw-765xMW0zu1U8CZpB7iV8XOsj6WXYp8HA3nG-VlyBS_bSyIzpSEcI=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/15/152771/152771a_hb_ro_005_20250610_105727.jpg?20250610125727?20250711213857"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/4imH1LIWiPP3PoXUXEk4416wnaYp-Pdzq6Z2wuzXr-T1lFPMNCS27Z7aXVww9gTw0Knrlb28KTs5GYjOxB8MkCsgzRt2EZLX-9EMsjY7MejIxQ0SzPDYjWT4upl8JrCGvsU3USY-8q3O_Czib4mWYyPqoSDL1rg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/1/0/206/294/385/SHABN_10864927402_O.jpg"
+        }
+      ],
+      "overall_rating": 4.9,
+      "reviews": 25,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 22
+        },
+        {
+          "stars": 4,
+          "count": 3
+        },
+        {
+          "stars": 3,
+          "count": 0
+        },
+        {
+          "stars": 2,
+          "count": 0
+        },
+        {
+          "stars": 1,
+          "count": 0
+        }
+      ],
+      "location_rating": 4.1,
+      "reviews_breakdown": [
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 7,
+          "positive": 7,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G&engine=google_hotels_reviews&hl=en&property_token=ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 9,
+          "positive": 8,
+          "negative": 0,
+          "neutral": 1,
+          "category_token": "nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw&engine=google_hotels_reviews&hl=en&property_token=ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 10,
+          "positive": 10,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=qPRjhHica1yRnFiSmp5fVDl5RUBRfkFqUUklI5wFANGQDTY&engine=google_hotels_reviews&hl=en&property_token=ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB"
+        },
+        {
+          "name": "Breakfast",
+          "description": "Breakfast",
+          "total_mentioned": 6,
+          "positive": 6,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "g2mTLnica1yRnFiSmp5fVDl5pVNRamJ2WmJxCQOCCQDn-g2T",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=g2mTLnica1yRnFiSmp5fVDl5pVNRamJ2WmJxCQOCCQDn-g2T&engine=google_hotels_reviews&hl=en&property_token=ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Parking",
+        "Indoor pool",
+        "Air conditioning",
+        "Restaurant",
+        "Room service",
+        "Kitchen",
+        "Full-service laundry",
+        "Accessible"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Hyatt on the Bund Hotel",
+      "description": "Contemporary lodging with high-end decor & a sleek spa, plus 2 Asian restaurants & a Western eatery.",
+      "link": "https://shanghaithebund.hyatt.com/zh-Hans/hotel/home.html",
+      "property_token": "ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.245349400000002,
+        "longitude": 121.49306600000001
+      },
+      "check_in_time": "3:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥1,397",
+        "extracted_lowest": 1397,
+        "before_taxes_fees": "CN¥1,318",
+        "extracted_before_taxes_fees": 1318
+      },
+      "total_rate": {
+        "lowest": "CN¥2,795",
+        "extracted_lowest": 2795,
+        "before_taxes_fees": "CN¥2,637",
+        "extracted_before_taxes_fees": 2637
+      },
+      "nearby_places": [
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "35 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "5-star hotel",
+      "extracted_hotel_class": 5,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/Xpv3cWsISmL_M6PoEYn--CrMjmGpL26jE8_tTuyMxsGRPv1Eltvre8BK7yyGcTvkLXaVbWgE92dCWs-DQdC9TEEqtgyVKptTe8YkRUXlN6u2PxgLxujj2M-8FJPTvBJ6SmbsdRTjdn28UqFheLzycyL7f0ZMflM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/20/ba/17/chairman-suite-terrace.jpg?w=1900&h=1300&s=1"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/Bf6w6KkrtBIfDL2l6eNyOmRH8fpaP51rdgYxuTMIDf8ujmqtUuu30KytONuc1z2rcubx20TVDrVLges2Nkw7fwpvCGH08YM_NeYi0mZxSygPD8Mkmz8YlihEg1edpZKQVI3w1vWruUrwtpnoN_oB3gAX8ieRrg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/090818/090818a_hb_a_051.jpg?20250108150840?20250507232333"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG-ZSf_m65Vh3arf7FDsDGssUSj7Ch2kqTZuZ87o3PcjZIFlLkZKBlj-AI6tQhxWvbY9eNPFozpWJYL8gAeqf0p-t5W2Si1YCh3u1TOYao18sq_zq9dkbvM2N1CBILhvFfzogJVDaKTm--j=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG-ZSf_m65Vh3arf7FDsDGssUSj7Ch2kqTZuZ87o3PcjZIFlLkZKBlj-AI6tQhxWvbY9eNPFozpWJYL8gAeqf0p-t5W2Si1YCh3u1TOYao18sq_zq9dkbvM2N1CBILhvFfzogJVDaKTm--j=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFSWkxI_VpoPaB36Zc5amHSB9s6dwEpMApg4UWPPTjn3KuT9BFkFn6rP4C8cjOCMB8XRSBlh-xfeYcVGr9i1ZwUfOTSXEkd8YN6j1977oGreS0nuozaRBI8O55jIhdyU_JxcRCuHM6FBAA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFSWkxI_VpoPaB36Zc5amHSB9s6dwEpMApg4UWPPTjn3KuT9BFkFn6rP4C8cjOCMB8XRSBlh-xfeYcVGr9i1ZwUfOTSXEkd8YN6j1977oGreS0nuozaRBI8O55jIhdyU_JxcRCuHM6FBAA=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/2YrVDvUqbPPHljiVW2zulDonHXbMcaJZuosEOrmEqSjTPGGf1HSY67Ms9LVHzpeGRpLHKfporw9xBzZwKT8GIFr9ednO02eQTZwgsd-FGbPaKtvKUKfmMfOaO-zkRuWLTgrK49D9y6iErvkstxOmAlkCX5rWrCU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://images.trvl-media.com/lodging/2000000/1670000/1668500/1668487/3fa87e11_z.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Rc8fXdQRxcab-HVFn9kEUV4Q9dA3UKs78m6IgsiQ04Ezd1-ObffHvgd_xdviw60wF0aaSd_ld9jwlMz0KH7CVTWEP2A9oz7MGEoKEEL5n5mzHNihCKH-e22v2MPLH_b0llwwfgtbw2ZtfRqMp51UsLidme0UTQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KALo7UQQFAAx21EO_9ok5B110C3frkUY"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/c8NU2_DRVgkcfyll8g9T7Dbe0QazDR7vOWgsRXFYUZwOoQOSGrSSqAibTMFAGFVL11WuTdZImHJn3lQPC_C15UWg4BsGvouoC95hsqeSyyrul3DlvKm9t40cbJo9b3EErKbjdjPXP10A2ubjSB1A5e5AfpPoRyc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAJk7UQQFAGjdr72ZrPKnBIA5cPOFHLg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/LZezjwVl_DnKnMxV7Ahxtv1oTfJrzkxsBw0AAh_kqWkBrfz7lUMoJe5nS5RBYdlgdmtWURFNiOiRAEkRirbB0OtCKw4SRTKZfLCCzT1dTdvqxcyhU2FRhqrXIhNDFnNGxUoN41_iDC9Yf3odELrptTGQKkulAOQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/09/090818/090818a_hb_a_050.jpg?20250301094523?20250507232333"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/TC_6lwUiK3x2atZdLMrLch-Y9mobjABhP3LHqFxyvhcsoSZi1nkKHZwxy-VBnibZSf9rwFuMHX2vqCpyKPyK7hhLuwnpLa180mPpuidnZyaAb9ljB7K-Z2zez8bPZx19iMJVOuUVAPRL2W8C_SQpDbP6bfGxLg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://i.giatamedia.com/m.php?m=AQABAAAAla4KAKU7UQQFAC0BhBczWKx4rXFesdSXUAk"
+        }
+      ],
+      "overall_rating": 4.1,
+      "reviews": 444,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 247
+        },
+        {
+          "stars": 4,
+          "count": 103
+        },
+        {
+          "stars": 3,
+          "count": 39
+        },
+        {
+          "stars": 2,
+          "count": 19
+        },
+        {
+          "stars": 1,
+          "count": 36
+        }
+      ],
+      "location_rating": 4.0,
+      "reviews_breakdown": [
+        {
+          "name": "Room",
+          "description": "Room amenities",
+          "total_mentioned": 61,
+          "positive": 34,
+          "negative": 16,
+          "neutral": 11,
+          "category_token": "JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=JWuianica1yRnFiSmp5fVDl5XVB-fq5CYm5qXmZJZmoxwxIQHwDoBQ2G&engine=google_hotels_reviews&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB"
+        },
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 57,
+          "positive": 34,
+          "negative": 22,
+          "neutral": 1,
+          "category_token": "nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=nHbA-nica1yRnFiSmp5fVDl5eXBqUVlmcioDjAEAtXYMCw&engine=google_hotels_reviews&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 61,
+          "positive": 36,
+          "negative": 18,
+          "neutral": 7,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB"
+        },
+        {
+          "name": "Bar",
+          "description": "Bar or lounge",
+          "total_mentioned": 30,
+          "positive": 16,
+          "negative": 7,
+          "neutral": 7,
+          "category_token": "L4-to3ica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirDYiAXAMhSDEA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=L4-to3ica1yRnFiSmp5fVDl5rVNikUJ-kUJOfmleeirDYiAXAMhSDEA&engine=google_hotels_reviews&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 45,
+          "positive": 38,
+          "negative": 4,
+          "neutral": 3,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB"
+        },
+        {
+          "name": "Dining",
+          "description": "Food and Beverage",
+          "total_mentioned": 26,
+          "positive": 15,
+          "negative": 9,
+          "neutral": 2,
+          "category_token": "DgnoGHica1yRnFiSmp5fVDl5o1t-fopCYl6KglNqWWpRYnoqwzKXzLzMvHQAKAQO5w",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DgnoGHica1yRnFiSmp5fVDl5o1t-fopCYl6KglNqWWpRYnoqwzKXzLzMvHQAKAQO5w&engine=google_hotels_reviews&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB"
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Free parking",
+        "Indoor pool",
+        "Hot tub",
+        "Air conditioning",
+        "Fitness center",
+        "Spa",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Hotel Chalet Shanghai",
+      "property_token": "ChoIx63v99ewkaf0ARoNL2cvMTFuODVrXzBxNRAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoIx63v99ewkaf0ARoNL2cvMTFuODVrXzBxNRAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.240092999999995,
+        "longitude": 121.48626999999999
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥980",
+        "extracted_lowest": 980,
+        "before_taxes_fees": "CN¥924",
+        "extracted_before_taxes_fees": 924
+      },
+      "total_rate": {
+        "lowest": "CN¥1,959",
+        "extracted_lowest": 1959,
+        "before_taxes_fees": "CN¥1,849",
+        "extracted_before_taxes_fees": 1849
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "9 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "34 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/K-QRLyoLKINFqo7dxZJ6C4V2qUQdS_YaMm4Eot4MnQX9RYt04EApxKZdT38C3ezVDH3-vLi6Sd-xzYX__ReBEIBuIqAzCXvXYAdF_KGc7vricl3M_XjgZqH0f3qH5jOjNss3hKySLFSGUBbeHfqqRnQlA2rMfEg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/66/2a/662a20cc42a3329e9278b36af6d7abfaea432828.JPEG"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHjJEq1NHNJa12Fkyliy0XbHPk4AiHSD1rbxPY2zRxPtFqZLGKKDu7MPz6H1D6ap-at64KBbhxI_kRKrJpE34CzCzalSBvohsD8zUHc3I5yLHgV9Gu_PxdnnD2KWIplEPFM_few=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHjJEq1NHNJa12Fkyliy0XbHPk4AiHSD1rbxPY2zRxPtFqZLGKKDu7MPz6H1D6ap-at64KBbhxI_kRKrJpE34CzCzalSBvohsD8zUHc3I5yLHgV9Gu_PxdnnD2KWIplEPFM_few=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG78I5tKOS_uVVS2yAAuqJ30slGkE2xBrJ6Xn28LdYhXhU0Byu0RU7uhwjDU4SIq9FJ3rf22sLZObdQ4-QSZtK2M4RNySNLMuzYXK7ZEoUqRLdEDUUI1BbZ53EYgF0JM5ILMH_-IXk9o5on=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG78I5tKOS_uVVS2yAAuqJ30slGkE2xBrJ6Xn28LdYhXhU0Byu0RU7uhwjDU4SIq9FJ3rf22sLZObdQ4-QSZtK2M4RNySNLMuzYXK7ZEoUqRLdEDUUI1BbZ53EYgF0JM5ILMH_-IXk9o5on=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/SEzu32VUx-2GI8TrMkQ6j4itjui67YzNo5UF4aQ4wJ9kTtK3CkoypbACzP6n9ywuxjYcMpqxvOtLBCr-5mQKnLUfF51wVpJx7d3h31g4xPEw8tCXx2IuLP7gYNMEGQRoOlTq2X_Et_TyJpb4u82tk_3dZAfHtQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/30/56/a7/83/caption.jpg?w=1100&h=900&s=1"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/wr0Ex9Tpd0xsHSY097Q-FFRfrb45H7Pz45HQQIaHadwY9OMGfCDzyrGYeyOvmZ4EbmFO2DmyFHcZnoFZFA-F1s4K3NH1tsYCUmrRXwndRqjKnCsOX35PqMeOUlZijvgDJI_tO1KMNgLqRrJc8zN88AB2xZ0GmA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/ca/0d/ca0de0d46560344bc75ec9b5a13129f182446ee9.JPEG"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/2ASB98w0xtNeUec7MuFeNK3lLhR1-kb2IvgSSKNntRv8vPVuMlmUpLMYTxAix2Gc3ZVACI_M4fw6G6Q_7r_R7YnZFyAznWyzvNDggG6RzgBtHRCCHGjjhmpipfdeS5GjXFvJdccgLLXksfhhA5BLRtX5fD40Gg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/a2/04/a204d624d1d6ab23b15c7b9ba8026536a5b52a93.JPEG"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/BuYt-hISUCwg6MNXQ-hYGbI7BuhsxJ6j3KoKrsmosJL-14dLab8amaoHa8U5jn42C39fKG9YtIYFv5hwWcZGRKexmtFdG9Bsm-2Ly2_jZTAcSDXSBqrO7Ufqe1tXtarNlRyevsYHhvQupDf5diQ8_AfvylH7n3c=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/7e/3d/7e3de2479db7272107c1fb934c3b55941d636214.JPEG"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/RcErL2kVQvHKufwAYWYWqd7lWYqWa-OJho1Uu1oS00qc61H1x15DtHB5VoLRZMWUNEV9SefTWfm9Ta_27YS34YAN0VD9VWJ0uSy-QxuQ62rCLGKCmydm8wsH-_6ebo1PeuemNXnW25cLxPjEp1_m5UMtoQ41ZA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/a1/7e/a17e66e92c19ee5cc55b42546afec368a3fc766f.JPEG"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/IAxhMry9lTUKYbae01K08muvjwEgAw5Q1ROFnkzbStFm8kpUah1suKoyXC_dKopjXMGExgOLwmW_bVFtsS0T8eKHpeNaoTZ1yW6HlAhya0Kx9Gxu9GnuIYfTRcLUrbC-xGJ0YQVL1xdH9a4hwbeg73YvnDc7yQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/1d/a6/1da6d25a917b6eb888988e05b6d9345a43c70a23.JPEG"
+        }
+      ],
+      "overall_rating": 4.6,
+      "reviews": 33,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 23
+        },
+        {
+          "stars": 4,
+          "count": 8
+        },
+        {
+          "stars": 3,
+          "count": 1
+        },
+        {
+          "stars": 2,
+          "count": 0
+        },
+        {
+          "stars": 1,
+          "count": 1
+        }
+      ],
+      "location_rating": 4.5,
+      "reviews_breakdown": [
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 6,
+          "positive": 4,
+          "negative": 1,
+          "neutral": 1,
+          "category_token": "xyUYpHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cAZwEAzlYM3Q",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=xyUYpHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cAZwEAzlYM3Q&engine=google_hotels_reviews&hl=en&property_token=ChoIx63v99ewkaf0ARoNL2cvMTFuODVrXzBxNRAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 5,
+          "positive": 5,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChoIx63v99ewkaf0ARoNL2cvMTFuODVrXzBxNRAB"
+        }
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoIx63v99ewkaf0ARoNL2cvMTFuODVrXzBxNRAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoIx63v99ewkaf0ARoNL2cvMTFuODVrXzBxNRAB"
+    },
+    {
+      "type": "hotel",
+      "name": "锦江之星",
+      "link": "http://www.jinjianginns.com/",
+      "property_token": "ChkIkPu2yLqJ69PgARoML2cvMWhjM2pueXJ0EAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChkIkPu2yLqJ69PgARoML2cvMWhjM2pueXJ0EAE&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.242451999999997,
+        "longitude": 121.486275
+      },
+      "check_in_time": "12:00 PM",
+      "check_out_time": "12:00 PM",
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "33 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "2-star hotel",
+      "extracted_hotel_class": 2,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHgk0vddnrq1Rw7UkLZWBVZQCt2gRqEvSB3OkQ-JnHKgDfjoH-wsTFhTfjuXXlJplHofpVoMXBwO4jOYq3jhKEO7xfozkgMGE_FTZtnLyjC6ix4z7LE3CcWmjZfQblDz1UKuTeX=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHgk0vddnrq1Rw7UkLZWBVZQCt2gRqEvSB3OkQ-JnHKgDfjoH-wsTFhTfjuXXlJplHofpVoMXBwO4jOYq3jhKEO7xfozkgMGE_FTZtnLyjC6ix4z7LE3CcWmjZfQblDz1UKuTeX=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1F8kte_nUARboBp0hSYhwKBtiPX4XggQ2yB0jcuiVEmJYuajrcqZU7OQJzxUwmpfyWVEFao9SRD6F4kuLHJ88dOVbd7sZf77u-o3AFUtgeAZHGWK322w4Gnk-d4S6aRYC_tJL8A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE1F8kte_nUARboBp0hSYhwKBtiPX4XggQ2yB0jcuiVEmJYuajrcqZU7OQJzxUwmpfyWVEFao9SRD6F4kuLHJ88dOVbd7sZf77u-o3AFUtgeAZHGWK322w4Gnk-d4S6aRYC_tJL8A=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEp-4ac77D6wYWlV5JHZgzfHjlsIGEgYzCTV8ZCqcR_ZkHnXMUOgTixwfI72g6rjL_XXewUNcH4MVKFv1U7bKt6vdf5noMh1SYVna9DefKZBhlGNMSvbXVnM77VlXX1KwImbFvw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEp-4ac77D6wYWlV5JHZgzfHjlsIGEgYzCTV8ZCqcR_ZkHnXMUOgTixwfI72g6rjL_XXewUNcH4MVKFv1U7bKt6vdf5noMh1SYVna9DefKZBhlGNMSvbXVnM77VlXX1KwImbFvw=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/-nBf96oxX-_EIQqxarRAdIfLRpechBAH7nYw8bGo92rjnafnFy51n_oaNqwYGMxYjO4bLl40Qr-GViNDuYKIUvX211j7XL2tOU574eQJBU-tVz36QVMHC4cuZzhfe6jhOp4z_BjWAXo_Ktb2W0SH9JOh0pzIgg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/b4/58/d2/caption.jpg?w=2100&h=1400&s=1"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/5AthRqcR4omeiCZ2zQPoIS8qJKNa0Rt2hFTwws32KI6TNJmyNjl2v2kwLbUPh-gvKyuylfzEFh54td6VN-Py0GVsne4FYZ9LsG_co6xoURMXEnrYoitcBuZGTj5gbDBOCkvo1Bqxl0a_yL8f5Z4DyY6BOMMPhdc=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/6a/c9/6ac902e3be31d71bf67ecfd4e7ecd4885c0551ed.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMs2VaDN2Xk7DILx8cSelZNy6VThcJEkEbhmnjSlyFMlVO8wEvGDe8aExnXmujEKwgtfVR05myDNsUOmRAG-kWh023-YpVVpS3ommYIo6TLvPYUlKS34swWQjhIxKvA_c1_vos=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMs2VaDN2Xk7DILx8cSelZNy6VThcJEkEbhmnjSlyFMlVO8wEvGDe8aExnXmujEKwgtfVR05myDNsUOmRAG-kWh023-YpVVpS3ommYIo6TLvPYUlKS34swWQjhIxKvA_c1_vos=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGK0ak8AtUXRMXBwMX-jIT4cFJH1nn_WDfKVCH3KXAMQGMRI6ulvj-HwrmUif9i0CGwUXhZequ8t7EWvg_N2rAODkZeymls2_jdkGY7Oq9VOx6FgvYkijJ8npQixQw9hcCtFL1U-Q=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGK0ak8AtUXRMXBwMX-jIT4cFJH1nn_WDfKVCH3KXAMQGMRI6ulvj-HwrmUif9i0CGwUXhZequ8t7EWvg_N2rAODkZeymls2_jdkGY7Oq9VOx6FgvYkijJ8npQixQw9hcCtFL1U-Q=s10000"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/f6srTUDFh9sd7UHfm5kPdLHVGjTbSc0yJ_ezudZzOVxVgAIyjOjplmQ7RVQ4EZrA5hgVP7ukd2pS5FjFPrAkUjoKiGtreUZ6TJk_2zFScCNd4ZARm1ZsVqWyA9__X7U-vjR3Jsmio-mirblgMHeCRJhnoZNqpMA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/0a/f4/0af4f248623844651bba6436d521da5cebb4bce4.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/kGnvVr3ZQM4pl1wOjPb6buXUU2tJho9QBjjf-S3O_e6RnIbKChRQzEdKvuBqAVVN_PX5y7I0dw2mn63FEPKa_NDr1rFHu1sUeEYCgFv7QuTOdmfSc83sH3GwxoimPuzZq6pu5DHIlQt5jWpyY23xvrNCSChTPA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/83/12/06/single-with-king-size.jpg?w=1400&h=1000&s=1"
+        }
+      ],
+      "overall_rating": 4.2,
+      "reviews": 104,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 49
+        },
+        {
+          "stars": 4,
+          "count": 37
+        },
+        {
+          "stars": 3,
+          "count": 12
+        },
+        {
+          "stars": 2,
+          "count": 3
+        },
+        {
+          "stars": 1,
+          "count": 3
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 6,
+          "positive": 6,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChkIkPu2yLqJ69PgARoML2cvMWhjM2pueXJ0EAE"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Restaurant",
+        "Kid-friendly"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChkIkPu2yLqJ69PgARoML2cvMWhjM2pueXJ0EAE",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChkIkPu2yLqJ69PgARoML2cvMWhjM2pueXJ0EAE"
+    },
+    {
+      "type": "hotel",
+      "name": "Ji Hotel",
+      "property_token": "ChkI89CGq7yz1-5fGg0vZy8xMWgxbWcwN3ZxEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChkI89CGq7yz1-5fGg0vZy8xMWgxbWcwN3ZxEAE&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.241985000000003,
+        "longitude": 121.48621
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥856",
+        "extracted_lowest": 856,
+        "before_taxes_fees": "CN¥808",
+        "extracted_before_taxes_fees": 808
+      },
+      "total_rate": {
+        "lowest": "CN¥1,712",
+        "extracted_lowest": 1712,
+        "before_taxes_fees": "CN¥1,615",
+        "extracted_before_taxes_fees": 1615
+      },
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "34 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/eVkjCrmghQNfkOG4Z_3piVnIA6ZGR8Wsiiu6phdHaHpCrTK0XyepcAYp-welggLrmAU_XK1Z71CAsWlNFAtyPJHZXrQfLKBKl8Nobt0GUJwDX9TFawdZG57b4Sgtkox0Skan4Jq0bUI8MFDpHdyuLxP92BtwUns=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/39/42/39423bd339812bf6f7672c86275ff0cd43c1fb3c.jpeg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/jNMEC5RPM-Dd3mKO_M5o95KGA7A840AojXDV79Vv9dSLy9PmipXDTgGIQNl6PriYxTCX1pDR-9CTL27XIIokqA5SSP1lxp1np3WdgJdj7b_V33feibvVJI0ngHfGQFBdWU-EL0iIcYiOfNzE3fcJEP3GQ_ghSA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/88/884036/884036a_hb_ro_013.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/ZhD46CAlpyQ0ZVMq5B7Z56RBGAv8_v8BKxn-wBsVl9opFqwycl9Yk4P9LeHoFuB0axuqsM0HFtqvA6YGeqvqyNC5XddTOyk0f72iEAbcRraUNcr5u2fAAqBe7gmW4NTaeHtaJ-MR1dZ3krS4EL0T6c55jHKmpw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/88/884036/884036a_hb_a_014.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Cd3zCqyWgC8vAEofPIYtSwqOanwg-jS8flc7937B5wi0uK3-IIbohDnZga-Ohu7c8FPJVJrD-eD3xiseeNd0ki0PXEvr4t8cB0K3h3EDuOSN0OLBFN0BRfKRz_RwdZcBO06tSd7u6-AuY6BzSEjj6PA3H5pTgg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/88/884036/884036a_hb_a_011.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/vkwKelv8sbYbVyDHh0zUr_HrOK6vLUu88MyeRm9-O55ntidbA-sPJjUuF75pYrEiznhnw_NS6Wd7SFjuFc0edGApSGaybxsLwpUJxj7TlRorATtvzwvFkx5lpHknb27RNbrBxjKvEmWdE8cLenoBzL2pms0OwA=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/2f/88/2f88eea11288241db8761a27ded584f12d6f9c52.jpeg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/wypCCWkBmn7zIZm1JPjCaWTjoY6jTEdZPOe9Ciq-eHXNJ9MEi_ewkiVKnSdSZ_IorCkkv7mu4k3ha0IDzIjnaUSBBwndwn6wVx-4JtwP77ZyMJsvE9kHfZZyEFYV9kgPuMN6kd_QuaB7qqJdt5mI1F5rvqTwuw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/88/884036/884036a_hb_l_002.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/eYdLnAz-aPq0rVWkP0ax4wR-qM2idm3ikF_pedD6AGkRxnooYef1kuLbTKdjVB2W1znVPSJKwri1UIURhFqt7kxQMjTXx2g8G_BGacSUion_AkNf1kHXMb8qqI1LO5Swlp7ePYQ6YKvCxLfPhGfJK_4tGhLX9CM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/88/884036/884036a_hb_r_001.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/W8NoGrldelqVNKMZTWw9MxQvVnN07s8UAX7XdD1k0EMD7HDlda9pyg5JBP8VfUxY8ddg5m1mx5zTEDfy5XwkHqM7x9S057v9yr7lya7nSq1UYu8LtzSvyoBvWHFjgcKSBv0ciFP26MZJzOShcIppF2qrfBARCoM=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/88/884036/884036a_hb_ro_026.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/bqPZeG5PW6AcOhkTVpknA9kCQdmxdI_xSBCp_wtq4SzZFZlw6j9VwMXaBNG4KCEzW-2pPIGW7zLUL7h3yVT-kM9TNmnTQEBEv8kjU4pMCCN73ZyzJ06X6OE-QST04-h-5LW7hO8LiBOcPzeglYmB3Vad4vrLs-8=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/88/884036/884036a_hb_ro_025.jpg"
+        }
+      ],
+      "overall_rating": 4.6,
+      "reviews": 24,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 15
+        },
+        {
+          "stars": 4,
+          "count": 9
+        },
+        {
+          "stars": 3,
+          "count": 0
+        },
+        {
+          "stars": 2,
+          "count": 0
+        },
+        {
+          "stars": 1,
+          "count": 0
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 5,
+          "positive": 3,
+          "negative": 2,
+          "neutral": 0,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChkI89CGq7yz1-5fGg0vZy8xMWgxbWcwN3ZxEAE"
+        }
+      ],
+      "amenities": [
+        "Breakfast ($)",
+        "Free Wi-Fi",
+        "Air conditioning",
+        "Restaurant",
+        "Smoke-free property"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChkI89CGq7yz1-5fGg0vZy8xMWgxbWcwN3ZxEAE",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChkI89CGq7yz1-5fGg0vZy8xMWgxbWcwN3ZxEAE"
+    },
+    {
+      "type": "hotel",
+      "name": "Youli Hotel",
+      "property_token": "ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.235794000000002,
+        "longitude": 121.48522999999999
+      },
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥848",
+        "extracted_lowest": 848,
+        "before_taxes_fees": "CN¥800",
+        "extracted_before_taxes_fees": 800
+      },
+      "total_rate": {
+        "lowest": "CN¥1,696",
+        "extracted_lowest": 1696,
+        "before_taxes_fees": "CN¥1,600",
+        "extracted_before_taxes_fees": 1600
+      },
+      "nearby_places": [
+        {
+          "name": "Yu Garden",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "6 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "30 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGK6lvAgKCnnwrKj0Rd2vmVhcl2xDcLPsNxhrRxgm1-Q39BxhAFxeiQqbNX6UexSm6bzoacryzuL9zENUk_8MH50-AO0mAmf0qeYfZ2x791pTtOwhUkT4diWxFVwnoTpfNYSt3efy92xSji=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGK6lvAgKCnnwrKj0Rd2vmVhcl2xDcLPsNxhrRxgm1-Q39BxhAFxeiQqbNX6UexSm6bzoacryzuL9zENUk_8MH50-AO0mAmf0qeYfZ2x791pTtOwhUkT4diWxFVwnoTpfNYSt3efy92xSji=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/eEUfze0uUqELSQULAzZ8oHq_wfd1IFyfPoz0-8qygbi5OnD1wH_Xg78yLRsWAz6nSgsyf8o3f9mzyRuQUshsSQr0kE-ll2fOT16aM8EhXGQc0cJ_yb0twgNyqrgL-H1HzTVMD3gH_p_oCvqINCuJ_TtfgAad-xU=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/5b/18/5b185523aa632c73bd4e612ad8ff4541c486c971.JPEG"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH6QU_Vi-IU3MJUofwvdsrM4BRH-_EWyh_Np5TolNZihGY0TuwYRgjdtveARwiHCV_NdGHPNEv_8iiOGiPsM690QT5LLiego4k6gZdfWOatc5qRyfSE-qV76mG9Ef7AH8HUplLKedGzTx7G=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH6QU_Vi-IU3MJUofwvdsrM4BRH-_EWyh_Np5TolNZihGY0TuwYRgjdtveARwiHCV_NdGHPNEv_8iiOGiPsM690QT5LLiego4k6gZdfWOatc5qRyfSE-qV76mG9Ef7AH8HUplLKedGzTx7G=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/gyRfzrZo7eke8s1a3n6q63q8CnhTNJMhjQLRwlvu5Vh_BBxH0kh6veNMSFghAF3iun-jVT-n6GQ3zUsIwffgTD8qQhVxTzqU1pU7cuB9r_g9B07WUd2pEB21aewsFxQSjNo1KmA8Y8RDt38AVrB8-x6NcCFN8Ys=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/da/0f/da0f7438a191842381cf24b02af294f9335087ac.JPEG"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/zdB_bj2CVyttSMC0OfMOLqxTQt3TBtjYiiLSmO2ZvjfRgmqQl-kRGt-b3rkb5RpknZvhsgjAmwNnUBLyFexPlgEq43fMDTC5at0GzV_MdPErzanBYFGg7EFuvfAPZjJwLFzNSIcHa0HTBN7rpQd0jW4oWZuhYN0=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/51/68/5168cf5b99d0b5a726c71dfef7d15a0532eb35d9.JPEG"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/rBawkBRU-b0n7EeHhmD3wT6AqY0lCaQqWgivEkOi5wMY6mxwrG4jwggQ8Wpd3cn7qm_CwvBnpxYIeQXG9uTsITA7qBhOixgXvCrgYzJANy_qsDCgXf2LNwpiqoZvzunCaiLOwN8hxNFXhzLhHd6QunaWwtlTdw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://cdn.worldota.net/t/1024x768/content/78/4a/784a3a659c890d3a93c5f3a54687e2e30fb8ad22.JPEG"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHbOIYXv3rzAgI8r0HROjidRmN4uVqq6CDhTliabZ0AXpEyI9ZvDbTRfujQGgcSRXgRxEPAlsfHjwOECYHq20efd5DcFQU910oukvdFCKOuris3PQYKLJ6clQbwufVBU9vDELzk=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHbOIYXv3rzAgI8r0HROjidRmN4uVqq6CDhTliabZ0AXpEyI9ZvDbTRfujQGgcSRXgRxEPAlsfHjwOECYHq20efd5DcFQU910oukvdFCKOuris3PQYKLJ6clQbwufVBU9vDELzk=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJq_7bcwFcgU5bHnTE-3p2hUr7M8b8J7A-1Nos0jkOMZs2jD4Pb6mi6SRE0zEfU1CSyyDPnZegXGbt3Z0XlihAU2FZ0NBmumF7WJGPkucgoC_XfGhSJ5mdwa0XsozOXlkLuBW5_A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGJq_7bcwFcgU5bHnTE-3p2hUr7M8b8J7A-1Nos0jkOMZs2jD4Pb6mi6SRE0zEfU1CSyyDPnZegXGbt3Z0XlihAU2FZ0NBmumF7WJGPkucgoC_XfGhSJ5mdwa0XsozOXlkLuBW5_A=s10000"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE4slcAmkePATwBvXP1YehAWAWQOMDuBOt6EesHgZBwqaFgOGJyuVKUpJl67z7uOagVZ9TDdltBv0ID1qMf-MVFkcDnmlJbDM9ewUFBxF6ml0CzepftUOso0evj1ORc3imjeA5w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE4slcAmkePATwBvXP1YehAWAWQOMDuBOt6EesHgZBwqaFgOGJyuVKUpJl67z7uOagVZ9TDdltBv0ID1qMf-MVFkcDnmlJbDM9ewUFBxF6ml0CzepftUOso0evj1ORc3imjeA5w=s10000"
+        }
+      ],
+      "overall_rating": 4.3,
+      "reviews": 38,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 25
+        },
+        {
+          "stars": 4,
+          "count": 5
+        },
+        {
+          "stars": 3,
+          "count": 5
+        },
+        {
+          "stars": 2,
+          "count": 1
+        },
+        {
+          "stars": 1,
+          "count": 2
+        }
+      ],
+      "location_rating": 4.5,
+      "reviews_breakdown": [
+        {
+          "name": "Service",
+          "description": "Service",
+          "total_mentioned": 10,
+          "positive": 10,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=DZ7RYHica1yRnFiSmp5fVDl5eXBqUVlmciojjAEAtX8MDA&engine=google_hotels_reviews&hl=en&property_token=ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 10,
+          "positive": 8,
+          "negative": 1,
+          "neutral": 1,
+          "category_token": "jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=jLN0PHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cIZwEAzmAM3g&engine=google_hotels_reviews&hl=en&property_token=ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB"
+        },
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 6,
+          "positive": 5,
+          "negative": 1,
+          "neutral": 0,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB"
+        }
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB"
+    },
+    {
+      "type": "hotel",
+      "name": "Bellagio Shanghai",
+      "property_token": "ChkIgt3fntXoob1HGg0vZy8xMWRfeWt4aHhxEAE",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChkIgt3fntXoob1HGg0vZy8xMWRfeWt4aHhxEAE&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.245048599999997,
+        "longitude": 121.48749749999999
+      },
+      "check_in_time": "2:00 PM",
+      "check_out_time": "12:00 PM",
+      "rate_per_night": {
+        "lowest": "CN¥2,441",
+        "extracted_lowest": 2441,
+        "before_taxes_fees": "CN¥2,303",
+        "extracted_before_taxes_fees": 2303
+      },
+      "total_rate": {
+        "lowest": "CN¥4,883",
+        "extracted_lowest": 4883,
+        "before_taxes_fees": "CN¥4,606",
+        "extracted_before_taxes_fees": 4606
+      },
+      "nearby_places": [
+        {
+          "name": "Shanghai Museum",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "8 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "33 min"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/fm_0-4am-7C5xiJKcXhlUxhwzE1R-34LvLBY3y_sIHIjHj7_d2fr-ZPjIO6Y3naAnmaLBC4fGjBJhnKioDQ8MXrkEIMeZ8zJYwzRKmZ2G1mH9x4p3ZG2NXWkveVNqp-v4mMPiivT5zXsPHAj8gpO_QCvP4VXSg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/4/0/82/314/273/View_from_Zahpu_Road_View__R.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/qM4kcfpcaI-SgrhBeVYx0rK1ZKqmUlBCTQgM7UUiowJHFAke4pDztMXxo_-RFgqMfBCC9C61hvSHExH1keZ_i1RCrn-DokzXTqv5VHaiOJEcVlGWgp6DHc4c16kt8MhpyWDWUZFI7wyJMUEpoaKZz4Df76hONQ=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/0/0/199/192/283/____-___O.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/TbGpw5_WSoICSgXeQ5-xm1E3ocn3wyUbIns_0BMExp8Kj8i1yodp-HPTGmi-nM1ges_PMG987jDchAWoABFK1eO2ftknFVfEJYL0eMGIMV-UfJ1cVrTQ4Vt2wWVaOmZ9r5K9HD-Qp-006LdVh4BlcEI2i1rEgg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/4/0/82/313/840/160218_RevisBellagio_bathroom_R.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/Mk7Lpu5kjhZQobiYZ8MDb6N76omeJR85a-SRPc6joj_5ufgF5wxeZmYTQqZmYlaP0G9Jq6mfvP9yMLOdWJLtnUY2OXxSfd0IVzXP8V_jo10XURyP5DQQw2E_M9iVoXxx3l4NwxZWy610xJj0f6S0qJbCqv529w=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/4/0/82/313/850/160218_Revised_Bellagio_bedroom_R.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/qPwHUdMJFD5I7Lz2qbCVBJCptc1qy07ZqnRLx4_oa6aABT8HdYaUMYeayp_eZW09Pikrm3x03oSpL_YO3PEJvq56_-bZ4GWjhcR-vkfGMu2VYPekg-uQGD7zUNTAGf0gQzsMWj2s0M7JmHITvga4K8kEB5cKnHg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/58/582983/582983a_hb_k_004.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/jpMKqe9VcpRTbS44PWdJDlbzFMO7d-zewMA9YXW5N8RUDosNpO50Fe4-KAuebaZjOaTPonJDNHYLTkFTTX6GpWI5QNylyzjTD72VvfkJWuGRb9WofpeYoWVzmkXNNGywW5yQa4wh_RAApAjLbRMg4AFSr0xADg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/58/582983/582983a_hb_k_002.jpg"
+        },
+        {
+          "thumbnail": "https://lh4.googleusercontent.com/proxy/cN919TabWbjgxJfwvrfyOoJeFrHxr9DAfB4AsumnzDmIebhimn3jC1moFCdUp9UsmQtgipBlihhGJIkt5rsqlV1VRhtLcc1DNzXk-MBU0IjpLcsM4YiHEqfIvrSodtGF0hUJMZ5zuGidkHgeHd9x80O86sOSag=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/58/582983/582983a_hb_r_019.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/4MOsjPLYAE_abTqcOaWjrXaGA1cBAvZWvY-s9xBFoqEXqqUKFoIXk7oaClKIivQMcChHIx8-7TbKbXxc5-FxA3pQpiqswNUcbq9vk3bQCP26ox0MuooRBPVCqQU252_sXO8ovBvHEo3wKfh_SJ8v6Hlr_gw47A=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/58/582983/582983a_hb_l_005.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/nLcUr8GEr1Jybqm_1W1cVF0r1eJOroFtFAdRvuAJiSQoZZrThMPCN1kvhAn6rIrySR6IHMpKrxZV3hqdD7to-VJ2OFurojRrDHsbnH5RzrnisCIz8G_pSJTQIIXaes_Ue1U6ttIaI9559i0eIccd41wLqcvRDw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://photos.hotelbeds.com/giata/original/58/582983/582983a_hb_r_016.jpg"
+        }
+      ],
+      "overall_rating": 4.5,
+      "reviews": 22,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 14
+        },
+        {
+          "stars": 4,
+          "count": 6
+        },
+        {
+          "stars": 3,
+          "count": 1
+        },
+        {
+          "stars": 2,
+          "count": 0
+        },
+        {
+          "stars": 1,
+          "count": 1
+        }
+      ],
+      "location_rating": 4.4,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 5,
+          "positive": 5,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChkIgt3fntXoob1HGg0vZy8xMWRfeWt4aHhxEAE"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Parking",
+        "Indoor pool",
+        "Air conditioning",
+        "Fitness center",
+        "Spa",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Accessible",
+        "Business center",
+        "Kid-friendly"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChkIgt3fntXoob1HGg0vZy8xMWRfeWt4aHhxEAE",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChkIgt3fntXoob1HGg0vZy8xMWRfeWt4aHhxEAE"
+    },
+    {
+      "type": "hotel",
+      "name": "Astor House Hotel",
+      "description": "Palatial hotel with a refined restaurant & 2 Western-style bars, plus an opulent ballroom.",
+      "property_token": "ChUIhpy30rjYreJ1GgkvbS8wOHZuNDMQAQ",
+      "serpapi_property_details_link": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&property_token=ChUIhpy30rjYreJ1GgkvbS8wOHZuNDMQAQ&q=%E5%A4%96%E6%BB%A9&sort_by=8",
+      "gps_coordinates": {
+        "latitude": 31.244188899999997,
+        "longitude": 121.4908274
+      },
+      "check_out_time": "12:00 PM",
+      "nearby_places": [
+        {
+          "name": "The Bund",
+          "transportations": [
+            {
+              "type": "Walking",
+              "duration": "7 min"
+            }
+          ]
+        },
+        {
+          "name": "Shanghai Hongqiao International Airport",
+          "transportations": [
+            {
+              "type": "Taxi",
+              "duration": "34 min"
+            }
+          ]
+        }
+      ],
+      "hotel_class": "4-star hotel",
+      "extracted_hotel_class": 4,
+      "images": [
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGOdFHF5B8hwvLpB6O6E8wVkYyuFNIeC4Lfzy1wQ75TnZ5yYbCQK9uqe-Pf5sx43TGUXBSCpQzwnN4uoCDQVLgbQ0VPbDVp2IZPW635uI25j1nJlCHAxZ09H1JyvKfrRXx7PFw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGOdFHF5B8hwvLpB6O6E8wVkYyuFNIeC4Lfzy1wQ75TnZ5yYbCQK9uqe-Pf5sx43TGUXBSCpQzwnN4uoCDQVLgbQ0VPbDVp2IZPW635uI25j1nJlCHAxZ09H1JyvKfrRXx7PFw=s10000"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/kLqjfgo4W7OpWzuu3dY3TpGS219IoU88F2P8-Wq_vYmk-jTlWcE9SebjMK_hRsr5-zsbDFOl63cWR7R1fCiC6Xf_SqkVt18zYPvBX124Jt2DmNBja_hULzAApoVctrHIb6_yZh7eUH9h7O1X4F4ZsDygrQYIrR0=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/67/953/67/Deluxe_Double_Room_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/SIZ2UNtSMsgSvX2FxEK_beY1o_l_XK_0xQjIhxJFiRjEwGYOC4l2_Tg1rIPZKFa7xevjZrddimzn5QRPfEt_RhRLRS4hq-jCxgUcnAwpyAV7ONHsXBEnCPf_3tYpyYYIStZaO14rrKanpRWzlz77BCekwE2yZNE=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/67/953/119/Richard_Executive_Room_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/3AUEn0p88P5soKUHBlFgUzRossvv2R1XD2rQ7qcWG6PzrzLEJ9TpwUe8CSQejy7DezLlWlg3LdqXcio-e7Z48rqCZGC3s1nomnZD2jEa0QXNkPogGmZFBCsdIjdp8BlSZAwKKUaec0Yq6Cae4FrtGQLAP1UuOg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/67/953/91/Middle_Hall_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGTGn8DT9lEwwhhVRIv5MBshXihi8Ysv8WcloAWpO3d_azSopvpm35hqvPrpzAkXUagjyI4JFsJeBCuzQ8QAECzZxfKg11HIUcDZ_w0xSS4_moPNZ-hLozL_X-qqJHUEDeBZkXEBCspdtdx=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGTGn8DT9lEwwhhVRIv5MBshXihi8Ysv8WcloAWpO3d_azSopvpm35hqvPrpzAkXUagjyI4JFsJeBCuzQ8QAECzZxfKg11HIUcDZ_w0xSS4_moPNZ-hLozL_X-qqJHUEDeBZkXEBCspdtdx=s10000"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/An-MpaCqwz_f-tB9pl66Vx2bUX0dnLScifKs0WDAqvE7bUVo8KJf0FfDkWxkqO7_D81rOEfsfhthw4jqLBBduSKIDswBUGGBk1mmxEt6LoJndL7lCddCFFNEus8MOxaWqU6rGx6K6YtxG1cTwA9uN4fZNu9fgw=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/67/953/59/Celebrity_Room_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh6.googleusercontent.com/proxy/U78L0hNKSNlSXMezJw2iSuwBysWQ5pBRZHERPq-oizpvosW6LtJ1kqgu2KV0WgNUPwhdufumLeQW6Z5Y6MeTHiYzbpAvilfZVOUIaoOlpKx0kNPn3uzPM5h_I-pqHph0eCXDZNSjsHfoM-ETfNz9k8V3Nrcj4g=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/67/953/99/Richard_Restaurant_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh5.googleusercontent.com/proxy/1pERkRGf5WGBUzIOVyPg03RPvr3M_WgkKbzqvlKLC9CikeGV65xjzdU7cn1ocaRKZup_a7_43ne6tmY4OHP6zJGJaq04Hbmzsb3z-mYv-6vDKKVPIeqvhX_sVixNHmTOYU2RYCzXDvRZAbxjCiABHlUHh_5HV9E=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/67/953/83/Executive_Bar_S.jpg"
+        },
+        {
+          "thumbnail": "https://lh3.googleusercontent.com/proxy/h3oeY8gpLvfTfF_C_tVvf7h-xjSk0JEf3-RxaGUpYeJXPZqbS2HU4S1FmQjSHIZeebxBj7P29UttRzlxQ7nze_rbAlbWDpTepZ7LD8-2QxqvNX1Z3hDeAADtqpj1lGlSadLrROMvbkf5rAfUVwFTielSdVdXNg=s287-w287-h192-n-k-no-v1",
+          "original_image": "https://d2hyz2bfif3cr8.cloudfront.net/imageRepo/2/0/67/953/15/Lobby_S.jpg"
+        }
+      ],
+      "overall_rating": 4.1,
+      "reviews": 53,
+      "ratings": [
+        {
+          "stars": 5,
+          "count": 17
+        },
+        {
+          "stars": 4,
+          "count": 25
+        },
+        {
+          "stars": 3,
+          "count": 10
+        },
+        {
+          "stars": 2,
+          "count": 1
+        },
+        {
+          "stars": 1,
+          "count": 0
+        }
+      ],
+      "location_rating": 4.2,
+      "reviews_breakdown": [
+        {
+          "name": "Property",
+          "description": "Property",
+          "total_mentioned": 9,
+          "positive": 8,
+          "negative": 0,
+          "neutral": 1,
+          "category_token": "PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=PFaLzHica1yRnFiSmp5fVDl5RUBRfkFqUUklA5wFANGGDTU&engine=google_hotels_reviews&hl=en&property_token=ChUIhpy30rjYreJ1GgkvbS8wOHZuNDMQAQ"
+        },
+        {
+          "name": "Location",
+          "description": "Location",
+          "total_mentioned": 5,
+          "positive": 5,
+          "negative": 0,
+          "neutral": 0,
+          "category_token": "xyUYpHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cAZwEAzlYM3Q",
+          "serpapi_link": "https://serpapi.com/search.json?category_token=xyUYpHica1yRnFiSmp5fVDl5hU8-kJ2Zn8cAZwEAzlYM3Q&engine=google_hotels_reviews&hl=en&property_token=ChUIhpy30rjYreJ1GgkvbS8wOHZuNDMQAQ"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Free Wi-Fi",
+        "Parking",
+        "Pet-friendly",
+        "Bar",
+        "Restaurant",
+        "Room service",
+        "Airport shuttle",
+        "Full-service laundry",
+        "Business center",
+        "Kid-friendly"
+      ],
+      "serpapi_google_hotels_reviews_link": "https://serpapi.com/search.json?engine=google_hotels_reviews&hl=en&property_token=ChUIhpy30rjYreJ1GgkvbS8wOHZuNDMQAQ",
+      "serpapi_google_hotels_photos_link": "https://serpapi.com/search.json?engine=google_hotels_photos&property_token=ChUIhpy30rjYreJ1GgkvbS8wOHZuNDMQAQ"
+    }
+  ],
+  "serpapi_pagination": {
+    "current_from": 1,
+    "current_to": 18,
+    "next_page_token": "CBI=",
+    "next": "https://serpapi.com/search.json?adults=2&check_in_date=2026-05-01&check_out_date=2026-05-03&children=0&currency=CNY&engine=google_hotels&gl=us&hl=en&next_page_token=CBI%3D&q=%E5%A4%96%E6%BB%A9&sort_by=8"
+  }
+}

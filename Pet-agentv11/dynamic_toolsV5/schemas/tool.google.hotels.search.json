@@ -1,0 +1,74 @@
+{
+  "name": "google.hotels.search",
+  "description": "Google Hotels hotel/vacation rental search, based on SerpApi. Supports multi-condition filtering, pagination, price, rating, amenities, etc.",
+  "input_schema": {
+    "type": "object",
+    "required": ["q", "check_in_date", "check_out_date"],
+    "properties": {
+      "q": { "type": "string", "description": "Search keyword, such as location, hotel name, area, etc." },
+      "check_in_date": { "type": "string", "description": "Check-in date, format YYYY-MM-DD." },
+      "check_out_date": { "type": "string", "description": "Check-out date, format YYYY-MM-DD." },
+      "adults": { "type": "integer", "default": 2, "description": "Number of adults, default 2." },
+      "children": { "type": "integer", "default": 0, "description": "Number of children, default 0." },
+      "children_ages": { "type": "string", "description": "Children ages, separated by comma, e.g. '5,8'. Count must match 'children'." },
+      "gl": { "type": "string", "description": "Country code, e.g. 'us'. Optional." },
+      "hl": { "type": "string", "description": "Language code, e.g. 'en'. Optional." },
+      "currency": { "type": "string", "description": "Currency code, e.g. 'USD'. Optional." },
+      "sort_by": { "type": "string", "enum": ["3", "8", "13"], "description": "Sort by: 3-lowest price, 8-highest rating, 13-most reviewed. Optional." },
+      "min_price": { "type": "integer", "description": "Minimum price. Optional." },
+      "max_price": { "type": "integer", "description": "Maximum price. Optional." },
+      "property_types": { "type": "string", "description": "Property type filter, multiple separated by comma. Optional." },
+      "amenities": { "type": "string", "description": "Amenities filter, multiple separated by comma. Optional." },
+      "rating": { "type": "string", "enum": ["7", "8", "9"], "description": "Rating filter: 7-3.5+, 8-4.0+, 9-4.5+. Optional." },
+      "vacation_rentals": { "type": "boolean", "description": "Whether to search only vacation rentals. Optional." },
+      "page_token": { "type": "string", "description": "Pagination token. Optional." },
+      "page_size": { "type": "integer", "default": 20, "description": "Page size, default 20. Optional." }
+    }
+  },
+  "examples": {
+    "input": {
+      "q": "Shanghai hotel",
+      "check_in_date": "2026-05-01",
+      "check_out_date": "2026-05-03",
+      "adults": 2,
+      "currency": "CNY",
+      "sort_by": "8"
+    },
+    "output_success": {
+      "ok": true,
+      "request_id": "mock-reqid-001",
+      "data": {
+        "source": "google_hotels",
+        "properties": [
+          {
+            "type": "hotel",
+            "name": "Hyatt on the Bund Shanghai",
+            "description": "Luxury riverside hotel with gym, restaurant, and SPA.",
+            "link": "https://www.hyatt.com/en-US/hotel/china/hyatt-on-the-bund-shanghai/shagh",
+            "property_token": "ChgIxxxxxx",
+            "gps_coordinates": { "latitude": 31.243, "longitude": 121.490 },
+            "check_in_time": "15:00",
+            "check_out_time": "12:00",
+            "rate_per_night": { "lowest": "¥1200", "extracted_lowest": 1200 },
+            "total_rate": { "lowest": "¥2400", "extracted_lowest": 2400 },
+            "prices": [
+              { "source": "Booking.com", "rate_per_night": { "lowest": "¥1200", "extracted_lowest": 1200 } }
+            ],
+            "overall_rating": 4.7,
+            "reviews": 3200,
+            "hotel_class": "5-star hotel",
+            "amenities": ["Free Wi-Fi", "Gym", "SPA"],
+            "images": [
+              { "thumbnail": "https://example.com/thumb.jpg", "original_image": "https://example.com/original.jpg" }
+            ]
+          }
+        ],
+        "pagination": {
+          "current_from": 1,
+          "current_to": 20,
+          "next_page_token": "CBI="
+        }
+      }
+    }
+  }
+}

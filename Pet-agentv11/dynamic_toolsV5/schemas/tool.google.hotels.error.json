@@ -1,0 +1,42 @@
+{
+  "name": "google.hotels.error",
+  "description": "Google Hotels API error response structure, MCP style.",
+  "schema": {
+    "type": "object",
+    "required": ["ok", "request_id", "data", "error"],
+    "properties": {
+      "ok": { "type": "boolean", "description": "Whether the request is successful." },
+      "request_id": { "type": "string", "description": "Unique request ID." },
+      "data": { "type": ["object", "null"], "description": "Data object if success, null if failed." },
+      "error": {
+        "type": ["object", "null"],
+        "description": "Error object, null if success.",
+        "properties": {
+          "code": { "type": "string", "enum": ["VALIDATION_ERROR", "AUTH_FAILED", "RATE_LIMITED", "TIMEOUT", "UPSTREAM_ERROR", "UPSTREAM_EMPTY"], "description": "Error code." },
+          "message": { "type": "string", "description": "Error message." },
+          "upstream_status": { "type": "string", "description": "Upstream status code. Optional." },
+          "upstream_code": { "type": "string", "description": "Upstream error code. Optional." },
+          "upstream_message": { "type": "string", "description": "Upstream error message. Optional." }
+        }
+      }
+    },
+    "oneOf": [
+      { "properties": { "ok": { "const": true }, "data": { "type": "object" }, "error": { "type": "null" } } },
+      { "properties": { "ok": { "const": false }, "data": { "type": "null" }, "error": { "type": "object" } } }
+    ]
+  },
+  "examples": {
+    "output_error": {
+      "ok": false,
+      "request_id": "mock-reqid-err-001",
+      "data": null,
+      "error": {
+        "code": "UPSTREAM_ERROR",
+        "message": "Upstream service error",
+        "upstream_status": "500",
+        "upstream_code": "E500",
+        "upstream_message": "Internal Server Error"
+      }
+    }
+  }
+}

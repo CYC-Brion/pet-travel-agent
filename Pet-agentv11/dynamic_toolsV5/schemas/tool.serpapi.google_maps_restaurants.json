@@ -1,0 +1,42 @@
+{
+  "name": "serpapi.google_maps_restaurants",
+  "description": "Google Maps local restaurant search via SerpApi. Searches for restaurants by location keyword, returns rating, reviews, price range, address, phone, and hours.",
+  "input_schema": {
+    "type": "object",
+    "required": ["q"],
+    "properties": {
+      "q": { "type": "string", "description": "Search query, e.g. 'restaurant near Bund, Shanghai'." },
+      "hl": { "type": "string", "default": "zh-CN", "description": "Language code. Optional." },
+      "gl": { "type": "string", "default": "cn", "description": "Country code. Optional." },
+      "start": { "type": "integer", "default": 0, "description": "Pagination start index. Optional." }
+    }
+  },
+  "examples": {
+    "input": {
+      "q": "restaurant near Bund, Shanghai",
+      "hl": "zh-CN",
+      "gl": "cn"
+    },
+    "output_success": {
+      "ok": true,
+      "request_id": "mock-reqid-rest-001",
+      "data": {
+        "source": "google_maps",
+        "total_results": 20,
+        "local_results": [
+          {
+            "title": "Mercato",
+            "type": "Italian restaurant",
+            "rating": 4.6,
+            "reviews": 83,
+            "price": "¥100-150",
+            "address": "3号外滩三号, 中山东一路 3, 6层, 黄浦区, Shanghai",
+            "phone": "021 6321 9922",
+            "hours": "Open · Closes 23:00",
+            "gps_coordinates": { "latitude": 31.239, "longitude": 121.490 }
+          }
+        ]
+      }
+    }
+  }
+}

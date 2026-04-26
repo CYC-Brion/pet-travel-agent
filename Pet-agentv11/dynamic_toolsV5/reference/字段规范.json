@@ -1,0 +1,1065 @@
+{
+  "functions": {
+    "welcome_and_stage_detection": {
+      "feature_id": "welcome_and_stage_detection",
+      "stage": "global",
+      "description": "Default greeting, stage recognition, task recognition, and first-round field completeness check.",
+      "trigger_examples": [
+        "你好，我想带狗去上海玩三天",
+        "我现在在北京旅游途中，猫有点应激怎么办"
+      ],
+      "input_fields": [
+        "current_user_message",
+        "session_id(optional)",
+        "output_language(optional)"
+      ],
+      "output_fields": [
+        "welcome_message",
+        "stage",
+        "primary_task",
+        "sub_tasks",
+        "recognized_fields",
+        "missing_required_fields",
+        "follow_up_question",
+        "next_step"
+      ],
+      "memory_read_fields": [
+        "session_id",
+        "user_profile_summary",
+        "pet_profile_summary",
+        "trip_context_summary",
+        "historical_preference_summary"
+      ],
+      "api_request_fields": [],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "memory_summary",
+            "supported_stage_list",
+            "supported_task_list",
+            "task_required_field_registry",
+            "output_language_hint"
+          ],
+          "output_fields": [
+            "welcome_message",
+            "recognized_stage",
+            "recognized_primary_task",
+            "recognized_sub_tasks",
+            "recognized_field_values",
+            "missing_required_fields",
+            "follow_up_question_if_needed",
+            "tool_invocation_decision",
+            "structured_task_stub_json"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [],
+          "output_fields": []
+        }
+      },
+      "notes": [
+        "This block normally does not need 5.1-mini."
+      ]
+    },
+    "document_material_reminder": {
+      "feature_id": "document_material_reminder",
+      "stage": "pre_trip",
+      "description": "Generate travel document and material reminder for user and pet. Default output in pre-trip stage.",
+      "trigger_examples": [
+        "告诉我需要带什么证件",
+        "带猫出门需要准备哪些材料"
+      ],
+      "input_fields": [
+        "destination_city",
+        "travel_start_date(optional)",
+        "travel_end_date(optional)",
+        "user_identity_info(optional)",
+        "pet_type",
+        "pet_vaccinated(optional)",
+        "pet_special_needs(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "user_document_checklist",
+        "pet_document_checklist",
+        "optional_material_checklist",
+        "compliance_notice",
+        "pre_departure_tips"
+      ],
+      "memory_read_fields": [
+        "user_profile_summary",
+        "pet_profile_summary",
+        "trip_context_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "static_document_rule_db",
+          "purpose": "Load document/material rules for travelers and pets",
+          "request_fields": [
+            "destination_city",
+            "travel_date_range(optional)",
+            "pet_type",
+            "pet_vaccinated(optional)",
+            "output_language"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "parsed_profile_fields",
+            "pet_profile_summary",
+            "trip_context_summary",
+            "static_rule_result"
+          ],
+          "output_fields": [
+            "normalized_document_request_json",
+            "user_document_checklist",
+            "pet_document_checklist",
+            "optional_material_checklist",
+            "lightweight_explanation"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [],
+          "output_fields": []
+        }
+      },
+      "notes": [
+        "Handled by 4.1-mini plus static rule lookup in the source design."
+      ]
+    },
+    "scenic_recommendation": {
+      "feature_id": "scenic_recommendation",
+      "stage": "pre_trip",
+      "description": "Recommend scenic spots by category under pet-friendly, budget, and pet-profile constraints.",
+      "trigger_examples": [
+        "推荐一些适合带狗玩的上海景点",
+        "帮我找北京宠物友好的历史景点"
+      ],
+      "input_fields": [
+        "destination_city",
+        "hotel_area(optional)",
+        "target_area(optional)",
+        "trip_days(optional)",
+        "budget_total(optional)",
+        "budget_per_person(optional)",
+        "pet_type",
+        "pet_breed(optional)",
+        "pet_age",
+        "pet_weight_kg",
+        "pet_special_needs(optional)",
+        "preferred_categories(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "recommended_scenic_spots_by_category",
+        "category_name",
+        "scenic_spot_name",
+        "scenic_type",
+        "indoor_or_outdoor",
+        "ticket_required",
+        "ticket_price",
+        "visitor_review_summary",
+        "pet_friendly_evidence",
+        "recommendation_reason"
+      ],
+      "memory_read_fields": [
+        "user_profile_summary",
+        "pet_profile_summary",
+        "trip_context_summary",
+        "historical_preference_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "amap_geocode",
+          "purpose": "Convert destination/hotel/target area text to standard location object",
+          "request_fields": [
+            "destination_city",
+            "hotel_area(optional)",
+            "target_area(optional)"
+          ]
+        },
+        {
+          "api_name": "amap_poi_search",
+          "purpose": "Search candidate POIs for five required categories",
+          "request_fields": [
+            "standard_location",
+            "search_radius(optional)",
+            "category",
+            "city_limit",
+            "page_size",
+            "page_no(optional)"
+          ]
+        },
+        {
+          "api_name": "amap_poi_detail",
+          "purpose": "Fetch detailed scenic information",
+          "request_fields": [
+            "poi_ids"
+          ]
+        },
+        {
+          "api_name": "review_tag_db",
+          "purpose": "Load offline review summary and pet-friendly tags",
+          "request_fields": [
+            "poi_ids",
+            "destination_city",
+            "pet_type",
+            "pet_breed(optional)",
+            "pet_age",
+            "pet_weight_kg"
+          ]
+        },
+        {
+          "api_name": "pet_friendly_rule_db",
+          "purpose": "Load pet-friendly constraints and screening rules",
+          "request_fields": [
+            "pet_type",
+            "pet_breed(optional)",
+            "pet_age",
+            "pet_weight_kg",
+            "budget_total(optional)",
+            "budget_per_person(optional)"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "parsed_user_fields",
+            "pet_profile_summary",
+            "budget_summary",
+            "amap_geocode_result",
+            "amap_poi_search_result",
+            "amap_poi_detail_result",
+            "review_tag_db_result",
+            "pet_friendly_rule_result"
+          ],
+          "output_fields": [
+            "normalized_scenic_request_json",
+            "initial_filter_conditions",
+            "filtered_candidate_spots",
+            "classified_spots_by_five_categories",
+            "constraint_summary",
+            "display_ready_recommendation_payload"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [],
+          "output_fields": []
+        }
+      },
+      "notes": [
+        "Original design uses 4.1-mini for first-round filtering and category classification."
+      ]
+    },
+    "travel_route_planning": {
+      "feature_id": "travel_route_planning",
+      "stage": "pre_trip",
+      "description": "Generate 2-3 travel route plans using weather, pet constraints, budget, operating hours, hotel distance, and route matrix.",
+      "trigger_examples": [
+        "帮我规划上海三日游路线",
+        "带猫去北京，住在国贸附近，给我两套路线"
+      ],
+      "input_fields": [
+        "destination_city",
+        "travel_start_date",
+        "travel_end_date(optional)",
+        "trip_days",
+        "hotel_name(optional)",
+        "hotel_area(optional)",
+        "hotel_address(optional)",
+        "daily_play_hours",
+        "transport_preference",
+        "budget_total(optional)",
+        "budget_per_person(optional)",
+        "pace_preference(optional)",
+        "target_pois(optional)",
+        "pet_type",
+        "pet_breed(optional)",
+        "pet_age",
+        "pet_weight_kg",
+        "pet_special_needs(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "route_plan_options",
+        "option_id",
+        "option_summary",
+        "daily_total_play_hours",
+        "day_index",
+        "scenic_order",
+        "scenic_name",
+        "planned_stay_duration_minutes",
+        "transport_mode_between_nodes",
+        "commute_duration_minutes",
+        "estimated_total_cost",
+        "route_reasoning",
+        "constraint_notes"
+      ],
+      "memory_read_fields": [
+        "user_profile_summary",
+        "pet_profile_summary",
+        "trip_context_summary",
+        "historical_preference_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "pet_transport_rule_db",
+          "purpose": "Confirm hard constraints between pet profile and transport modes",
+          "request_fields": [
+            "pet_type",
+            "pet_breed(optional)",
+            "pet_age",
+            "pet_weight_kg",
+            "transport_preference",
+            "destination_city"
+          ]
+        },
+        {
+          "api_name": "weather_api",
+          "purpose": "Fetch travel-date weather constraints",
+          "request_fields": [
+            "destination_city",
+            "travel_start_date",
+            "travel_end_date(optional)"
+          ]
+        },
+        {
+          "api_name": "amap_geocode",
+          "purpose": "Normalize hotel and scenic locations",
+          "request_fields": [
+            "destination_city",
+            "hotel_name(optional)",
+            "hotel_area(optional)",
+            "hotel_address(optional)",
+            "target_pois(optional)"
+          ]
+        },
+        {
+          "api_name": "amap_poi_search",
+          "purpose": "Fetch candidate scenic spots",
+          "request_fields": [
+            "destination_city",
+            "hotel_standard_location(optional)",
+            "target_categories(optional)",
+            "search_radius(optional)",
+            "page_size"
+          ]
+        },
+        {
+          "api_name": "amap_poi_detail",
+          "purpose": "Fetch ticket price and opening details",
+          "request_fields": [
+            "poi_ids"
+          ]
+        },
+        {
+          "api_name": "amap_route_matrix",
+          "purpose": "Calculate hotel-to-spot and spot-to-spot commute duration and distance",
+          "request_fields": [
+            "origin_locations",
+            "destination_locations",
+            "transport_mode"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "parsed_user_fields",
+            "pet_profile_summary",
+            "trip_context_summary",
+            "pet_transport_rule_result",
+            "weather_result",
+            "amap_geocode_result",
+            "amap_poi_search_result",
+            "amap_poi_detail_result",
+            "amap_route_matrix_result"
+          ],
+          "output_fields": [
+            "first_round_filtered_candidates",
+            "normalized_time_constraints",
+            "normalized_budget_constraints",
+            "normalized_pet_constraints",
+            "normalized_route_solver_input_json",
+            "context_summary_for_5.1-mini"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [
+            "normalized_route_solver_input_json",
+            "candidate_spots_with_metadata",
+            "route_matrix_summary",
+            "weather_constraints",
+            "pet_constraints",
+            "budget_constraints",
+            "opening_hour_constraints",
+            "hotel_distance_constraints",
+            "required_output_format"
+          ],
+          "output_fields": [
+            "route_plan_options",
+            "per_option_node_sequence",
+            "per_node_planned_stay_minutes",
+            "per_leg_transport_mode",
+            "per_leg_commute_minutes",
+            "daily_play_hours_summary",
+            "estimated_total_cost",
+            "route_reasoning",
+            "constraint_satisfaction_notes"
+          ]
+        }
+      },
+      "notes": [
+        "4.1-mini packages the unified route-solver input and 5.1-mini outputs the route options."
+      ]
+    },
+    "hotel_nearby_pet_hospital_summary": {
+      "feature_id": "hotel_nearby_pet_hospital_summary",
+      "stage": "pre_trip",
+      "description": "Summarize nearby pet hospitals around the hotel with distance and review-oriented service tags.",
+      "trigger_examples": [
+        "帮我看看酒店附近的宠物医院",
+        "住在静安寺附近，附近有哪些宠物医院"
+      ],
+      "input_fields": [
+        "hotel_name(optional)",
+        "hotel_area(optional)",
+        "hotel_address(optional)",
+        "destination_city(optional)",
+        "pet_type(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "nearby_pet_hospitals",
+        "hospital_name",
+        "hospital_address",
+        "distance_to_hotel",
+        "business_hours",
+        "contact_info",
+        "review_summary",
+        "service_experience_tags"
+      ],
+      "memory_read_fields": [
+        "trip_context_summary",
+        "pet_profile_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "amap_geocode",
+          "purpose": "Normalize hotel location",
+          "request_fields": [
+            "hotel_name(optional)",
+            "hotel_area(optional)",
+            "hotel_address(optional)",
+            "destination_city(optional)"
+          ]
+        },
+        {
+          "api_name": "amap_poi_search",
+          "purpose": "Search nearby pet hospital candidates around hotel location",
+          "request_fields": [
+            "center_location",
+            "poi_keyword",
+            "search_radius",
+            "page_size"
+          ]
+        },
+        {
+          "api_name": "amap_poi_detail",
+          "purpose": "Fetch hospital details",
+          "request_fields": [
+            "poi_ids"
+          ]
+        },
+        {
+          "api_name": "review_tag_db",
+          "purpose": "Fetch review summary and service tags",
+          "request_fields": [
+            "poi_ids"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "parsed_hotel_fields",
+            "trip_context_summary",
+            "pet_profile_summary",
+            "amap_geocode_result",
+            "amap_poi_search_result",
+            "amap_poi_detail_result",
+            "review_tag_db_result",
+            "ranked_candidates_from_5.1-mini(optional)"
+          ],
+          "output_fields": [
+            "normalized_hotel_pet_hospital_request_json",
+            "display_ready_hospital_summary",
+            "final_chat_response"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [
+            "normalized_hotel_location",
+            "candidate_pet_hospitals",
+            "distance_to_hotel",
+            "review_summary",
+            "service_experience_tags",
+            "distance_priority_rule"
+          ],
+          "output_fields": [
+            "ranked_pet_hospital_candidates",
+            "filtered_pet_hospital_candidates",
+            "ranking_reason_summary"
+          ]
+        }
+      },
+      "notes": [
+        "Original design gives first-round ranking/filtering here to 5.1-mini, then 4.1-mini handles final display."
+      ]
+    },
+    "route_replanning": {
+      "feature_id": "route_replanning",
+      "stage": "in_trip",
+      "description": "Generate 1-2 alternative route plans based on current location, time, weather, traffic, and original route context.",
+      "trigger_examples": [
+        "现在下雨了，帮我重新规划今天的路线",
+        "我已经到外滩了，后面的路线怎么改"
+      ],
+      "input_fields": [
+        "current_time",
+        "current_location_text",
+        "current_standard_location(optional)",
+        "user_current_status(optional)",
+        "pet_current_status(optional)",
+        "current_weather(optional)",
+        "traffic_status(optional)",
+        "remaining_play_time_hours(optional)",
+        "current_budget_remaining(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "replanned_route_options",
+        "option_id",
+        "replaced_original_nodes",
+        "new_route_sequence",
+        "transport_mode_per_leg",
+        "commute_duration_per_leg",
+        "adjusted_total_play_hours",
+        "adjustment_reason",
+        "cost_delta",
+        "new_total_cost"
+      ],
+      "memory_read_fields": [
+        "user_profile_summary",
+        "pet_profile_summary",
+        "trip_context_summary",
+        "generated_itinerary_summary",
+        "historical_preference_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "weather_api",
+          "purpose": "Fetch current weather and short-term changes",
+          "request_fields": [
+            "current_standard_location",
+            "current_time"
+          ]
+        },
+        {
+          "api_name": "amap_traffic_api",
+          "purpose": "Fetch current traffic congestion status",
+          "request_fields": [
+            "current_standard_location",
+            "time_window(optional)",
+            "route_corridor(optional)"
+          ]
+        },
+        {
+          "api_name": "amap_poi_search",
+          "purpose": "Find nearby alternative resources",
+          "request_fields": [
+            "current_standard_location",
+            "candidate_categories(optional)",
+            "search_radius",
+            "page_size"
+          ]
+        },
+        {
+          "api_name": "amap_route_matrix",
+          "purpose": "Calculate commute from current location to substitutes and remaining nodes",
+          "request_fields": [
+            "origin_locations",
+            "destination_locations",
+            "transport_mode_set"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "live_context_fields",
+            "user_profile_summary",
+            "pet_profile_summary",
+            "generated_itinerary_summary",
+            "historical_preference_summary",
+            "weather_result",
+            "traffic_result",
+            "amap_poi_search_result",
+            "amap_route_matrix_result"
+          ],
+          "output_fields": [
+            "affected_original_nodes",
+            "must_replace_nodes",
+            "normalized_replanning_constraints",
+            "normalized_replanning_input_json",
+            "context_summary_for_5.1-mini"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [
+            "normalized_replanning_input_json",
+            "original_route_summary",
+            "current_location_and_time_boundary",
+            "affected_nodes",
+            "candidate_replacement_nodes",
+            "route_matrix_summary",
+            "weather_constraints",
+            "traffic_constraints",
+            "pet_transport_constraints",
+            "remaining_time_constraints",
+            "budget_constraints",
+            "required_output_format"
+          ],
+          "output_fields": [
+            "replanned_route_options",
+            "replaced_original_nodes",
+            "new_route_sequence",
+            "transport_mode_per_leg",
+            "commute_duration_per_leg",
+            "adjusted_total_play_hours",
+            "adjustment_reason",
+            "cost_delta",
+            "new_total_cost"
+          ]
+        }
+      },
+      "notes": [
+        "Final 1-2 replacement route options are produced by 5.1-mini after 4.1-mini packages structured constraints."
+      ]
+    },
+    "alternative_scenic_recommendation": {
+      "feature_id": "alternative_scenic_recommendation",
+      "stage": "in_trip",
+      "description": "Recommend 2-3 substitute scenic spots near the current location using current weather, remaining time, budget, and pet-friendly constraints.",
+      "trigger_examples": [
+        "现在附近还有什么可以带宠物去的景点",
+        "原来的景点去不了了，推荐替代景点"
+      ],
+      "input_fields": [
+        "current_time",
+        "current_location_text",
+        "current_standard_location(optional)",
+        "remaining_play_time_hours(optional)",
+        "current_weather(optional)",
+        "budget_remaining(optional)",
+        "user_preferred_categories(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "alternative_scenic_spots",
+        "scenic_name",
+        "scenic_type",
+        "travel_time_from_current_location",
+        "indoor_or_outdoor",
+        "weather_fit",
+        "pet_friendly",
+        "ticket_required",
+        "ticket_price",
+        "recommendation_reason"
+      ],
+      "memory_read_fields": [
+        "user_profile_summary",
+        "pet_profile_summary",
+        "trip_context_summary",
+        "generated_itinerary_summary",
+        "historical_preference_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "weather_api",
+          "purpose": "Fetch current weather and short-term weather changes",
+          "request_fields": [
+            "current_standard_location",
+            "current_time"
+          ]
+        },
+        {
+          "api_name": "amap_poi_search",
+          "purpose": "Search nearby candidate scenic spots",
+          "request_fields": [
+            "current_standard_location",
+            "search_radius",
+            "candidate_categories(optional)",
+            "page_size"
+          ]
+        },
+        {
+          "api_name": "amap_poi_detail",
+          "purpose": "Fetch scenic details including distance, ticket, and type",
+          "request_fields": [
+            "poi_ids"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "current_location_and_time",
+            "user_profile_summary",
+            "pet_profile_summary",
+            "trip_context_summary",
+            "historical_preference_summary",
+            "structured_recommendation_output_from_5.1-mini"
+          ],
+          "output_fields": [
+            "display_ready_alternative_scenic_recommendations",
+            "final_chat_response"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [
+            "current_location_and_time",
+            "remaining_play_time_hours",
+            "weather_result",
+            "candidate_scenic_spots",
+            "pet_profile_summary",
+            "budget_remaining(optional)",
+            "user_preferred_categories(optional)",
+            "required_output_format"
+          ],
+          "output_fields": [
+            "normalized_alternative_scenic_input_json",
+            "filtered_and_ranked_alternative_spots",
+            "recommendation_reason_summary"
+          ]
+        }
+      },
+      "notes": [
+        "Source design uses 5.1-mini for first-round filtering and ranking, then 4.1-mini for chat display."
+      ]
+    },
+    "nearby_hospital_recommendation": {
+      "feature_id": "nearby_hospital_recommendation",
+      "stage": "in_trip",
+      "description": "Recommend 2-3 nearby hospitals for the user under location, symptom, and transport accessibility constraints.",
+      "trigger_examples": [
+        "我现在有点不舒服，附近有什么医院",
+        "帮我找最近的急诊"
+      ],
+      "input_fields": [
+        "current_time",
+        "current_location_text",
+        "current_standard_location(optional)",
+        "user_body_condition",
+        "symptom_summary(optional)",
+        "needs_immediate_medical_help(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "nearby_hospitals",
+        "hospital_name",
+        "distance_or_eta",
+        "hospital_type",
+        "contact_info",
+        "navigation_mode",
+        "whether_immediate_visit_is_suggested",
+        "basic_first_aid_advice"
+      ],
+      "memory_read_fields": [
+        "user_profile_summary",
+        "medical_history_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "amap_poi_search",
+          "purpose": "Search nearby hospitals",
+          "request_fields": [
+            "current_standard_location",
+            "poi_keyword",
+            "search_radius",
+            "page_size"
+          ]
+        },
+        {
+          "api_name": "amap_poi_detail",
+          "purpose": "Fetch hospital details",
+          "request_fields": [
+            "poi_ids"
+          ]
+        },
+        {
+          "api_name": "amap_route_matrix",
+          "purpose": "Calculate route accessibility to hospital candidates",
+          "request_fields": [
+            "origin_locations",
+            "destination_locations",
+            "transport_mode_set"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "current_location_and_time",
+            "user_body_condition",
+            "symptom_summary(optional)",
+            "medical_history_summary",
+            "amap_poi_search_result",
+            "amap_poi_detail_result",
+            "amap_route_matrix_result"
+          ],
+          "output_fields": [
+            "urgency_level",
+            "whether_emergency_is_recommended",
+            "normalized_nearby_hospital_request_json"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [
+            "normalized_nearby_hospital_request_json",
+            "candidate_hospital_list",
+            "user_body_condition",
+            "medical_history_summary",
+            "transport_accessibility_summary",
+            "required_output_format"
+          ],
+          "output_fields": [
+            "ranked_nearby_hospitals",
+            "distance_or_eta",
+            "hospital_type",
+            "contact_info",
+            "navigation_mode",
+            "whether_immediate_visit_is_suggested",
+            "basic_first_aid_advice"
+          ]
+        }
+      },
+      "notes": [
+        "4.1-mini performs urgency triage, then 5.1-mini filters and ranks hospital candidates."
+      ]
+    },
+    "nearby_pet_hospital_recommendation": {
+      "feature_id": "nearby_pet_hospital_recommendation",
+      "stage": "in_trip",
+      "description": "Recommend 2-3 nearby pet hospitals for the pet based on current location, symptom severity, pet profile, and transport accessibility.",
+      "trigger_examples": [
+        "我的狗有点中暑，附近有什么宠物医院",
+        "猫吐了，帮我找最近的宠物医院"
+      ],
+      "input_fields": [
+        "current_time",
+        "current_location_text",
+        "current_standard_location(optional)",
+        "pet_body_condition",
+        "pet_symptom_summary(optional)",
+        "needs_immediate_pet_medical_help(optional)",
+        "output_language"
+      ],
+      "output_fields": [
+        "nearby_pet_hospitals",
+        "hospital_name",
+        "distance_or_eta",
+        "business_hours",
+        "contact_info",
+        "navigation_mode",
+        "whether_immediate_visit_is_suggested",
+        "basic_emergency_advice"
+      ],
+      "memory_read_fields": [
+        "pet_profile_summary",
+        "pet_medical_history_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "amap_poi_search",
+          "purpose": "Search nearby pet hospitals",
+          "request_fields": [
+            "current_standard_location",
+            "poi_keyword",
+            "search_radius",
+            "page_size"
+          ]
+        },
+        {
+          "api_name": "amap_poi_detail",
+          "purpose": "Fetch pet hospital details",
+          "request_fields": [
+            "poi_ids"
+          ]
+        },
+        {
+          "api_name": "amap_route_matrix",
+          "purpose": "Calculate route accessibility to pet hospital candidates",
+          "request_fields": [
+            "origin_locations",
+            "destination_locations",
+            "transport_mode_set"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message",
+            "pet_profile_summary",
+            "current_location_and_time",
+            "amap_poi_search_result",
+            "amap_poi_detail_result",
+            "amap_route_matrix_result"
+          ],
+          "output_fields": [
+            "normalized_pet_hospital_search_context",
+            "display_packaging_input(optional)"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [
+            "pet_profile_summary",
+            "pet_body_condition",
+            "pet_symptom_summary(optional)",
+            "current_location_and_time",
+            "candidate_pet_hospitals",
+            "transport_accessibility_summary",
+            "required_output_format"
+          ],
+          "output_fields": [
+            "urgency_level",
+            "whether_immediate_visit_is_suggested",
+            "ranked_nearby_pet_hospitals",
+            "distance_or_eta",
+            "business_hours",
+            "contact_info",
+            "navigation_mode",
+            "basic_emergency_advice"
+          ]
+        }
+      },
+      "notes": [
+        "The architecture assigns urgency judgment plus filtering/sorting here to 5.1-mini."
+      ]
+    },
+    "session_init": {
+      "feature_id": "session_init",
+      "stage": "global",
+      "description": "Generate session_id, read memory, and determine whether existing user/pet/trip profiles already exist.",
+      "trigger_examples": [
+        "首轮进入系统",
+        "新会话启动"
+      ],
+      "input_fields": [
+        "user_id(optional)",
+        "session_id(optional)",
+        "current_user_message(optional)"
+      ],
+      "output_fields": [
+        "session_id",
+        "memory_exists",
+        "user_profile_exists",
+        "pet_profile_exists",
+        "trip_context_exists",
+        "memory_summary"
+      ],
+      "memory_read_fields": [
+        "user_profile_summary",
+        "pet_profile_summary",
+        "trip_context_summary",
+        "generated_itinerary_summary",
+        "historical_preference_summary"
+      ],
+      "api_request_fields": [
+        {
+          "api_name": "memory_store",
+          "purpose": "Load historical user/pet/trip/context information",
+          "request_fields": [
+            "user_id(optional)",
+            "session_id(optional)"
+          ]
+        }
+      ],
+      "model_io_logic": {
+        "4.1-mini": {
+          "input_fields": [
+            "current_user_message(optional)",
+            "memory_summary",
+            "profile_existence_flags"
+          ],
+          "output_fields": [
+            "initial_greeting_strategy",
+            "memory_summary_for_next_step"
+          ]
+        },
+        "5.1-mini": {
+          "input_fields": [],
+          "output_fields": []
+        }
+      },
+      "notes": [
+        "This is the A-B block in the original architecture."
+      ]
+    }
+  },
+  "model_handoff_pattern": {
+    "description": "Common handoff logic between 4.1-mini and 5.1-mini across features that need deep reasoning.",
+    "4.1-mini_to_5.1-mini": {
+      "input_fields_to_4.1-mini": [
+        "raw_user_message",
+        "memory_summary",
+        "task_registry",
+        "required_field_schema",
+        "tool_results"
+      ],
+      "output_fields_from_4.1-mini": [
+        "recognized_stage",
+        "recognized_task",
+        "normalized_request_json",
+        "missing_fields_resolution_status",
+        "constraint_summary",
+        "candidate_resource_summary",
+        "required_output_format",
+        "context_summary_for_5.1-mini"
+      ],
+      "handoff_rule": "Only when required fields are sufficiently complete and the task requires multi-constraint reasoning should 4.1-mini invoke 5.1-mini."
+    },
+    "5.1-mini_to_4.1-mini": {
+      "input_fields_to_5.1-mini": [
+        "normalized_request_json",
+        "constraint_summary",
+        "candidate_resource_summary",
+        "required_output_format"
+      ],
+      "output_fields_from_5.1-mini": [
+        "ranked_or_combined_solution",
+        "reasoning_summary",
+        "constraint_satisfaction_notes",
+        "structured_plan"
+      ],
+      "returned_to_4.1-mini_for": [
+        "lightweight_explanation",
+        "translation",
+        "chat_friendly_formatting",
+        "memory_writeback_summary"
+      ]
+    }
+  }
+}

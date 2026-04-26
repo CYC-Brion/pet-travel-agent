@@ -1,0 +1,12 @@
+openai
+python-dotenv
+tiktoken
+azure-ai-projects
+azure-identity
+azure-cosmos
+pydantic>=2.0
+requests
+pytest
+pyyaml
+fastapi
+uvicorn

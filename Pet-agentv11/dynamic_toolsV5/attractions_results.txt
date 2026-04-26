@@ -1,0 +1,116 @@
+=== Top Attractions near Bund, Shanghai ===
+
+1. 外滩
+   Type: 旅游胜地
+   Rating: 4.7/5 (7113 reviews)
+   Price: N/A
+   Address: 上海市黄浦区外滩, 中山东一路, 邮政编码: 200002
+   Description: 著名滨江步道，漫步于此可欣赏城市美景. 1500 米长的滨江大道，历史悠久，沿岸展示了独特的现代和殖民建筑。...
+   Hours: N/A
+
+2. 上海中心大厦
+   Type: 旅游胜地
+   Rating: 4.6/5 (3012 reviews)
+   Price: N/A
+   Address: 上海市浦东新区陆家嘴, 银城中路501号, 邮政编码: 200120
+   Description: 127 层高的摩天大楼，设有 2 个观景台. 632 米高的摩天大楼，设有餐厅、酒吧、商店、2 个观景台和 1 家酒店。...
+   Hours: 正在营业 · 结束营业时间：21:30
+
+3. 上海外滩观光隧道
+   Type: 旅游胜地
+   Rating: 3.7/5 (687 reviews)
+   Price: N/A
+   Address: 上海市黄浦区外滩, 中山东一路349号, 邮政编码: 200002
+   Description: 可欣赏灯光秀的水下观光车之旅. 自动观光车穿过黄浦江下的隧道，四周闪烁着五颜六色的灯光，还有悠扬动听的音乐。...
+   Hours: N/A
+
+4. 外滩观光隧道
+   Type: 旅游胜地
+   Rating: 4.1/5 (1641 reviews)
+   Price: N/A
+   Address: 上海市浦东新区陆家嘴, 丰和路98号, 邮政编码: 200120
+   Hours: 正在营业 · 结束营业时间：22:30
+
+5. 外滩艺术馆
+   Type: 旅游胜地
+   Rating: 4.7/5 (84 reviews)
+   Price: N/A
+   Address: 上海市黄浦区, 汉口路193号, 邮政编码: 200002
+   Hours: N/A
+
+6. 上海外滩美术馆
+   Type: 旅游胜地
+   Rating: 4.3/5 (93 reviews)
+   Price: N/A
+   Address: 上海市黄浦区外滩, 虎丘路20号, 邮政编码: 200085
+   Hours: 正在营业 · 结束营业时间：18:00
+
+7. 上海博物馆
+   Type: 旅游胜地
+   Rating: 4.3/5 (1257 reviews)
+   Price: N/A
+   Address: 上海市黄浦区人民广场, 人民大道201号, 邮政编码: 200003
+   Description: 现代博物馆，展品有古文物. 可免费参观的巨型博物馆，展品丰富多样，包括青铜器和玉器、雕塑和绘画品。...
+   Hours: 即将结束营业 · 17:00 · 开始营业时间：周五09:00
+
+8. 豫园
+   Type: 旅游胜地
+   Rating: 4.5/5 (4962 reviews)
+   Price: N/A
+   Address: 上海市黄浦区四牌楼, 邮政编码: 200000
+   Description: 蜿蜒曲折的著名古典园林. 占地 5 英亩的花园，建于 1577 年，拥有明代的亭台、池塘、假山和拱形桥梁。...
+   Hours: 已结束营业 · 开始营业时间：周五09:00
+
+9. 黄浦公园
+   Type: 旅游胜地
+   Rating: 4.5/5 (175 reviews)
+   Price: N/A
+   Address: 上海市黄浦区外滩, 中山东一路500号, 邮政编码: 200002
+   Description: 建于 19 世纪的欧式公园. 这是中国第一个欧式公园，建于 1886 年，现在设有一座纪念塔和一个历史博物馆。...
+   Hours: N/A
+
+10. 外滩历史纪念馆
+   Type: 旅游胜地
+   Rating: 4.8/5 (78 reviews)
+   Price: N/A
+   Address: 上海市黄浦区外滩, 中山东一路475号, 邮政编码: 200120
+   Hours: N/A
+
+11. 东方明珠电视塔
+   Type: 旅游胜地
+   Rating: 4.6/5 (7375 reviews)
+   Price: N/A
+   Address: 上海市浦东新区陆家嘴, 世纪大道1号, 邮政编码: 200120
+   Description: 标志性铁塔，可观赏城市景观. 未来派电视塔（高 468 米），设有历史博物馆和旋转餐厅，可在塔上观赏城市景观。...
+   Hours: N/A
+
+12. 上海老街
+   Type: 旅游胜地
+   Rating: 4.4/5 (787 reviews)
+   Price: N/A
+   Address: 上海市黄浦区四牌楼, 宝带弄, 邮政编码: 200010
+   Description: 坐落着古老建筑的繁华街道. 古老的宝塔式建筑，是这个拥有商店和景点的繁华老街中的一大亮点。...
+   Hours: N/A
+
+13. 田子坊
+   Type: 旅游胜地
+   Rating: 4.2/5 (1928 reviews)
+   Price: N/A
+   Address: 上海市黄浦区, 泰康路210弄号, 邮政编码: 200023
+   Description: 历史悠久的街区，艺术气息浓厚. 这片曾经的法租界街巷狭窄，以其古香古色的商店、咖啡馆和酒吧而闻名。...
+   Hours: 24 小时营业
+
+14. 豫园老街
+   Type: 旅游胜地
+   Rating: 4.6/5 (857 reviews)
+   Price: N/A
+   Address: 上海市黄浦区四牌楼, 豫园新路, 豫园, 邮政编码: 200120
+   Description: 始建于 1907 年且内有商店和餐馆的市场. 这片老购物区内有诸多餐馆，并林立着出售各式用品、纪念品和工艺品的精品店。...
+   Hours: N/A
+
+15. 点春堂
+   Type: 旅游胜地
+   Rating: 4.6/5 (13 reviews)
+   Price: N/A
+   Address: 上海市黄浦区四牌楼, 邮政编码: 200120
+   Hours: N/A

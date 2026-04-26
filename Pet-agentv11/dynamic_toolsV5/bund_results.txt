@@ -1,0 +1,163 @@
+Total: 18 hotels near Bund/Waitai
+
+=== 1. Fairmont Peace Hotel ===
+  Type: hotel
+  Rating: 4.6 (906 reviews)
+  Class: 5-star hotel
+  Price/night: CN¥3,163
+  Total (2 nights): CN¥6,327
+  Description: Elegant quarters in a sophisticated hotel with upscale restaurants, a plush spa & an indoor pool.
+  Token: ChYIqLKmg4KEluahARoJL20vMDYwbHA2EAE
+
+=== 2. The Peninsula Shanghai ===
+  Type: hotel
+  Rating: 4.6 (189 reviews)
+  Class: 5-star hotel
+  Price/night: CN¥3,394
+  Total (2 nights): CN¥6,787
+  Description: High-end hotel offering 3 elegant restaurants, 2 bars & river views, plus a spa with an indoor pool.
+  Token: ChkI6rrB9eyVmLcSGg0vZy8xMWJ0d2tjcnA2EAE
+
+=== 3. The Shanghai EDITION ===
+  Type: hotel
+  Rating: 4.5 (251 reviews)
+  Class: 5-star hotel
+  Price/night: CN¥3,927
+  Total (2 nights): CN¥7,854
+  Description: Refined quarters in an elegant hotel offering 3 restaurants & 2 bars, plus a gym & spa treatments.
+  Token: ChoImICVkdOE4MjyARoNL2cvMTFmNjYyeTdteRAB
+
+=== 4. Atour Hotel Shanghai Bund Nanjing East Road ===
+  Type: hotel
+  Rating: 4.6 (109 reviews)
+  Class: None
+  Price/night: CN¥1,384
+  Total (2 nights): CN¥2,768
+  Description: N/A
+  Token: ChoI1JK61fXi2d_OARoNL2cvMTFqMzF2dHNkehAB
+
+=== 5. Jinjiang Metropolo Hotel Classiq - Bund Circle Shanghai ===
+  Type: hotel
+  Rating: 4.4 (154 reviews)
+  Class: 3-star hotel
+  Price/night: CN¥1,030
+  Total (2 nights): CN¥2,059
+  Description: N/A
+  Token: ChgItYCQwcT56YReGgwvZy8xMWd6Nzh5amgQAQ
+
+=== 6. Shanghai Fish Inn East Nanjing Road ===
+  Type: hotel
+  Rating: 4.2 (1227 reviews)
+  Class: 3-star hotel
+  Price/night: N/A
+  Total (2 nights): N/A
+  Description: N/A
+  Token: ChoI7LGx3_yR9_TvARoNL2cvMTFiNmQwNjYxZBAB
+
+=== 7. Oriental Riverside Hotel ===
+  Type: hotel
+  Rating: 4.3 (163 reviews)
+  Class: 5-star hotel
+  Price/night: CN¥1,158
+  Total (2 nights): CN¥2,316
+  Description: Polished quarters in an upmarket hotel offering an indoor pool, a spa & a gym, plus river views.
+  Token: ChgIyP-h9puZgYifARoLL2cvMXRmamNrM3cQAQ
+
+=== 8. New Asia Hotel Shanghai ===
+  Type: hotel
+  Rating: 4.3 (128 reviews)
+  Class: 3-star hotel
+  Price/night: CN¥1,074
+  Total (2 nights): CN¥2,148
+  Description: Refined rooms, some with city views, in an upscale hotel offering 3 restaurants, a bar & a gym.
+  Token: ChcIq8euzNT3veNoGgsvZy8xNTVyX2gwYxAB
+
+=== 9. Jinjiang Metropolo Classiq Hotel, Off Bund ===
+  Type: hotel
+  Rating: 4.4 (76 reviews)
+  Class: 4-star hotel
+  Price/night: CN¥1,159
+  Total (2 nights): CN¥2,318
+  Description: Sophisticated hotel offering contemporary rooms & suites, plus a restaurant, a bar & breakfast.
+  Token: ChoI5qvg9bfY_62MARoNL2cvMTFiNnZuOGI4MBAB
+
+=== 10. Broadway Mansions Hotel Shanghai ===
+  Type: hotel
+  Rating: 4.3 (103 reviews)
+  Class: 5-star hotel
+  Price/night: CN¥2,886
+  Total (2 nights): CN¥5,773
+  Description: Refined quarters in an upscale 1930s hotel with posh dining & a British pub, plus a gym & a spa.
+  Token: ChUIzub4xInEndEuGgkvbS8wOHZtbW4QAQ
+
+=== 11. Regent Shanghai On The Bund ===
+  Type: hotel
+  Rating: 4.9 (25 reviews)
+  Class: None
+  Price/night: CN¥3,177
+  Total (2 nights): CN¥6,355
+  Description: N/A
+  Token: ChoIyJH1vfbK3sW5ARoNL2cvMTF5MmZiYnc2ehAB
+
+=== 12. Hyatt on the Bund Hotel ===
+  Type: hotel
+  Rating: 4.1 (444 reviews)
+  Class: 5-star hotel
+  Price/night: CN¥1,397
+  Total (2 nights): CN¥2,795
+  Description: Contemporary lodging with high-end decor & a sleek spa, plus 2 Asian restaurants & a Western eatery.
+  Token: ChoI_aWuxb29qrSgARoNL2cvMTFjbHl0NHgwehAB
+
+=== 13. Hotel Chalet Shanghai ===
+  Type: hotel
+  Rating: 4.6 (33 reviews)
+  Class: 4-star hotel
+  Price/night: CN¥980
+  Total (2 nights): CN¥1,959
+  Description: N/A
+  Token: ChoIx63v99ewkaf0ARoNL2cvMTFuODVrXzBxNRAB
+
+=== 14. 锦江之星 ===
+  Type: hotel
+  Rating: 4.2 (104 reviews)
+  Class: 2-star hotel
+  Price/night: N/A
+  Total (2 nights): N/A
+  Description: N/A
+  Token: ChkIkPu2yLqJ69PgARoML2cvMWhjM2pueXJ0EAE
+
+=== 15. Ji Hotel ===
+  Type: hotel
+  Rating: 4.6 (24 reviews)
+  Class: None
+  Price/night: CN¥856
+  Total (2 nights): CN¥1,712
+  Description: N/A
+  Token: ChkI89CGq7yz1-5fGg0vZy8xMWgxbWcwN3ZxEAE
+
+=== 16. Youli Hotel ===
+  Type: hotel
+  Rating: 4.3 (38 reviews)
+  Class: None
+  Price/night: CN¥848
+  Total (2 nights): CN¥1,696
+  Description: N/A
+  Token: ChoI38ic97zfzqahARoNL2cvMTFybXAwamo5aBAB
+
+=== 17. Bellagio Shanghai ===
+  Type: hotel
+  Rating: 4.5 (22 reviews)
+  Class: None
+  Price/night: CN¥2,441
+  Total (2 nights): CN¥4,883
+  Description: N/A
+  Token: ChkIgt3fntXoob1HGg0vZy8xMWRfeWt4aHhxEAE
+
+=== 18. Astor House Hotel ===
+  Type: hotel
+  Rating: 4.1 (53 reviews)
+  Class: 4-star hotel
+  Price/night: N/A
+  Total (2 nights): N/A
+  Description: Palatial hotel with a refined restaurant & 2 Western-style bars, plus an opulent ballroom.
+  Token: ChUIhpy30rjYreJ1GgkvbS8wOHZuNDMQAQ

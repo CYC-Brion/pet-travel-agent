@@ -1,0 +1,288 @@
+{
+  "profiles": {
+    "persist": {
+      "user_id": "persist",
+      "fullName": "Alex Chen",
+      "email": "persist@example.com",
+      "phone": "+86 138-0000-1234",
+      "petName": "Biscuit",
+      "petType": "dog",
+      "breed": "Golden Retriever",
+      "age": "3",
+      "weight": "35",
+      "healthStatus": "healthy",
+      "healthNotes": "Vaccinations up to date. No known allergies.",
+      "minBudget": "3500",
+      "maxBudget": "6000",
+      "transportPreference": "car",
+      "hotelPreference": "4-star",
+      "travelPace": "moderate",
+      "emergencyName": "Jane Chen",
+      "emergencyPhone": "+86 138-0000-1234",
+      "emergencyRelation": "Spouse"
+    }
+  },
+  "trips": {
+    "trip-88464587c0": {
+      "trip_id": "trip-88464587c0",
+      "session_id": "a0bfee31-25e4-4a53-80e6-dd803ad1ab25",
+      "user_id": "persist",
+      "status": "planned",
+      "emergency_decision": "none",
+      "trip": {
+        "departure": "Shanghai",
+        "destination": "Hangzhou",
+        "start_date": "2026-05-15",
+        "end_date": "2026-05-17",
+        "days": 3,
+        "num_people": 1,
+        "num_pets": 1,
+        "budget_min": 3500,
+        "budget_max": 6000,
+        "transport": "car",
+        "hotel_preference": "4-star",
+        "pace": "moderate"
+      },
+      "pet": {
+        "name": "Biscuit",
+        "type": "dog",
+        "breed": "Golden Retriever",
+        "age": 3,
+        "weight_kg": 35.0,
+        "health_status": "healthy",
+        "medical_notes": ""
+      },
+      "safety": {
+        "emergency_contact": "Jane",
+        "include_pet_hospitals": true
+      },
+      "plan": {
+        "title": "Your Pet-Friendly Trip to Hangzhou",
+        "route": "Shanghai to Hangzhou",
+        "dates": "May 15-17, 2026",
+        "budget_range": {
+          "min": 3500,
+          "max": 6000,
+          "currency": "CNY"
+        },
+        "estimated_total": 4500,
+        "hotel": {
+          "name": "Hangzhou Pet-Friendly Hotel",
+          "type": "4-star",
+          "price": "¥680/night",
+          "petPolicy": "Friendly"
+        },
+        "itinerary_days": [
+          {
+            "day": 1,
+            "date": "2026-05-15",
+            "activities": [
+              {
+                "id": "d1-1",
+                "time": "09:00",
+                "type": "transport",
+                "title": "Depart Shanghai",
+                "duration": "2 hrs",
+                "price": "¥200 gas",
+                "petPolicy": null
+              },
+              {
+                "id": "d1-2",
+                "time": "11:30",
+                "type": "hotel",
+                "title": "Check-in: Hangzhou Pet-Friendly Hotel",
+                "duration": null,
+                "price": "¥680",
+                "petPolicy": "Friendly",
+                "hours": "24 hours"
+              },
+              {
+                "id": "d1-3",
+                "time": "14:00",
+                "type": "attraction",
+                "title": "Su Causeway Walk",
+                "duration": "2 hrs",
+                "ticket": "Free",
+                "petPolicy": "Leash required",
+                "hours": "Always open"
+              },
+              {
+                "id": "d1-4",
+                "time": "16:30",
+                "type": "meal",
+                "title": "Pet-Friendly Cafe",
+                "petPolicy": "Friendly"
+              },
+              {
+                "id": "d1-5",
+                "time": "18:00",
+                "type": "meal",
+                "title": "Dinner at Hubin Road Pet Restaurant",
+                "petPolicy": "Friendly"
+              }
+            ]
+          },
+          {
+            "day": 2,
+            "date": "2026-05-15",
+            "activities": [
+              {
+                "id": "d2-1",
+                "time": "08:30",
+                "type": "attraction",
+                "title": "Prince Bay Park",
+                "duration": "2.5 hrs",
+                "ticket": "Free",
+                "petPolicy": "Leash required",
+                "hours": "Open until 18:00"
+              },
+              {
+                "id": "d2-2",
+                "time": "12:00",
+                "type": "meal",
+                "title": "Lunch Break"
+              },
+              {
+                "id": "d2-3",
+                "time": "14:00",
+                "type": "transport",
+                "title": "Drive to Yunqi Bamboo Trail",
+                "duration": "30 min",
+                "price": "¥30 gas"
+              },
+              {
+                "id": "d2-4",
+                "time": "15:00",
+                "type": "attraction",
+                "title": "Yunqi Bamboo Trail",
+                "duration": "2 hrs",
+                "ticket": "¥8",
+                "petPolicy": "Friendly",
+                "hours": "Open until 17:00"
+              },
+              {
+                "id": "d2-5",
+                "time": "17:30",
+                "type": "meal",
+                "title": "Tea House Rest Stop",
+                "petPolicy": "Friendly"
+              }
+            ]
+          },
+          {
+            "day": 3,
+            "date": "2026-05-17",
+            "activities": [
+              {
+                "id": "d3-1",
+                "time": "09:00",
+                "type": "attraction",
+                "title": "Longjing Village",
+                "duration": "2 hrs",
+                "ticket": "Free",
+                "petPolicy": "Friendly"
+              },
+              {
+                "id": "d3-2",
+                "time": "12:00",
+                "type": "hotel",
+                "title": "Hotel Check-out"
+              },
+              {
+                "id": "d3-3",
+                "time": "13:30",
+                "type": "transport",
+                "title": "Return to Shanghai",
+                "duration": "2 hrs",
+                "price": "¥200 gas"
+              }
+            ]
+          }
+        ],
+        "restaurants": [
+          {
+            "id": "r1",
+            "name": "Pet-Friendly Cafe",
+            "type": "Cafe",
+            "petFriendly": true
+          },
+          {
+            "id": "r2",
+            "name": "Hubin Road Pet Restaurant",
+            "type": "Restaurant",
+            "petFriendly": true
+          }
+        ],
+        "attractions": [
+          {
+            "id": "a1",
+            "name": "Su Causeway Walk",
+            "type": "Nature",
+            "petFriendly": true
+          },
+          {
+            "id": "a2",
+            "name": "Prince Bay Park",
+            "type": "Park",
+            "petFriendly": true
+          },
+          {
+            "id": "a3",
+            "name": "Yunqi Bamboo Trail",
+            "type": "Nature",
+            "petFriendly": true
+          }
+        ],
+        "hospitals": [
+          {
+            "id": "hospital-1",
+            "name": "Hangzhou Pet Hospital (24hr)",
+            "rating": 4.8,
+            "hours": "24 hours",
+            "distance": "2.3 km",
+            "eta": "8 min",
+            "phone": "+86 571-8888-0000",
+            "address": "No. 268 Kaixuan Road, Hangzhou"
+          },
+          {
+            "id": "hospital-2",
+            "name": "Hangzhou Pet Care Hospital",
+            "rating": 4.6,
+            "hours": "08:00-22:00",
+            "distance": "4.1 km",
+            "eta": "12 min",
+            "phone": "+86 571-8888-0001",
+            "address": "No. 155 Wensan West Road, Hangzhou"
+          }
+        ],
+        "flights": [],
+        "risks": [
+          "Confirm pet policies before arrival.",
+          "Carry vaccination records and water."
+        ],
+        "documents": [
+          "Pet vaccination record",
+          "Owner ID/passport",
+          "Hotel pet policy confirmation"
+        ],
+        "source_trace": [
+          {
+            "branch": "fallback",
+            "used": true
+          }
+        ]
+      },
+      "assistant_reply": "I created one budget-matched itinerary for Shanghai to Hangzhou within ¥3,500 - ¥6,000.",
+      "warnings": [
+        "Live agent disabled; using API fallback plan."
+      ],
+      "raw": {
+        "recommendations": {},
+        "retrieval_data": {}
+      },
+      "created_at": "2026-04-26T06:23:25.950840"
+    }
+  },
+  "reviews": {},
+  "updated_at": "2026-04-26T06:23:25.951224"
+}
