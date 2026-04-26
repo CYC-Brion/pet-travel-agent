@@ -1,4 +1,4 @@
-# BRION - Pet Travel Planning AI Agent
+# Pet Travel Planning AI Agent
 
 > A pet-friendly trip planning system that generates personalized travel itineraries with pet-specific constraints including hotels, flights, restaurants, weather, routes, and emergency vet recommendations.
 
